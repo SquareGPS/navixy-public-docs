@@ -24,13 +24,13 @@ Navixy MCP Server changes that. It gives your AI client a direct, secure connect
 
 ## Navixy AI tools
 
-<table><thead><tr><th width="176.20001220703125">Tool</th><th width="341">What it does</th><th>Setup required</th></tr></thead><tbody><tr><td><a href="navixy-ai-assistant.md">Navixy AI Assistant</a></td><td>Chat interface built into Navixy. Ask questions about the platform or your account without leaving the interface.</td><td>None</td></tr><tr><td><a href="https://app.gitbook.com/s/gh5cGQ23uFYTcp7Fj7Yd/navixy-mcp-server">Navixy MCP Server</a></td><td>Connects Claude Desktop, Cursor, or another AI client to your live Navixy account data.</td><td>Connect your MCP client to the Navixy MCP Server endpoint</td></tr><tr><td><a href="./#navixy-documentation-mcp">Navixy Documentation MCP Server</a></td><td>Gives your AI client access to the full Navixy documentation so it can find answers across any page on demand.</td><td>Connect your AI client to the documentation MCP endpoint</td></tr></tbody></table>
+<table><thead><tr><th width="176.20001220703125">Tool</th><th width="341">What it does</th><th>Setup required</th></tr></thead><tbody><tr><td><a href="navixy-ai-assistant/README.md">Navixy AI Assistant</a></td><td>Chat interface built into Navixy. Ask questions about the platform or your account without leaving the interface.</td><td>None</td></tr><tr><td><a href="https://app.gitbook.com/s/gh5cGQ23uFYTcp7Fj7Yd/navixy-mcp-server">Navixy MCP Server</a></td><td>Connects Claude Desktop, Cursor, or another AI client to your live Navixy account data.</td><td>Connect your MCP client to the Navixy MCP Server endpoint</td></tr><tr><td><a href="./#navixy-documentation-mcp">Navixy Documentation MCP Server</a></td><td>Gives your AI client access to the full Navixy documentation so it can find answers across any page on demand.</td><td>Connect your AI client to the documentation MCP endpoint</td></tr></tbody></table>
 
 You can use all three at the same time. They are independent and complement each other.
 
 ## Navixy AI Assistant
 
-[Navixy AI Assistant](navixy-ai-assistant.md) is a chat interface built into the Navixy platform. It answers questions about platform features, device specifications, and your live account data in the same conversation. No setup is required.
+[Navixy AI Assistant](navixy-ai-assistant/README.md) is a chat interface built into the Navixy platform. It answers questions about platform features, device specifications, and your live account data in the same conversation. No setup is required.
 
 You can also use it without signing in at [assistant.navixy.com](https://assistant.navixy.com).
 

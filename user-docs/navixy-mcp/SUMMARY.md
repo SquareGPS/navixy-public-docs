@@ -15,6 +15,7 @@
 
 ***
 
-* [Navixy AI Assistant](navixy-ai-assistant.md)
+* [Navixy AI Assistant](navixy-ai-assistant/README.md)
+  * [IoT Logic Flow Builder](navixy-ai-assistant/iot-logic-flow-builder.md)
 * [Using Navixy documentation with AI](using-navixy-documentation-with-ai.md)
 * [Troubleshooting](troubleshooting.md)

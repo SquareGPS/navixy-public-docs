@@ -6,7 +6,7 @@ Navixy AI Assistant is a chat interface built into the Navixy platform and websi
 {% endcolumn %}
 
 {% column width="16.666666666666657%" %}
-<figure><img src=".gitbook/assets/AI assistant-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/AI assistant-icon.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -17,7 +17,7 @@ You can also use the assistant without signing in at [assistant.navixy.com](http
 **See also:**
 
 * [Navixy MCP Server](https://app.gitbook.com/s/gh5cGQ23uFYTcp7Fj7Yd/navixy-mcp-server): Connect your own AI client to Navixy account data
-* [Documentation MCP](using-navixy-documentation-with-ai.md): Give your AI client access to Navixy documentation
+* [Documentation MCP](../using-navixy-documentation-with-ai.md): Give your AI client access to Navixy documentation
 
 ## What AI Assistant can always do <a href="#what-the-assistant-can-always-do" id="what-the-assistant-can-always-do"></a>
 
@@ -40,7 +40,7 @@ When you open the assistant from the Navixy interface or Admin Panel, it automat
 
 ### From the Navixy interface
 
-The assistant is available widget-style in the lower-right corner of the interface. Click <img src=".gitbook/assets/AI assistant-icon.png" alt="" data-size="line"> to open the chat window.
+The assistant is available widget-style in the lower-right corner of the interface. Click <img src="../.gitbook/assets/AI assistant-icon.png" alt="" data-size="line"> to open the chat window.
 
 With an active Navixy session, the assistant can access:
 
@@ -48,6 +48,8 @@ With an active Navixy session, the assistant can access:
 * **Groups and tags:** List tracker groups, find a group by name, or browse your tags.
 * **Track history:** Ask for the route a tracker took during a specific time period.
 * **Addresses:** Convert GPS coordinates to a readable address.
+* **IoT Logic flows:** List flows, read a flow's configuration, export a flow, view device-to-flow assignments, and inspect endpoints.
+* **IoT Logic flow builder:** Describe what you need in plain language and the assistant can [build a new IoT Logic flow](iot-logic-flow-builder.md) for you.
 
 Example prompts:
 
