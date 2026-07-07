@@ -1,5 +1,7 @@
 ---
-description: Alert when a GPS device sensor enters or exits a defined value range. Supports measurement sensors and virtual sensors, with a configurable accuracy buffer.
+description: >-
+  Alert when a GPS device sensor enters or exits a defined value range. Supports
+  measurement sensors and virtual sensors, with a configurable accuracy buffer.
 ---
 
 # Parameter in range
@@ -10,7 +12,7 @@ This rule is specifically designed for the use of measurement sensors and serves
 
 ## Settings
 
-![](../../../.gitbook/assets/image-20230706-064405.png)
+![](../../../../.gitbook/assets/image-20230706-064405.png)
 
 **Sensor:**
 
@@ -26,7 +28,7 @@ This parameter describes the highest boundary of the range.
 
 **Value threshold:**
 
-- is a buffer which is added upon the “**More or equal**” and “**Less or equal**” boundaries from both sides of each parameter. This value helps the Navixy platform distinguish between **IN** and **OUT** range states, even in cases of "loose" data (such as sensor noise or inaccuracies). It does this by creating a larger range around the '10' and '24' points, allowing for more tolerance and reducing the risk of false alerts. Hard to get an analogue sensor that hits the exact specified value, at the same time, inaccuracies will trigger the event too frequently. There may be two cases of incoming value occurrences. The behaviour of the platform depends on the rule (event) **state** for a given moment of time. The event has two states:
+* is a buffer which is added upon the “**More or equal**” and “**Less or equal**” boundaries from both sides of each parameter. This value helps the Navixy platform distinguish between **IN** and **OUT** range states, even in cases of "loose" data (such as sensor noise or inaccuracies). It does this by creating a larger range around the '10' and '24' points, allowing for more tolerance and reducing the risk of false alerts. Hard to get an analogue sensor that hits the exact specified value, at the same time, inaccuracies will trigger the event too frequently. There may be two cases of incoming value occurrences. The behaviour of the platform depends on the rule (event) **state** for a given moment of time. The event has two states:
 
 1. **IN** range
 2. **OUT** range
@@ -39,7 +41,7 @@ Case#2, From the **OUT** to the **IN** state:
 
 Whenever the event (the rule) is in the **OUT** range state, this state only changes to the **IN** range when the incoming value hits **in range** (#**1**) but outside the inner buffers (#**2**).
 
-![](../../../.gitbook/assets/image-20230706-064540.png)
+![](../../../../.gitbook/assets/image-20230706-064540.png)
 
 If the "Value threshold" parameter isn't specified, it becomes equal to 0.03 (absolute value) by default. So, as for the example above, the buffers' space would be from 9.97 to 10, from 10 to 10.03, from 23.97 to 24, and from 24 to 24.03.
 
@@ -101,16 +103,16 @@ Set a schedule for when the rule runs. If your schedule indicates that the event
 
 ## The platform specifics:
 
-- Whenever the platform identifies an **IN** range or an **OUT** range event from a packet of GPS device data with no valid coordinates in it, the platform counts the event as a valid one and displays it regardless of whether the event occurred within or outside the bound geofences. The logic of the **Inside/Outside** radio buttons is also ignored in this case. This behavior is due to the fact that showing a controversial event once more is better than omitting it.
-- The rule supports only one device per rule. This is due to the fact that multiple different sources of measurement sensors can't be cross-referenced with multiple GPS devices, calibration tables, and other aspects of measuring and filtering data.
-- The **Parameter in range** alert has a 10-second reset timer, meaning the alert event doesn't occur more often than once every 10 seconds. If this type of event occurs in time the rule has been waiting for the reset, this event is omitted by the platform, including the reports.
+* Whenever the platform identifies an **IN** range or an **OUT** range event from a packet of GPS device data with no valid coordinates in it, the platform counts the event as a valid one and displays it regardless of whether the event occurred within or outside the bound geofences. The logic of the **Inside/Outside** radio buttons is also ignored in this case. This behavior is due to the fact that showing a controversial event once more is better than omitting it.
+* The rule supports only one device per rule. This is due to the fact that multiple different sources of measurement sensors can't be cross-referenced with multiple GPS devices, calibration tables, and other aspects of measuring and filtering data.
+* The **Parameter in range** alert has a 10-second reset timer, meaning the alert event doesn't occur more often than once every 10 seconds. If this type of event occurs in time the rule has been waiting for the reset, this event is omitted by the platform, including the reports.
 
 ## Event reports
 
 To view the dates when the events were received, you can build the **Report on all events** report.
 
-![](../../../.gitbook/assets/image-20230706-064944.png)
+![](../../../../.gitbook/assets/image-20230706-064944.png)
 
-![](../../../.gitbook/assets/image-20230706-065349.png)
+![](../../../../.gitbook/assets/image-20230706-065349.png)
 
 For a graphical representation of a measurement sensor usage over a period of time, use the **Measuring sensors** report.

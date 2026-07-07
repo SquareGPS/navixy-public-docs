@@ -1,5 +1,7 @@
 ---
-description: Odometer and GPS distance use different calculation methods in Navixy. Compare accuracy, choose the right approach, and apply automatic correction.
+description: >-
+  Odometer and GPS distance use different calculation methods in Navixy. Compare
+  accuracy, choose the right approach, and apply automatic correction.
 ---
 
 # Mileage and odometer
@@ -26,7 +28,7 @@ If the GPS device transmits data infrequently, corners will be cut and part of t
 
 Configure the GPS device to transmit your location as often as possible (including angle and distance conditions) to minimize possible impact.
 
-![](../../.gitbook/assets/image-20230728-103318.png)
+![](../../../.gitbook/assets/image-20230728-103318.png)
 
 {% hint style="info" %}
 In addition, the odometer readings in a car are not always 100% accurate. Manufacturers allow an error of up to 10%, but usually it fluctuates somewhere around 5%. Usually, upwards.
@@ -43,7 +45,7 @@ But first, you need to collect some statistics in order to understand what value
 
 Now all readings will be automatically corrected according to your settings. Most likely, a small difference will still be observed, but it will not be critical and you can simply check the data and update the counter every few months.
 
-![Mileage and odometer](../../.gitbook/assets/image-20231130-083736.png)
+![Mileage and odometer](../../../.gitbook/assets/image-20231130-083736.png)
 
 {% hint style="info" %}
 If your GPS device is connected to the car via CAN bus, then you can set up the synchronization of the odometer on the platform with the real car odometer. Just create the corresponding CAN sensor and select it as the odometer source in the settings panel. Note that you will still need to manually enter the current mileage first.
@@ -58,5 +60,5 @@ First of all, because it is only trips that are taken into account, and not all 
 But most often, this happens due to incorrect settings for **Parking detection**. The easiest way to check this is to display all trips for the day on the map and see if there are large gaps between them and if each trip is a continuation of the previous one.
 
 {% hint style="info" %}
-If necessary, read the [Parking detection](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/location-and-movement/parking-detection-block) instructions in order to correct possible problems.
+If necessary, read the [Parking detection](/broken/spaces/446mKak1zDrGv70ahuYZ/pages/kuQsXSvRlmWewB0IVXgM) instructions in order to correct possible problems.
 {% endhint %}

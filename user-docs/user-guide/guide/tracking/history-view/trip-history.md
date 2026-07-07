@@ -1,5 +1,7 @@
 ---
-description: Review past trips for any object, with mileage, fuel, stops, and duration. Replay routes on the map, color-code by speed, and export trips as KML files.
+description: >-
+  Review past trips for any object, with mileage, fuel, stops, and duration.
+  Replay routes on the map, color-code by speed, and export trips as KML files.
 ---
 
 # Trip history
@@ -9,18 +11,18 @@ Trip history in Navixy allows you to review past activities and routes taken by 
 {% hint style="info" %}
 **Navigation**
 
-To view your trip history in Navixy, select the objects you're interested in and click <img src="../../../.gitbook/assets/Untitled-20250414-131158.png" alt="Untitled-20250414-131158.png" data-size="line">. Select the desired date range to proceed.
+To view your trip history in Navixy, select the objects you're interested in and click <img src="../../../../.gitbook/assets/Untitled-20250414-131158.png" alt="Untitled-20250414-131158.png" data-size="line">. Select the desired date range to proceed.
 {% endhint %}
 
-![Trip history button](../../../.gitbook/assets/image-20241112-222233.png)
+![Trip history button](../../../../.gitbook/assets/image-20241112-222233.png)
 
 {% columns fullWidth="true" %}
 {% column %}
-![History date range selection](../../../.gitbook/assets/image-20240807-220921.png)
+![History date range selection](../../../../.gitbook/assets/image-20240807-220921.png)
 {% endcolumn %}
 
 {% column %}
-![Trip details](../../../.gitbook/assets/image-20240807-223841.png)
+![Trip details](../../../../.gitbook/assets/image-20240807-223841.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -38,12 +40,12 @@ Select a date range to see a summary of trips for the chosen objects, grouped by
 
 An object’s trip list contains a detailed breakdown of each trip taken during the selected period, including:
 
-- **Trip date**: The trip’s starting day
-- **Start and end time**: The date and time when the trip started and ended
-- **Mileage**: Total distance covered during the trip
-- **Fuel consumed**: The amount of fuel consumed during the trip
-- **Travel time**: Total time spent on the trip
-- **Parking information**: Detailed information about each stop, including the location and duration of the stop
+* **Trip date**: The trip’s starting day
+* **Start and end time**: The date and time when the trip started and ended
+* **Mileage**: Total distance covered during the trip
+* **Fuel consumed**: The amount of fuel consumed during the trip
+* **Travel time**: Total time spent on the trip
+* **Parking information**: Detailed information about each stop, including the location and duration of the stop
 
 To learn more about each segment of the trip, such as traveling periods and stops, click the **>** button to the right of the segment.
 
@@ -51,7 +53,7 @@ To learn more about each segment of the trip, such as traveling periods and stop
 
 Route display varies depending on the technology used to determine the location and the tracking mode set in the device configuration. To learn more, see [Tracking mode in Devices and Settings](../../devices-and-settings/#key-features-and-configuration-options).
 
-- **Continuous tracks**: These are the most common tracks, typically used in vehicle tracking applications. They are represented as polylines with clear start and end points.
-- **Interval tracks**: For autonomous GPS devices, the location is often updated at relatively long intervals, such as once per hour or once per day. These tracks are shown as numbered landmarks (1, 2… N). To aid in visualization, they are connected with transparent grey lines, which may not accurately represent the real path.
-- **LBS locations**: When location data is determined using alternative LBS technologies such as GSM or Wi-Fi signals, it may lack precision. These locations are visualized with circles, where the radius indicates the accuracy.
-- **Clustered landmarks**: When an object stays in the same place for an extended period, numerous interval or LBS messages can clutter the map. To enhance readability, the server consolidates these into a single clustered landmark, showing only one point on the map. The start/end time and duration are added to the note for this landmark.
+* **Continuous tracks**: These are the most common tracks, typically used in vehicle tracking applications. They are represented as polylines with clear start and end points.
+* **Interval tracks**: For autonomous GPS devices, the location is often updated at relatively long intervals, such as once per hour or once per day. These tracks are shown as numbered landmarks (1, 2… N). To aid in visualization, they are connected with transparent grey lines, which may not accurately represent the real path.
+* **LBS locations**: When location data is determined using alternative LBS technologies such as GSM or Wi-Fi signals, it may lack precision. These locations are visualized with circles, where the radius indicates the accuracy.
+* **Clustered landmarks**: When an object stays in the same place for an extended period, numerous interval or LBS messages can clutter the map. To enhance readability, the server consolidates these into a single clustered landmark, showing only one point on the map. The start/end time and duration are added to the note for this landmark.

@@ -1,6 +1,8 @@
 ---
 title: Missing Customer ID and Customer Name in RC-Walmart
-description: Configure the External ID field with the full Recurso Confiable customer format to include Customer ID and Customer Name in RC-Walmart exports
+description: >-
+  Configure the External ID field with the full Recurso Confiable customer
+  format to include Customer ID and Customer Name in RC-Walmart exports
 ---
 
 # Missing Customer ID and Customer Name in RC-Walmart
@@ -14,10 +16,10 @@ License Plate | Route ID | Company ID | Company Name
 
 It is important to note that the configuration must follow the Trusted Resource documentation. If only a single number is entered in the External ID field, the system will not be able to transmit all the required information, which results in missing fields such as Customer ID and Customer Name.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 **Links:**
 
-[Waltmart RC blogpost](https://www.navixy.com/es/blog/ayudando-a-transportistas-logisticos-a-cumplir-con-el-cumplimiento-de-recurso-confiable-de-walmart-superando-desafios-de-transmision-de-datos)&#x20;
+[Waltmart RC blogpost](https://www.navixy.com/es/blog/ayudando-a-transportistas-logisticos-a-cumplir-con-el-cumplimiento-de-recurso-confiable-de-walmart-superando-desafios-de-transmision-de-datos)
 
 [Recurso Confiable](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/connectivity/data-forwarding/recurso-confiable)

@@ -1,6 +1,8 @@
-﻿---
+---
 title: Scheduling a valid geo link
-description: Set the validity timeframe in geo link settings to restrict the access window and ensure the link is only accessible during the set period
+description: >-
+  Set the validity timeframe in geo link settings to restrict the access window
+  and ensure the link is only accessible during the set period
 ---
 
 # Scheduling a valid geo link
@@ -13,7 +15,7 @@ Is it possible to schedule a geo link on Navixy?
 
 Yes, you can schedule a timeframe where the geo link will be valid for visualization.
 
-![](<../.gitbook/assets/Unknown image (7)>)
+![](<../../.gitbook/assets/Unknown image (7)>)
 
 This helps to limit access for end users.
 

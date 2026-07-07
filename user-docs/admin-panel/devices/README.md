@@ -1,12 +1,14 @@
 ---
-description: "Manage GPS trackers in Admin Panel: search, filter, and view details for each device. Edit, clone, delete, or change pricing plans from the tracker list."
+description: >-
+  Manage GPS trackers in Admin Panel: search, filter, and view details for each
+  device. Edit, clone, delete, or change pricing plans from the tracker list.
 ---
 
 # Trackers
 
 The **Trackers** page of the Admin Panel provides comprehensive information on GPS device setup with a specific focus on configuring devices for optimal performance. Whether it's setting up new trackers or managing existing ones, the Admin Panel equips you with the necessary tools to efficiently handle device configurations.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt="Trackers page"><figcaption><p>Trackers page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt="Trackers page"><figcaption><p>Trackers page</p></figcaption></figure>
 
 The page consists of three main sections:
 

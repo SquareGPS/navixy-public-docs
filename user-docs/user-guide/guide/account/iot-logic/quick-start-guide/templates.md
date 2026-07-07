@@ -1,12 +1,15 @@
 ---
-description: Start quickly with pre-configured IoT Logic flows for common data processing scenarios. Select a template from the start page and customize it for your needs.
+description: >-
+  Start quickly with pre-configured IoT Logic flows for common data processing
+  scenarios. Select a template from the start page and customize it for your
+  needs.
 ---
 
 # Templates
 
 Templates are pre-configured IoT Logic flows for common data processing scenarios. You access them from the **Flow templates** gallery on the IoT Logic start page. Clicking a template card immediately creates a flow from that template and opens it on the canvas, where you can review the pre-configured nodes and complete any required setup.
 
-<figure><img src="../../../../.gitbook/assets/flow-templates.png" alt="Flow templates gallery on the IoT Logic start page"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/flow-templates.png" alt="Flow templates gallery on the IoT Logic start page"><figcaption></figcaption></figure>
 
 To learn more about the templates and their configurations, see [Available templates](templates.md#available-templates).
 

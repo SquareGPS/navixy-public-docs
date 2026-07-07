@@ -1,5 +1,8 @@
 ---
-description: Install and configure Uptime Kuma for local Navixy on-premise monitoring. Set up website, API, and TCP port checks with notification alerts for service downtime.
+description: >-
+  Install and configure Uptime Kuma for local Navixy on-premise monitoring. Set
+  up website, API, and TCP port checks with notification alerts for service
+  downtime.
 ---
 
 # Uptime Kuma
@@ -59,7 +62,7 @@ For each metric, you can specify a heartbeat interval to adjust how often the ch
 
 To get started, create the first monitor that will track domain availability based on HTTPS requests. Select monitor type `HTTP(s)`, give it a name and specify your website URL. This will check the website availability based on HTTP response status codes. The codes are 200-299, so if any other odes will be received (e.g. `404 Not found` or `504 Gateway timeout`) it will be considered a failure and the monitor will report that the service is down.
 
-![](../../../../.gitbook/assets/image-20240815-135847.png)
+![](../../../../../.gitbook/assets/image-20240815-135847.png)
 
 {% hint style="info" %}
 The “Advanced” section offers extended monitoring configuration options, and in particular certificate expiry notification. Mark this option to be notified when your website certificate expires so you can reissue it promptly.
@@ -89,7 +92,7 @@ You can configure the monitor to work with this response. To do this, create ano
 * Body encoding: `JSON`
 * Body: `{"success": true}`
 
-![](../../../../.gitbook/assets/image-20240815-135921.png)
+![](../../../../../.gitbook/assets/image-20240815-135921.png)
 
 Save the monitor settings, and it will automatically start checking the API availability by sending the specified request and parsing the responses.
 
@@ -99,7 +102,7 @@ Receiving data from devices is critical for the tracking platform. Therefore, it
 
 Configure the monitor: select the “TCP Port” monitor type, specify your basic domain and the port of your choice.
 
-![](../../../../.gitbook/assets/image-20240815-135810.png)
+![](../../../../../.gitbook/assets/image-20240815-135810.png)
 
 Save the monitor settings, and it will start checking the port availability.
 
@@ -107,7 +110,7 @@ Save the monitor settings, and it will start checking the port availability.
 
 For each metric, you have the option to set up notifications so that Uptime Kuma alerts you when unavailability events occur. This way you can have not only graphs of service availability, but also receive urgent notifications if one of the services goes down.
 
-![](../../../../.gitbook/assets/image-20240821-114131.png)
+![](../../../../../.gitbook/assets/image-20240821-114131.png)
 
 You can set up various types of notifications, but it is important to note that Uptime Kuma is not itself a notification gateway. To set up any type of notification, you need an appropriate external gateway credentials (e.g. SMTP, Twilio, Discord, etc.).
 

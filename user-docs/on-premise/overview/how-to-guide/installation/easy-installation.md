@@ -1,5 +1,8 @@
 ---
-description: Install Navixy on-premise on Linux using the Docker-based quick deployment wizard. Enter license key and domain parameters, then verify access via the admin panel.
+description: >-
+  Install Navixy on-premise on Linux using the Docker-based quick deployment
+  wizard. Enter license key and domain parameters, then verify access via the
+  admin panel.
 ---
 
 # Easy installation
@@ -33,7 +36,7 @@ The script verifies whether Docker is installed on the server. If Docker is dete
 
 You will see the installation process of Docker, after which the platform package distribution will be unpacked.
 
-![On-Premise - Dockered installation](../../../.gitbook/assets/newdocker.gif)
+![On-Premise - Dockered installation](../../../../.gitbook/assets/newdocker.gif)
 
 After the script completes its work, it will report success and display a link leading to the current page.
 
@@ -52,7 +55,7 @@ cd ./navixy-package
 
 The script will run a wizard where you need to specify the necessary parameters of your new Navixy On-premise instance:
 
-![](../../../.gitbook/assets/image-20250306-184855.png)
+![](../../../../.gitbook/assets/image-20250306-184855.png)
 
 * **Fingerprint** - license key. Unique set of characters received from Navixy technical team. Can be used only once.
 * **Database Password** - a password for database user. You can make up any password of your choice or auto-generate it with some third-party tools.
@@ -71,15 +74,15 @@ If optional domain names for API and panel are not specified, these services wil
 
 After specifying all the parameters, you will be prompted to choose whether you want to enable HTTPS to make your website SSL-protected, or if you do not need this option.
 
-![](../../../.gitbook/assets/image-20250306-191609.png)
+![](../../../../.gitbook/assets/image-20250306-191609.png)
 
 If you answer Yes, you will be prompted to choose to install a free Let's Encrypt certificate or your own SSL certificate from a third-party authority. Select the desired option and follow the installer prompts.
 
-![](../../../.gitbook/assets/image-20250306-191842.png)
+![](../../../../.gitbook/assets/image-20250306-191842.png)
 
 After all settings are done, you will see the configuration summary
 
-![](../../../.gitbook/assets/image-20250306-192813.png)
+![](../../../../.gitbook/assets/image-20250306-192813.png)
 
 Confirm the settings and the script will deploy the Navixy On-premise platform with your parameters. In a short time, the platform will be installed, launched and fully ready to use.
 
@@ -92,7 +95,7 @@ Open your web browser and navigate to the admin panel. The access link will depe
 
 The default login and password are `admin`.
 
-![On-Premise - Dockered installation - Checking the platform](../../../.gitbook/assets/chrome_VFgPhAehZp.gif)
+![On-Premise - Dockered installation - Checking the platform](../../../../.gitbook/assets/chrome_VFgPhAehZp.gif)
 
 If you have successfully logged into the platform, change your admin password in _Service preferences_ menu.
 

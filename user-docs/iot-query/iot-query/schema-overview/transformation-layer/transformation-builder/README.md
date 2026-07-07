@@ -1,5 +1,8 @@
 ---
-description: Build custom IoT Query transformations with a visual workflow editor. Configure SQL nodes, preview results, validate workflows, and schedule executions
+description: >-
+  Build custom IoT Query transformations with a visual workflow editor.
+  Configure SQL nodes, preview results, validate workflows, and schedule
+  executions
 ---
 
 # Transformation Builder
@@ -22,7 +25,7 @@ Transformation Builder is not a full ETL orchestrator or a data platform. It is 
 
 A workflow in Transformation Builder is a directed graph of nodes arranged from data sources to output:
 
-<figure><img src="../../../../.gitbook/assets/Basic-flow-example.png" alt="workflow graph example showing sources, transformations, and output"><figcaption><p align="center"><strong>Raw data sources → Transformation nodes → Output</strong></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Basic-flow-example.png" alt="workflow graph example showing sources, transformations, and output"><figcaption><p align="center"><strong>Raw data sources → Transformation nodes → Output</strong></p></figcaption></figure>
 
 Each node corresponds to one logical processing step. You can combine multiple sources into one transformation node, and the result of one node can feed into several downstream nodes. The graph gives you a clear visual representation of the entire data path from source tables to the target analytical entity.
 
@@ -43,7 +46,7 @@ The connection panel allows you to specify your [Connection URL](../../../connec
 
 Once connected, the Builder automatically discovers available tables and columns, which you can then select when configuring data source nodes.
 
-<figure><img src="../../../../.gitbook/assets/Connection-url.png" alt="connection panel showing URL input and discovered table counts"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Connection-url.png" alt="connection panel showing URL input and discovered table counts"><figcaption></figcaption></figure>
 
 ### Data source nodes
 
@@ -252,7 +255,7 @@ Click **Schedule** to open the configuration dialog, where you can determine exa
 {% endstep %}
 {% endstepper %}
 
-<figure><img src="../../../../.gitbook/assets/Complete-flow-example.png" alt="completed workflow graph with all node types connected"><figcaption><p>Complete transformation flow example</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Complete-flow-example.png" alt="completed workflow graph with all node types connected"><figcaption><p>Complete transformation flow example</p></figcaption></figure>
 
 ### Results preview
 
@@ -275,7 +278,7 @@ After you click **Execute** in the toolbar, the Builder compiles your workflow g
 Results preview requires an active PostgreSQL connection. Without a connection, the preview returns an empty result with no SQL executed. The preview always uses real data from your database, not mock data.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Executed-flow-result.png" alt="Results preview panel showing successful execution with result table and SQL"><figcaption><p>Executed flow result</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Executed-flow-result.png" alt="Results preview panel showing successful execution with result table and SQL"><figcaption><p>Executed flow result</p></figcaption></figure>
 
 ## Validation and compilation
 

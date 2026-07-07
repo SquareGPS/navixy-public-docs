@@ -1,5 +1,8 @@
 ---
-description: Troubleshoot Navixy on-premise web interface issues including Nginx configuration errors, DNS failures, SSL certificate problems, and database unavailability.
+description: >-
+  Troubleshoot Navixy on-premise web interface issues including Nginx
+  configuration errors, DNS failures, SSL certificate problems, and database
+  unavailability.
 ---
 
 # Web interface
@@ -12,7 +15,7 @@ This page provides a comprehensive guide to troubleshooting the most prevalent e
 
 If you see the Nginx welcome screen, it means that the request has passed through and Nginx is installed and running, but not yet configured.
 
-![Welcome to Nginx](../../../.gitbook/assets/image-20230823-121500.png)
+![Welcome to Nginx](../../../../.gitbook/assets/image-20230823-121500.png)
 
 Things to check:
 
@@ -31,7 +34,7 @@ If there are no configs present - please contact Navixy support team.
 
 DNS\_PROBE\_FINISHED\_NXDOMAIN error means that your domain is not pointed to your server or is set up incorrectly.
 
-![DNS\_PROBE\_FINISHED\_NXDOMAIN](../../../.gitbook/assets/image-20230823-122136.png)
+![DNS\_PROBE\_FINISHED\_NXDOMAIN](../../../../.gitbook/assets/image-20230823-122136.png)
 
 To resolve the issue, please check that DNS records for the domain are specified correctly.
 
@@ -45,7 +48,7 @@ Domains must have A-type DNS record to functions. Please check [domain requireme
 
 This error means that connection attempts failed.
 
-![ERR\_CONNECTION\_REFUSED](../../../.gitbook/assets/image-20230823-130318.png)
+![ERR\_CONNECTION\_REFUSED](../../../../.gitbook/assets/image-20230823-130318.png)
 
 Troubleshooting steps:
 
@@ -62,7 +65,7 @@ Troubleshooting steps:
 
 If you see such error it means NGINX not properly configured or you’re requesting wrong URL.
 
-![404 not found](../../../.gitbook/assets/image-20230823-130949.png)
+![404 not found](../../../../.gitbook/assets/image-20230823-130949.png)
 
 Possible ways to solve:
 
@@ -89,9 +92,9 @@ Possible ways to solve:
 
 If you see a loading icon for extended time periods, or “We’ll be back soon” screen appears - it means that you web server is working and static files are accessible, but UI can't get data from the platfrom.
 
-![We will back soon error](../../../.gitbook/assets/e2xphxkndx.gif)
+![We will back soon error](../../../../.gitbook/assets/e2xphxkndx.gif)
 
-![We'll be back soon](../../../.gitbook/assets/image-20230823-135703.png)
+![We'll be back soon](../../../../.gitbook/assets/image-20230823-135703.png)
 
 To resolve the issue:
 
@@ -109,7 +112,7 @@ To resolve the issue:
 
 Database unavailable message generally means the Java services cannot request data from a database.
 
-![DB unavailable](../../../.gitbook/assets/image-20230823-140830.png)
+![DB unavailable](../../../../.gitbook/assets/image-20230823-140830.png)
 
 Begin with [checking MySQL status](checking-service-statuses.md#database). If MySQL is down - try restarting it and check its logs to find the cause of the failure.
 
@@ -123,7 +126,7 @@ If your database is hosted on a separate server, make sure the connection to it 
 
 This error tells you that connection is not SSL-protected.
 
-![Your connection is not private](../../../.gitbook/assets/image-20230823-141352.png)
+![Your connection is not private](../../../../.gitbook/assets/image-20230823-141352.png)
 
 Possible reasons
 

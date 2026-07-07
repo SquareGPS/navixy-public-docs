@@ -1,6 +1,8 @@
-﻿---
+---
 title: Lock down device activation
-description: Restrict device activation to specific devices using activation codes, or remove the activation option entirely via Menu Editor for end users
+description: >-
+  Restrict device activation to specific devices using activation codes, or
+  remove the activation option entirely via Menu Editor for end users
 ---
 
 # Lock down device activation
@@ -18,5 +20,5 @@ Yes, you're able to do this via a couple of different ways, with activation code
 
 ## Links
 
-* [Activation codes](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/KdgeXg71LpaDrwexQYwp/activation-codes)
-* [Custom menu editor](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/KdgeXg71LpaDrwexQYwp/settings/custom-menu-editor)
+* [Activation codes](https://app.gitbook.com/s/KdgeXg71LpaDrwexQYwp/activation-codes)
+* [Custom menu editor](https://app.gitbook.com/s/KdgeXg71LpaDrwexQYwp/settings/custom-menu-editor)

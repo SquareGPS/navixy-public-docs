@@ -1,5 +1,7 @@
 ---
-description: Analyze fuel level changes with the Fuel volume report. Detect refueling and drain events, review daily consumption, and assess sensor quality.
+description: >-
+  Analyze fuel level changes with the Fuel volume report. Detect refueling and
+  drain events, review daily consumption, and assess sensor quality.
 ---
 
 # Fuel volume report
@@ -10,7 +12,7 @@ Choose this report type if your primary concern is detecting fuel theft or unexp
 
 For a simpler, configuration-free alternative that focuses on refueling events and uses automated data processing, see the [Fuel volume 2.0 report](fuel-volume-2.0-report.md).
 
-<figure><img src="../../../.gitbook/assets/image (49).png" alt="Fuel volume report"><figcaption><p>Fuel volume report</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49) (1).png" alt="Fuel volume report"><figcaption><p>Fuel volume report</p></figcaption></figure>
 
 The **Fuel volume report** is composed of the following sections:
 
@@ -22,38 +24,38 @@ The **Fuel volume report** is composed of the following sections:
 
 ## Fuel volume report use cases
 
-- **Fuel theft detection**: Drain events can be cross-referenced against vehicle location and speed data. Drains recorded while the vehicle is traveling at speed are almost certainly sensor noise rather than actual theft.
-- **Cost accounting**: The report calculates actual fuel consumption per day and per 100 km from sensor readings. For vehicles with a norm consumption rate configured in the vehicle profile, it also shows how actual consumption compares to the manufacturer's norm.
-- **Depreciation and logistics calculations**: Daily consumption data per vehicle supports cost-per-trip calculations, fuel allowances for drivers using their own vehicles, or fuel costs per unit of work.
-- **Equipment monitoring:** The report works equally well for stationary equipment such as generators, where time-based consumption is more relevant than mileage-based metrics.
-- **Sensor performance monitoring**: The quality section provides a quantitative assessment of how noisy the sensor signal is, helping decide whether recalibration or hardware inspection is needed.
+* **Fuel theft detection**: Drain events can be cross-referenced against vehicle location and speed data. Drains recorded while the vehicle is traveling at speed are almost certainly sensor noise rather than actual theft.
+* **Cost accounting**: The report calculates actual fuel consumption per day and per 100 km from sensor readings. For vehicles with a norm consumption rate configured in the vehicle profile, it also shows how actual consumption compares to the manufacturer's norm.
+* **Depreciation and logistics calculations**: Daily consumption data per vehicle supports cost-per-trip calculations, fuel allowances for drivers using their own vehicles, or fuel costs per unit of work.
+* **Equipment monitoring:** The report works equally well for stationary equipment such as generators, where time-based consumption is more relevant than mileage-based metrics.
+* **Sensor performance monitoring**: The quality section provides a quantitative assessment of how noisy the sensor signal is, helping decide whether recalibration or hardware inspection is needed.
 
 ## Prerequisites for generating Fuel volume report
 
 For the report to produce accurate data, the following must be configured:
 
-- A fuel level sensor must be connected to the GPS device and transmitting data continuously. Gaps in data transmission appear as shaded areas on the graph.
-- The sensor must be configured with units set to liters or gallons. Sensors with units set to **Custom** aren't supported and produce an error message in place of the report.
-- For accurate filling and drain detection, the sensor's calibration table should be filled out according to the manufacturer's recommendations, and the error and drain threshold parameters should be set in the sensor's Advanced settings.
-- For multi-tank vehicles, each physical sensor must be calibrated individually and combined into an aggregate sensor with volume units set to liters or gallons.
+* A fuel level sensor must be connected to the GPS device and transmitting data continuously. Gaps in data transmission appear as shaded areas on the graph.
+* The sensor must be configured with units set to liters or gallons. Sensors with units set to **Custom** aren't supported and produce an error message in place of the report.
+* For accurate filling and drain detection, the sensor's calibration table should be filled out according to the manufacturer's recommendations, and the error and drain threshold parameters should be set in the sensor's Advanced settings.
+* For multi-tank vehicles, each physical sensor must be calibrated individually and combined into an aggregate sensor with volume units set to liters or gallons.
 
 ## Fuel volume report parameters
 
-- **X-axis:** Determines what the horizontal axis of the fuel graph represents. **Mileage** builds the graph against distance traveled and average consumption is shown in l/100 km. Time **builds** the graph against the clock and average consumption is shown in l/h.
-- **Detailed info (by dates)**: Adds a daily breakdown table showing initial and final fuel volumes, consumption, and refueling and drain totals for each day of the report period.
-- **Display summary:** Toggles the visibility of a summary page showing aggregate data across all selected devices.
-- **Display only summary**: Shows only the aggregate summary page without individual device sheets. Requires at least two devices to be selected.
-- **Ignition-based consumption**: Uses ignition sensor data instead of movement time to calculate average consumption. Recommended for equipment that frequently idles with the engine running, such as excavators or tractors.
-- **Show mileage**: Available only for time-based reports. Adds a mileage overlay on the fuel level graph, which helps correlate fuel changes with driving activity.
-- **Show speed**: Adds a speed overlay on the graph. Useful for distinguishing genuine drain events from sensor anomalies: a sharp drop at high speed is likely to be a false alarm.
-- **Use smart filter**: Excludes short or invalid trips from the report. A regular trip is excluded if it has fewer than 3 data points, covers less than 100 meters, or stays within a 200-meter diameter. Additionally, individual track points with suspicious mileage patterns (e.g. implausibly high or low speeds) are removed.
-- **Smooth data:** Apply smoothing to average sensor readings on the graph, providing a cleaner view of trends.
+* **X-axis:** Determines what the horizontal axis of the fuel graph represents. **Mileage** builds the graph against distance traveled and average consumption is shown in l/100 km. Time **builds** the graph against the clock and average consumption is shown in l/h.
+* **Detailed info (by dates)**: Adds a daily breakdown table showing initial and final fuel volumes, consumption, and refueling and drain totals for each day of the report period.
+* **Display summary:** Toggles the visibility of a summary page showing aggregate data across all selected devices.
+* **Display only summary**: Shows only the aggregate summary page without individual device sheets. Requires at least two devices to be selected.
+* **Ignition-based consumption**: Uses ignition sensor data instead of movement time to calculate average consumption. Recommended for equipment that frequently idles with the engine running, such as excavators or tractors.
+* **Show mileage**: Available only for time-based reports. Adds a mileage overlay on the fuel level graph, which helps correlate fuel changes with driving activity.
+* **Show speed**: Adds a speed overlay on the graph. Useful for distinguishing genuine drain events from sensor anomalies: a sharp drop at high speed is likely to be a false alarm.
+* **Use smart filter**: Excludes short or invalid trips from the report. A regular trip is excluded if it has fewer than 3 data points, covers less than 100 meters, or stays within a 200-meter diameter. Additionally, individual track points with suspicious mileage patterns (e.g. implausibly high or low speeds) are removed.
+* **Smooth data:** Apply smoothing to average sensor readings on the graph, providing a cleaner view of trends.
 
 {% hint style="warning" %}
 Smoothing reduces the precision of filling and drain volume calculations.
 {% endhint %}
 
-- **Ignore peaks**: Applies a moving median filter that detects and replaces sudden isolated spikes or drops in sensor readings with the local median value. The slider controls how aggressively it filters: move toward **Weak** to remove only the most extreme outliers, toward **Strong** to also eliminate smaller ones.
+* **Ignore peaks**: Applies a moving median filter that detects and replaces sudden isolated spikes or drops in sensor readings with the local median value. The slider controls how aggressively it filters: move toward **Weak** to remove only the most extreme outliers, toward **Strong** to also eliminate smaller ones.
 
 ## How to read Fuel volume report
 
@@ -99,9 +101,9 @@ This experimental section evaluates the signal quality of the fuel level sensor 
 
 The score falls into one of three categories:
 
-- **High (8.0–10.0)**: Readings are highly accurate. Reports based on this sensor are the most reliable and provide detailed information on fuel status.
-- **Moderate (above 3.0 to 8.0)**: Readings have acceptable accuracy but the signal is somewhat noisy. This may be due to operating conditions or other environmental factors. Reports are reasonably reliable.
-- **Low (1.0–3.0):** Readings have low accuracy due to excessive signal noise, which may indicate sensor defects or installation issues. Reports based on these readings carry a significant degree of error.
+* **High (8.0–10.0)**: Readings are highly accurate. Reports based on this sensor are the most reliable and provide detailed information on fuel status.
+* **Moderate (above 3.0 to 8.0)**: Readings have acceptable accuracy but the signal is somewhat noisy. This may be due to operating conditions or other environmental factors. Reports are reasonably reliable.
+* **Low (1.0–3.0):** Readings have low accuracy due to excessive signal noise, which may indicate sensor defects or installation issues. Reports based on these readings carry a significant degree of error.
 
 If the section reports insufficient data for assessment, the most likely causes are: the report period is shorter than the recommended minimum of 14 days of active vehicle operation, the data acquisition interval is too infrequent, or the sensor calibration table quality is poor.
 

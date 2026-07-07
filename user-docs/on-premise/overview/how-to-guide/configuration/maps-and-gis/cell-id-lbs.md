@@ -1,5 +1,8 @@
 ---
-description: Enable Cell ID location services in Navixy on-premise using Mozilla Location Services or Google LBS. Configure the provider connection and fallback coordinates.
+description: >-
+  Enable Cell ID location services in Navixy on-premise using Mozilla Location
+  Services or Google LBS. Configure the provider connection and fallback
+  coordinates.
 ---
 
 # Cell ID / LBS
@@ -67,11 +70,11 @@ lbs.google.apiKey=KEY
 
 3. Go to the admin panel, open _Account management → Service preferences_, and select Google in _"Cell ID geolocation"_.
 
-![On-Premise - Maps and GIS - Cell ID - LBS](../../../../.gitbook/assets/image-20230810-133150.png)
+![On-Premise - Maps and GIS - Cell ID - LBS](../../../../../.gitbook/assets/image-20230810-133150.png)
 
 4. Make sure that "Location by Cell ID" is selected in the tariff plan settings for the devices.
 
-![On-Premise - Maps and GIS - Cell ID - LBS](../../../../.gitbook/assets/image-20230810-133203.png)
+![On-Premise - Maps and GIS - Cell ID - LBS](../../../../../.gitbook/assets/image-20230810-133203.png)
 
 {% hint style="danger" %}
 Please note that Google charges a fee for every LBS request. With a large number of devices sending LBS data, using this service can be quite expensive. You can reduce costs by limiting the use of this service to specific devices only. To do this, create a plan with the "Location by Cell ID" option enabled, disable this option for all other plans, and then assign this plan to the necessary devices.Requests to LBS service are performed only for those devices for which the option is active. If the option is not enabled for a plan, LBS data will not be processed even if the device sends it

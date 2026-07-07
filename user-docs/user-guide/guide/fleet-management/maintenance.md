@@ -1,12 +1,15 @@
 ---
-description: Create and track fleet maintenance tasks by date, mileage, or engine hours. Set up repeating schedules, add costs and attachments, and monitor service status.
+description: >-
+  Create and track fleet maintenance tasks by date, mileage, or engine hours.
+  Set up repeating schedules, add costs and attachments, and monitor service
+  status.
 ---
 
 # Maintenance
 
 The **Maintenance works** functionality within the Navixy Fleet Management application is a comprehensive tool designed to manage vehicle service tasks efficiently. This guide explains how to create, manage, and monitor service tasks to keep your fleet in top condition.
 
-![](../../.gitbook/assets/image-20240814-185130.png)
+![](../../../.gitbook/assets/image-20240814-185130.png)
 
 ## Add service work
 
@@ -48,7 +51,7 @@ To assign similar tasks to other vehicles, use the copy function and adjust the 
 
 Streamline your fleet's maintenance by configuring repeatable tasks, a feature that automatically generates new service tasks at predefined intervals. Follow these steps to set it up.
 
-![](../../.gitbook/assets/image-20240814-190748.png)
+![](../../../.gitbook/assets/image-20240814-190748.png)
 
 1. **Activate auto-repeat:**\
    Turn on the **Auto-repeat** option by toggling the switch.
@@ -76,6 +79,6 @@ Monitor your fleet's maintenance activities effectively with the comprehensive s
 * **Completed:** Tasks that have been finished.
 * **Expired:** Tasks that weren't completed on time.
 
-![](../../.gitbook/assets/image-20240814-191110.png)
+![](../../../.gitbook/assets/image-20240814-191110.png)
 
 The dashboard offers a concise summary, allowing you to instantly view the status of all maintenance tasks at a glance.

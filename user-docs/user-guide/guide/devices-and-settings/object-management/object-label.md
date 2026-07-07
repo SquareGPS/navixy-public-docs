@@ -1,5 +1,7 @@
 ---
-description: Manage the GPS device's name, group, tags, and model in Navixy. Labels and tags make it easier to organize and filter devices across the platform.
+description: >-
+  Manage the GPS device's name, group, tags, and model in Navixy. Labels and
+  tags make it easier to organize and filter devices across the platform.
 ---
 
 # Object label
@@ -45,7 +47,7 @@ Navigate to the **Devices and settings** section and select the required device 
 
 Click **Replace device** on the device information pane.
 
-<figure><img src="../../../.gitbook/assets/image-20241213-115912.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-20241213-115912.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

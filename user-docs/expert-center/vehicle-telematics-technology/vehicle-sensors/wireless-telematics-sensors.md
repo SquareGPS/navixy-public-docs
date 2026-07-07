@@ -1,13 +1,15 @@
 ---
-description: BLE and UHF sensors transmit TPMS, temperature, and environmental data to GPS trackers using GATT/ATT protocols for wireless fleet monitoring.
+description: >-
+  BLE and UHF sensors transmit TPMS, temperature, and environmental data to GPS
+  trackers using GATT/ATT protocols for wireless fleet monitoring.
 ---
 
 # Wireless Telematics Sensors
 
 Wireless technologies allow the transmission of values from different sensors to GPS tracking units without wiring. There are 2 types of wireless technologies that use their own frequencies:
 
-- Bluetooth Low Energy – 2.4 GHz
-- Ultra high frequency – 315/433 MHz
+* Bluetooth Low Energy – 2.4 GHz
+* Ultra high frequency – 315/433 MHz
 
 ## What is BLE
 
@@ -27,11 +29,11 @@ Bluetooth Low Energy uses many protocols to transmit data, interact with all par
 
 **Generic Access Profile (GAP)** provides initial data exchange between devices, to determine «who is who».
 
-![BLE architecture](../../.gitbook/assets/ble-protocols.png)
+![BLE architecture](../../../.gitbook/assets/ble-protocols.png)
 
 Separately, we note the GATT and ATT protocols:
 
-![](../../.gitbook/assets/imagen-20231019-232843.png)
+![](../../../.gitbook/assets/imagen-20231019-232843.png)
 
 **GATT** is an acronym for Generic Attribute Profile, which defines the way data is transferred between two low-energy Bluetooth devices using concepts called services and characteristics.
 
@@ -39,12 +41,12 @@ It uses a common data protocol called the **attribute protocol (ATT)**, which is
 
 Profile structure
 
-![](../../.gitbook/assets/imagen-20231019-232914.png)
+![](../../../.gitbook/assets/imagen-20231019-232914.png)
 
-- Attribute Handle – table index corresponding to the attribute;
-- Attribute Type – UUID that describes the type;
-- Attribute Value – the data itself;
-- Attribute Permissions – part of an attribute, permissions that cannot be read or written using the ATT.
+* Attribute Handle – table index corresponding to the attribute;
+* Attribute Type – UUID that describes the type;
+* Attribute Value – the data itself;
+* Attribute Permissions – part of an attribute, permissions that cannot be read or written using the ATT.
 
 GATT profile contains services. Services are used to break data down into logic entities, and contain specific chunks of data called characteristics. A service can have one or more characteristics, and each service distinguishes itself from other services by means of a unique numeric ID called a UUID, which can be either 16-bit (for officially adopted BLE Services) or 128-bit (for custom services).
 
@@ -68,11 +70,11 @@ The GATT server receives requests from a client and sends responses back. It als
 
 It's no secret that currently all technologies are switching to wireless communication. Below we have noted the main advantages of wireless sensors:
 
-- Freedom from wires. It can be configured using any physical connection.
-- Easy to set up. It is easy to expand and configure.
-- Flexibility. Wire-free connections are more flexible and adaptable.
-- Cost-effectiveness. Since wireless connections do not require cables, such networks are relatively cheaper.
-- Mobile and portable. Easy to transfer and reinstall to another place.
+* Freedom from wires. It can be configured using any physical connection.
+* Easy to set up. It is easy to expand and configure.
+* Flexibility. Wire-free connections are more flexible and adaptable.
+* Cost-effectiveness. Since wireless connections do not require cables, such networks are relatively cheaper.
+* Mobile and portable. Easy to transfer and reinstall to another place.
 
 As you can see, wireless connections have a large list of advantages. All these points make the installation and operation of sensors easier and more comfortable.
 
@@ -82,24 +84,24 @@ At the same time, it is worth noting that wired sensors have higher noise protec
 
 Separately, it is worth considering the [Tire-pressure monitoring system](https://en.wikipedia.org/wiki/Tire-pressure_monitoring_system) (TPMS). The majority of TPMS installations transmit their data via UHF (Ultra High Frequency) radio. TPMS data is typically transmitted in one of two frequency ranges, which depends on the geographical location of the TPMS. TPMS signals are transmitted at about 433MHz in Europe, and at 315MHz in most other parts of the world.
 
-![Tire pressure monitoring system sensor](../../.gitbook/assets/tire-pressure-monitoring-system-sensor.jpg)
+![Tire pressure monitoring system sensor](../../../.gitbook/assets/tire-pressure-monitoring-system-sensor.jpg)
 
 This TPMS sensor is called a “Direct TPMS” system. It provides more accurate tire pressure values instead of “Indirect TPMS” that does not use physical pressure sensors but measure air pressures using software-based systems, which by evaluating and combining existing sensor signals like wheel speeds, accelerometers, driveline data, etc. estimate and monitor the tire pressure without physical pressure sensors in the wheels.
 
 Each TPMS sensor should be installed into the tire. This sensor establishes the connection with an antenna that is connected to a receiver. This system provides a stable monitoring of pressure in the tires.
 
-![](../../.gitbook/assets/imagen-20231019-232937.png)
+![](../../../.gitbook/assets/imagen-20231019-232937.png)
 
 ## Types of BLE sensors
 
 Navixy platform supports many types of wireless sensors which are used to make it easier for users to get actual and accurate telematics data. Below you can find the list of supported ones:
 
-- Fuel
-- Temperature
-- Humidity
-- Driver identification
-- Magnetic sensors
-- Tire pressure sensors
+* Fuel
+* Temperature
+* Humidity
+* Driver identification
+* Magnetic sensors
+* Tire pressure sensors
 
 The sensors can also send an additional parameter "BLE: Battery Level", which shows how much charge the BLE sensor battery has. This parameter is very useful for understanding the remaining battery life.
 
@@ -110,7 +112,7 @@ The sensors can also send an additional parameter "BLE: Battery Level", which sh
 1. Configure a sensor according to the user manual
 2. Select needed sensor from the list. Usually BLE sensors have "BLE" in the label, e.g. BLE: Temperature #, BLE: Fuel etc.
 
-<img src="../../.gitbook/assets/imagen-20231019-233836.png" alt="" width="375">
+<img src="../../../.gitbook/assets/imagen-20231019-233836.png" alt="" width="375">
 
 1. Then specify other settings according to your needs.
 2. That’s all! Now the platform will show data from the BLE sensor as soon as data is received on the server.

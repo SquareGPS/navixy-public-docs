@@ -1,5 +1,7 @@
 ---
-description: Organize field service employees into named departments in Navixy. Assign staff to departments and use them to filter task assignments and reports.
+description: >-
+  Organize field service employees into named departments in Navixy. Assign
+  staff to departments and use them to filter task assignments and reports.
 ---
 
 # Departments
@@ -8,7 +10,7 @@ The **Departments** page in Navixy's **Field service** module allows you to orga
 
 You can assign employees to departments on the [Staff](staff.md#assign-employee-to-department) page.
 
-<figure><img src="../../.gitbook/assets/{7F96E3FF-ACF9-4C49-B1BA-34D5E4DB3C0A}.png" alt="Departments page"><figcaption><p>Departments page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/{7F96E3FF-ACF9-4C49-B1BA-34D5E4DB3C0A}.png" alt="Departments page"><figcaption><p>Departments page</p></figcaption></figure>
 
 The department list is used to manage different departments in your organization. Each department can be labeled, such as "Delivery" or "Sales," to reflect the specific function of the team.
 
@@ -30,7 +32,7 @@ Click **+** to open the department creation dialogue.
 {% step %}
 #### Enter department details
 
-![Creating a new department](../../.gitbook/assets/image-20240816-172857.png)
+![Creating a new department](../../../.gitbook/assets/image-20240816-172857.png)
 
 * **Label**: Provide a name for the department.
 * **Address**: Enter the department's physical location or use the map to select a point.

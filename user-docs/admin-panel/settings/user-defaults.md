@@ -1,12 +1,14 @@
 ---
-description: Set default profile settings for new users, including time zone, date/time formats, units, and menu preset
+description: >-
+  Set default profile settings for new users, including time zone, date/time
+  formats, units, and menu preset
 ---
 
 # User defaults
 
 The **User defaults** page contains user profile settings applied to every new user account. Later, users can change their account settings. It consists of two sections: **Regional settings** and **UI settings**.
 
-<figure><img src="../.gitbook/assets/image (55).png" alt="User defaults page"><figcaption><p>User defaults page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55).png" alt="User defaults page"><figcaption><p>User defaults page</p></figcaption></figure>
 
 ## Regional settings
 

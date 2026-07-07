@@ -1,6 +1,8 @@
 ---
 title: Prevent users from changing device settings
-description: "Use Menu Editor to restrict access to device settings; requires Fleet Management and Field Service plan add-ons"
+description: >-
+  Use Menu Editor to restrict access to device settings; requires Fleet
+  Management and Field Service plan add-ons
 ---
 
 # Prevent users from changing device settings
@@ -19,4 +21,4 @@ This option requires both Fleet Management and Field Service add-ons. If you don
 
 ## Links
 
-* [Menu editor](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/KdgeXg71LpaDrwexQYwp/settings/custom-menu-editor)
+* [Menu editor](https://app.gitbook.com/s/KdgeXg71LpaDrwexQYwp/settings/custom-menu-editor)

@@ -1,5 +1,7 @@
 ---
-description: Add custom web applications to the Navixy main menu using SQL queries. Enable apps for entire service accounts or individual users, with HTTPS required.
+description: >-
+  Add custom web applications to the Navixy main menu using SQL queries. Enable
+  apps for entire service accounts or individual users, with HTTPS required.
 ---
 
 # Applications
@@ -14,7 +16,7 @@ Standard modules, such as Field Service and Fleet Management, cannot be enabled 
 
 The Navixy platform allows you to integrate your custom web application into the Navixy main application interface. This custom application will appear as a distinct item in the main menu, and upon clicking, it will open a specified external URL address as an internal interface application.
 
-![On-Premise - Configuration - Applications](../../../.gitbook/assets/image-20230810-133621.png)
+![On-Premise - Configuration - Applications](../../../../.gitbook/assets/image-20230810-133621.png)
 
 There are several parameters the integration can have:
 

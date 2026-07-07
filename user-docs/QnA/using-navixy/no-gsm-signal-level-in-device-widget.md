@@ -1,6 +1,8 @@
-﻿---
+---
 title: No GSM signal level in device widget
-description: GSM signal level shows as unknown in the widget when the device data frame contains no signal intensity field for that data packet
+description: >-
+  GSM signal level shows as unknown in the widget when the device data frame
+  contains no signal intensity field for that data packet
 ---
 
 # No GSM signal level in device widget
@@ -13,7 +15,7 @@ Why is there no GSM signal level in my device widget?
 
 The GSM signal level refers to the intensity of the GSM signal perceived by the device, and this value is sent through the frame. Unfortunately, being unknown in the messages, the platform chooses to display **no GSM signal**.
 
-![](<../.gitbook/assets/Unknown image (8)>)
+![](<../../.gitbook/assets/Unknown image (8)>)
 
 ## Links
 

@@ -1,12 +1,14 @@
 ---
-description: Enable the device to treat its current position as a parking reference and report to Navixy when the vehicle leaves the set radius after ignition off.
+description: >-
+  Enable the device to treat its current position as a parking reference and
+  report to Navixy when the vehicle leaves the set radius after ignition off.
 ---
 
 # Unauthorized movement
 
 Arms the device to detect that a parked vehicle has moved and to report an event to the Navixy platform. On many devices this works as an auto-geofence: when the ignition is off, the device treats the current position as a parking point and reports an event if the vehicle leaves a set radius.
 
-![](../../../../.gitbook/assets/image-20241118-024806.png)
+![](../../../../../.gitbook/assets/image-20241118-024806.png)
 
 ## Settings
 

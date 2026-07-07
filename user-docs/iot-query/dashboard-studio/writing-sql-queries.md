@@ -1,6 +1,8 @@
 ---
 title: Writing SQL queries
-description: Write PostgreSQL queries optimized for Dashboard Studio visualizations. Learn data access patterns, layer selection, and performance best practices
+description: >-
+  Write PostgreSQL queries optimized for Dashboard Studio visualizations. Learn
+  data access patterns, layer selection, and performance best practices
 ---
 
 # Writing SQL queries
@@ -18,12 +20,12 @@ Dashboard Studio provides two SQL environments for different purposes. Understan
 [**SQL Editor**](writing-sql-queries.md#how-to-use-the-sql-editor) supports data exploration and export. Access the SQL Editor from the left sidebar under Tools. Write any SELECT statement to examine data structure, validate assumptions, or export results as CSV. The SQL Editor shows full result tables with column sorting and provides execution metrics. Use this for testing logic before adding SQL to visualization panels, or for ad-hoc data extraction that doesn't need visualization.
 
 {% hint style="info" %}
-**The key difference**: visualization SQL must match exact column structures, while SQL Editor statements can return any result format. Test complex logic in SQL Editor first, then adapt it for visualizations.&#x20;
+**The key difference**: visualization SQL must match exact column structures, while SQL Editor statements can return any result format. Test complex logic in SQL Editor first, then adapt it for visualizations.
 {% endhint %}
 
 ### How to write SQL for visualizations
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Visualization SQL must return specific column counts and data types. Dashboard Studio cannot render a bar chart from three columns or a stat tile from text data. Check the Dataset Requirements section in the SQL Query tab to see exactly what your chosen visualization expects before writing the statement. The table below contains supported visualization types:
 
@@ -219,7 +221,7 @@ If the panel query is a bar chart or stat tile query returning aggregated result
 
 Global variables provide reusable values across multiple SQL statements. Define variables in **Settings > Configuration > Global Variables**, then reference them using `${variable_name}` syntax.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 Define variables for values that change periodically but remain consistent across multiple panels: analysis date ranges, vehicle type filters, or threshold values. When these values change, update the variable definition once instead of editing individual SQL statements.
 
@@ -292,7 +294,7 @@ Most SQL statements filter by device, time range, or both. Add these filters ear
 
 Access SQL Editor from the left sidebar under Tools. Use it for three main purposes: testing logic before adding to panels, exploring data schemas to understand available columns, and exporting data that doesn't need visualization.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 The SQL Editor supports multiple tabs for different statements. Write SQL in tabs, execute with the "Execute Query" button, and view results in the table below. Results show execution metrics (execution time, rows returned) and support column sorting for quick data examination.
 
@@ -413,7 +415,7 @@ ORDER BY total_km DESC;
 
 Execution failures fall into three categories: structural mismatches with visualization requirements, SQL syntax errors, or filters that return no data.
 
-#### **Column structure mismatches**&#x20;
+#### **Column structure mismatches**
 
 Occur when results don't match visualization expectations. If you selected a bar chart but your SQL returns three columns, Dashboard Studio cannot render it. Check Dataset Requirements in the SQL Query tab. The bar chart needs exactly two columns (category, value), so adjust your SELECT clause:
 
@@ -425,11 +427,11 @@ SELECT device_id, start_time, COUNT(*) FROM silver.trips GROUP BY device_id, sta
 SELECT device_id, COUNT(*) as trips FROM silver.trips GROUP BY device_id;
 ```
 
-#### **SQL syntax errors**&#x20;
+#### **SQL syntax errors**
 
 Show specific error messages. Common issues include missing schema prefixes (`trips` instead of `silver.trips`), typos in column names, or incorrect date casting. Test statements in SQL Editor to see detailed error messages with line numbers.
 
-#### **Empty results**&#x20;
+#### **Empty results**
 
 Despite successful execution indicate filters exclude all data. Test the SQL without WHERE clauses in SQL Editor to verify the table contains data, then add filters incrementally to identify which condition excludes your expected results.
 
@@ -458,9 +460,9 @@ Adapt Recipe Book examples for visualizations by adjusting the SELECT clause to 
 
 You just need to:
 
-1. Copy examples from [Recipe Book](../example-queries/) to the Dashboard Studio'sEditor.&#x20;
+1. Copy examples from [Recipe Book](../example-queries/) to the Dashboard Studio'sEditor.
 2. Test with your actual data.
-3. Verify results, then modify the SELECT clause for your target visualization.&#x20;
+3. Verify results, then modify the SELECT clause for your target visualization.
 
 The core WHERE and JOIN logic remains the same; you adjust only the output structure.
 

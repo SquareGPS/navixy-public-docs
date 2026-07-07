@@ -1,6 +1,8 @@
 ---
 title: MC40-02 Howen event sensitivity
-description: Adjust MC40-02 event sensitivity in Howen iTools (L/M/H), not Navixy. Configure DMS or ADAS events, trigger hold, interval, and buzzer settings
+description: >-
+  Adjust MC40-02 event sensitivity in Howen iTools (L/M/H), not Navixy.
+  Configure DMS or ADAS events, trigger hold, interval, and buzzer settings
 ---
 
 # MC40-02 Howen event sensitivity
@@ -24,8 +26,10 @@ To change sensitivity, log in to the camera via Howen iTools, select either DMS 
 * buzzer
 * other event-related parameters
 
-![](<../.gitbook/assets/Unknown image (84)>)
+![](<../../.gitbook/assets/Unknown image (84)>)
 
-<img src="../.gitbook/assets/Unknown image (85)" alt="" width="375">
+<img src="../../.gitbook/assets/Unknown image (85)" alt="" width="375">
 
-<img src="../.gitbook/assets/Unknown image (86)" alt="" width="375">
+&#x20;
+
+<img src="../../.gitbook/assets/Unknown image (86)" alt="" width="375">

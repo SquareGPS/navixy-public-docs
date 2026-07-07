@@ -1,6 +1,8 @@
 ---
 title: SMS commands are not delivered
-description: "Check SMS gateway and customer balances, verify Service SMS is enabled, and review SIM card compatibility for command delivery"
+description: >-
+  Check SMS gateway and customer balances, verify Service SMS is enabled, and
+  review SIM card compatibility for command delivery
 ---
 
 # SMS commands are not delivered
@@ -18,17 +20,17 @@ Service SMS is a message sent from the platform to devices, normally without any
 
 If these SMS commands aren't free for the user according to the tariff plan, and there aren't enough funds to send messages, SMS commands aren't sent.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt="Service SMS price" width="334"><figcaption><p>Service SMS price</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt="Service SMS price" width="334"><figcaption><p>Service SMS price</p></figcaption></figure>
 
 In this case, make sure that there are enough funds on the user's account.
 
-<figure><img src="../.gitbook/assets/balance-20230811-204940.png" alt="Available balance"><figcaption><p>Available balance</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/balance-20230811-204940.png" alt="Available balance"><figcaption><p>Available balance</p></figcaption></figure>
 
 ## Service SMS messages are forbidden
 
 Activation commands might not be sent because of the tariff plan's restrictions:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt="Service SMS forbidden" width="330"><figcaption><p>Service SMS forbidden</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt="Service SMS forbidden" width="330"><figcaption><p>Service SMS forbidden</p></figcaption></figure>
 
 To allow sending activation commands from the platform, enable this option. Each device has its own tariff plan, and its settings may vary across devices.
 

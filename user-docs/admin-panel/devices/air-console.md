@@ -1,10 +1,12 @@
 ---
-description: Real-time terminal to view raw tracker data, monitor device status, and send diagnostic commands over WebSocket
+description: >-
+  Real-time terminal to view raw tracker data, monitor device status, and send
+  diagnostic commands over WebSocket
 ---
 
 # Air Console
 
-Air Console enables technical specialists, such as technical support team members, to monitor all messages sent by the tracker to the server and send commands to the device if supported. Powered by WebSocket technology,  Air Console enables real-time data exchange without any lag or delay.
+Air Console enables technical specialists, such as technical support team members, to monitor all messages sent by the tracker to the server and send commands to the device if supported. Powered by WebSocket technology, Air Console enables real-time data exchange without any lag or delay.
 
 Navixy Air Console enables technical specialists to perform various tasks, such as:
 
@@ -14,13 +16,13 @@ Navixy Air Console enables technical specialists to perform various tasks, such 
 * Perform OTA firmware update and remote reboot
 * Viewing raw device data
 
-![Air Console](../.gitbook/assets/Untitled-20230811-203348.png)
+![Air Console](../../.gitbook/assets/Untitled-20230811-203348.png)
 
 ## Using Air Console
 
 To use the GPRS terminal, select a tracker (which must be online) and click **Air Console** on the right side panel. This opens a window where you can establish a connection with the tracker by clicking **Start connection**.
 
-<figure><img src="../.gitbook/assets/image (80).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (80).png" alt="" width="563"><figcaption></figcaption></figure>
 
 The left panel displays all information from your device in the raw format. The command line below allows sending commands to your device in the form provided by the protocol. These commands are sent to the device in the same form in which they were entered.
 

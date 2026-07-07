@@ -1,5 +1,8 @@
 ---
-description: Set up SSH key authentication for Navixy on-premise Linux servers as a secure alternative to passwords. Generate keys on Linux or Windows and disable password login.
+description: >-
+  Set up SSH key authentication for Navixy on-premise Linux servers as a secure
+  alternative to passwords. Generate keys on Linux or Windows and disable
+  password login.
 ---
 
 # SSH keys
@@ -38,11 +41,11 @@ You will be prompted to enter the path of the file where the keys will be placed
 
 Next, you will be prompted to enter a passprase. It is an extra security measure to protect your key from usage by third parties in case it is compromised. This step is optional.
 
-![](../../../../.gitbook/assets/image-20240214-122034.png)
+![](../../../../../.gitbook/assets/image-20240214-122034.png)
 
 Once you have successfully generated a key pair, you will see a notification:
 
-![](../../../../.gitbook/assets/image-20240214-122134.png)
+![](../../../../../.gitbook/assets/image-20240214-122134.png)
 
 With the default location, the public key is stored in `/root/.ssh/id_rsa.pub`, and the private key is stored in `/root/.ssh/id_rsa`.
 
@@ -54,7 +57,7 @@ vi /home/navixy/.ssh/authorized_keys
 
 Specify your public key contents after `ssh-rsa`. You can specify a short comment after the key to explain its purpose.
 
-![](../../../../.gitbook/assets/image-20240214-124130.png)
+![](../../../../../.gitbook/assets/image-20240214-124130.png)
 
 Save the file.
 
@@ -74,23 +77,23 @@ In Windows, SSH key generation is performed using **PuTTYgen** utility that come
 
 Launch PuTTYgen from the start menu.
 
-![](../../../../.gitbook/assets/image-20240215-124950.png)
+![](../../../../../.gitbook/assets/image-20240215-124950.png)
 
 Make sure the `RSA` key type is selected and click **Generate**.
 
-![](../../../../.gitbook/assets/image-20240215-125643.png)
+![](../../../../../.gitbook/assets/image-20240215-125643.png)
 
 During the key generation process, swipe the mouse several times over an application window to create random values.
 
-![](../../../../.gitbook/assets/image-20240215-125204.png)
+![](../../../../../.gitbook/assets/image-20240215-125204.png)
 
 After key creation is complete, the public key will be displayed in PuTTYgen, and the private key will be stored in the application memory. To save these keys, click **Save public key** and **Save private key**. Specify the directory on your PC to store the key files.
 
-![](../../../../.gitbook/assets/image-20240215-133332.png)
+![](../../../../../.gitbook/assets/image-20240215-133332.png)
 
 When saving private key, if `Key passphrase` field is not filled in, you will be prompted "Are you sure you want to save this keywithout a passphrase to protect it?". Click `Yes` or return to the previous window to specify the passphrase.
 
-![](../../../../.gitbook/assets/image-20240215-133546.png)
+![](../../../../../.gitbook/assets/image-20240215-133546.png)
 
 Now the public key must be copied to your server into the `authorized_keys` file. It is located in the directory of the user on whose behalf the remote connection will be made. Let's assume that the username is `navixy`, and in this case the file location will be `/home/navixy/.ssh/authorized_keys`.
 
@@ -98,17 +101,17 @@ Use any file transfer client to work with files on a remote Linux server. Here w
 
 Open the `authorized_keys` file via WinSCP for editing.
 
-![](../../../../.gitbook/assets/image-20240215-140635.png)
+![](../../../../../.gitbook/assets/image-20240215-140635.png)
 
 Copy the public key value from the PuTTYgen window or from the previously saved file. The key must stert with `ssh-rsa`. If some key is already saved in the `authorized_keys` file, append the new key after it, starting from a new line.
 
-![](../../../../.gitbook/assets/image-20240215-141101.png)
+![](../../../../../.gitbook/assets/image-20240215-141101.png)
 
 Save the file.
 
 Now you can connect to your server via PuTTY using the private key file. You need to specify the path to it on your PC. To do this, select the required path in _Connection - SSH - Auth - Credentials_ section (new version PuTTY) or _Connection - SSH - Auth_ (old version), in _Private key for authentication_ field.
 
-![](../../../../.gitbook/assets/image-20240215-143917.png)
+![](../../../../../.gitbook/assets/image-20240215-143917.png)
 
 Specify username and server address (e.g. `navixy@myserver.domain.com`) in the _Session_ tab and connect to your server. If everything is done correctly, the connection will be established without the need to enter a password.
 

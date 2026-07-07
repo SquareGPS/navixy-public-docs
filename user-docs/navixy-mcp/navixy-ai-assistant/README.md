@@ -2,11 +2,11 @@
 
 {% columns %}
 {% column width="83.33333333333334%" %}
-Navixy AI Assistant is a chat interface built into the Navixy platform and website. It answers questions about the platform using official documentation, blog articles, and device information, and can query your live account data when opened from the [Navixy platform](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/) or [Admin Panel](https://app.gitbook.com/s/KdgeXg71LpaDrwexQYwp/).
+Navixy AI Assistant is a chat interface built into the Navixy platform and website. It answers questions about the platform using official documentation, blog articles, and device information, and can query your live account data when opened from the [Navixy platform](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/446mKak1zDrGv70ahuYZ/) or [Admin Panel](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/KdgeXg71LpaDrwexQYwp/).
 {% endcolumn %}
 
 {% column width="16.666666666666657%" %}
-<figure><img src="../.gitbook/assets/AI assistant-icon.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/AI assistant-icon.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -40,7 +40,7 @@ When you open the assistant from the Navixy interface or Admin Panel, it automat
 
 ### From the Navixy interface
 
-The assistant is available widget-style in the lower-right corner of the interface. Click <img src="../.gitbook/assets/AI assistant-icon.png" alt="" data-size="line"> to open the chat window.
+The assistant is available widget-style in the lower-right corner of the interface. Click <img src="../../.gitbook/assets/AI assistant-icon.png" alt="" data-size="line"> to open the chat window.
 
 With an active Navixy session, the assistant can access:
 

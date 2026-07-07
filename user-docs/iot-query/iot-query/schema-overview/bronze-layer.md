@@ -1,5 +1,7 @@
 ---
-description: Raw data layer stores business entities, device telemetry, and asset records in three schemas. Browse key tables and field formats for direct SQL analysis
+description: >-
+  Raw data layer stores business entities, device telemetry, and asset records
+  in three schemas. Browse key tables and field formats for direct SQL analysis
 ---
 
 # Raw data layer
@@ -16,7 +18,7 @@ Each schema is optimized for its specific data domain and access patterns, provi
 
 This schema contains 40+ carefully selected tables to cover various business aspects and use cases. These tables represent your core business entities, organizational structure, and operational data.
 
-<figure><img src="../../.gitbook/assets/raw_business_data.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/raw_business_data.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The interactive diagram of raw\_business\_data schema is available on **dbdiagram.io**: [https://dbdiagram.io/d/V3-bronze-layer-68ecfd1c2e68d21b4131089a](https://dbdiagram.io/d/V3-bronze-layer-68ecfd1c2e68d21b4131089a)
@@ -1118,7 +1120,7 @@ Reference and lookup data
 
 The **`raw_telematics_data`** schema contains three primary table types that work together to provide comprehensive device data.
 
-<figure><img src="../../.gitbook/assets/v1 schema telematics bd.svg" alt="Bronze layer raw telematics data ERD"><figcaption><p>Bronze layer raw telematics data ERD</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v1 schema telematics bd.svg" alt="Bronze layer raw telematics data ERD"><figcaption><p>Bronze layer raw telematics data ERD</p></figcaption></figure>
 
 {% hint style="info" %}
 The interactive diagram of raw\_telematics\_data schema is available on **dbdiagram.io**: [https://dbdiagram.io/d/v1-schema-telematics-bd-67a0acef263d6cf9a0d8e750](https://dbdiagram.io/d/v1-schema-telematics-bd-67a0acef263d6cf9a0d8e750)
@@ -1279,7 +1281,7 @@ The `repo` schema provides a comprehensive framework for managing organizational
 
 The schema addresses complex data management scenarios including fleet asset hierarchies across organizational levels, multi-tenant SaaS platforms requiring data isolation, compliance-driven operations with detailed audit requirements, and systems needing dynamic data models adaptable through custom fields rather than database migrations.
 
-<figure><img src="../../.gitbook/assets/Navixy Repo data schema.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Navixy Repo data schema.svg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The interactive diagram of`repo` data schema is available on **dbdiagram.io**: [https://dbdiagram.io/d/Navixy-Repo-data-schema-68ad788c1e7a611967a0930e](https://dbdiagram.io/d/Navixy-Repo-data-schema-68ad788c1e7a611967a0930e)

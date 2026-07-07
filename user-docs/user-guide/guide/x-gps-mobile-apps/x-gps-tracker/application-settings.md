@@ -1,5 +1,7 @@
 ---
-description: "Configure X-GPS Tracker app settings: enable or disable geolocation tracking and select the operating mode for how the app reports location."
+description: >-
+  Configure X-GPS Tracker app settings: enable or disable geolocation tracking
+  and select the operating mode for how the app reports location.
 ---
 
 # Application settings
@@ -31,7 +33,7 @@ You can choose one of three operating modes:
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-164009.png)
+![](../../../../.gitbook/assets/image-20250304-164009.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -51,9 +53,9 @@ Please note that all three conditions work according to the OR function. This me
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-164438.png)
+![](../../../../.gitbook/assets/image-20250304-164438.png)
 
-![](../../../.gitbook/assets/image-20250304-164357.png)
+![](../../../../.gitbook/assets/image-20250304-164357.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -71,7 +73,7 @@ If tracking is enabled according to the schedule, you can turn it off at any tim
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-164559.png)
+![](../../../../.gitbook/assets/image-20250304-164559.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -104,8 +106,8 @@ If tracking is enabled according to the schedule, you can turn it off at any tim
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-164817.png)
+![](../../../../.gitbook/assets/image-20250304-164817.png)
 
-![](../../../.gitbook/assets/image-20250304-164909.png)
+![](../../../../.gitbook/assets/image-20250304-164909.png)
 {% endcolumn %}
 {% endcolumns %}

@@ -1,12 +1,14 @@
 ---
-description: Add custom fields to Places, Employees, Vehicles, and Tasks in Navixy to store additional data and improve filtering in field service workflows.
+description: >-
+  Add custom fields to Places, Employees, Vehicles, and Tasks in Navixy to store
+  additional data and improve filtering in field service workflows.
 ---
 
 # Custom fields
 
 Custom fields allow you to add personalized information to the description of places. Custom fields operate in the same way as standard fields, allowing you to store valuable data that can be used for filtering and improving operational efficiency.
 
-![](../../.gitbook/assets/image-20240718-172504.png)
+![](../../../.gitbook/assets/image-20240718-172504.png)
 
 **Examples:**
 
@@ -18,7 +20,7 @@ Custom fields allow you to add personalized information to the description of pl
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
 | **Text string**    | Length up to 700 characters, allows any characters.                                                                                |
 | **Text area**      | Length up to 20,000 characters.                                                                                                    |
-| **Email**         | For email addresses only.                                                                                                          |
+| **Email**          | For email addresses only.                                                                                                          |
 | **Phone**          | For phone numbers only.                                                                                                            |
 | **Decimal number** | For decimal values.                                                                                                                |
 | **Integer number** | For integer values.                                                                                                                |

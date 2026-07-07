@@ -1,5 +1,8 @@
 ---
-description: Check the status of Navixy Java services, Nginx, and MySQL on Linux or Windows. Use platform health check commands to identify which component is not running.
+description: >-
+  Check the status of Navixy Java services, Nginx, and MySQL on Linux or
+  Windows. Use platform health check commands to identify which component is not
+  running.
 ---
 
 # Checking service statuses
@@ -18,11 +21,11 @@ check-navixy
 
 The output will display the type of installation (systemd-based or running in Docker) and the status of each of the services. The output must be as follows:
 
-![](../../../.gitbook/assets/image-20250221-074604.png)
+![](../../../../.gitbook/assets/image-20250221-074604.png)
 
 If you see that any of the services are down, it is a reason to take emergency measures, as in this case the platform is not fully functional.
 
-![](../../../.gitbook/assets/image-20250221-080138.png)
+![](../../../../.gitbook/assets/image-20250221-080138.png)
 
 Depending on which service has the problem, you need to refer to the appropriate section in the manual or contact technical support to restore its operation.
 
@@ -83,7 +86,7 @@ For information on restarting services, check the corresponding page: [Restartin
 
 On Windows, the Navixy Java services are installed as regular Windows NT services. To access the services, open the **services.msc** snap-in, and you will find three Navixy services in the list:
 
-![Checking service statuses - Windows](../../../.gitbook/assets/image-20230823-082858.png)
+![Checking service statuses - Windows](../../../../.gitbook/assets/image-20230823-082858.png)
 
 Services must have a _Running_ status. If this is not the case for any of the services, try starting it and see if it starts working fine. If the service crashes, then the reason should be looked for in the logs. The standard location of the logs is `C:\java\<service_name>\log\`. If a service fails to start, there will usually be associated errors in the logs. Try checking the information before `Server stopped` entry or any recent entries starting with `WARN` or `ERROR`. It is recommended to use some advanced text editors like Notepad++ or Sublime Text to review logs. A standard Notepad generally fails to work with big text files.
 
@@ -117,7 +120,7 @@ Make sure that Nginx has started and is running normally, and if not, check for 
 
 On Windows, Nginx is not a service but just a small application running in the background. To check if it is launched, open the Task manager (Details tab) and look for **nginx.exe** processes - there are usually two or more of them.
 
-![Checking Nginx status - Windows](../../../.gitbook/assets/image-20230823-090304.png)
+![Checking Nginx status - Windows](../../../../.gitbook/assets/image-20230823-090304.png)
 
 If you cannot find **nginx.exe** in the list, try running its executive file from `C:\nginx` manually or with the following commands in CMD:
 

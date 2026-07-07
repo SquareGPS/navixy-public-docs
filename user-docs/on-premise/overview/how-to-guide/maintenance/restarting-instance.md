@@ -1,5 +1,7 @@
 ---
-description: Restart Navixy on-premise on Linux using the restart-navixy command or on Windows via the services.msc console to manage Windows NT services.
+description: >-
+  Restart Navixy on-premise on Linux using the restart-navixy command or on
+  Windows via the services.msc console to manage Windows NT services.
 ---
 
 # Restarting instance
@@ -38,4 +40,4 @@ If Navixy instance is installed on Windows, the platform backend services will w
 
 To restart any required service or all of them, simply right-click on the corresponding service(s) and select "Restart".
 
-![](../../../.gitbook/assets/image-20230810-134010.png)
+![](../../../../.gitbook/assets/image-20230810-134010.png)

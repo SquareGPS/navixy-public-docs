@@ -1,5 +1,7 @@
 ---
-description: Activate the X-GPS Tracker app to turn a smartphone into a GPS tracker. Send an invitation to the employee and configure the app on their device.
+description: >-
+  Activate the X-GPS Tracker app to turn a smartphone into a GPS tracker. Send
+  an invitation to the employee and configure the app on their device.
 ---
 
 # Activate X-GPS tracker app
@@ -46,7 +48,7 @@ The employee receives an invitation via text (SMS) or email depending on setup. 
 {% endcolumn %}
 
 {% column %}
-![](../../.gitbook/assets/image-20240717-190626.png)
+![](../../../.gitbook/assets/image-20240717-190626.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -56,7 +58,6 @@ After the invitation is sent, employees should proceed on their end by downloadi
 
 {% stepper %}
 {% step %}
-
 ### Download and install the app
 
 Download and install the app on their mobile device from the related store:
@@ -66,7 +67,6 @@ Download and install the app on their mobile device from the related store:
 {% endstep %}
 
 {% step %}
-
 ### Configure the app
 
 Upon launching the app, the employee needs to enter the 12-digit identifier from the invitation to complete the setup. After that, just a few more steps to finish the configuration are needed:

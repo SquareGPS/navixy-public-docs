@@ -1,5 +1,8 @@
 ---
-description: Data Source node is the IoT Logic entry point for device telemetry. It receives data via TCP, UDP, HTTP, or MQTT, decodes it, and passes it to downstream nodes.
+description: >-
+  Data Source node is the IoT Logic entry point for device telemetry. It
+  receives data via TCP, UDP, HTTP, or MQTT, decodes it, and passes it to
+  downstream nodes.
 ---
 
 # Data Source
@@ -12,13 +15,13 @@ description: Data Source node is the IoT Logic entry point for device telemetry.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-20250403-162909.png" alt="Data source node in the flow workspace"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-20250403-162909.png" alt="Data source node in the flow workspace"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
 ### Flow architecture integration
 
-<figure><img src="../../../../.gitbook/assets/Data-source-in-flow.webp" alt="Data source node included in a flow on workspace"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Data-source-in-flow.webp" alt="Data source node included in a flow on workspace"><figcaption></figcaption></figure>
 
 **Data Source node** functions as the entry point for data in an IoT Logic flow. A single flow can contain multiple source nodes, each with independent configurations. This architecture enables:
 
@@ -45,7 +48,7 @@ The **Data Source node** by itself offers:
 {% endcolumn %}
 
 {% column width="41.666666666666664%" %}
-<figure><img src="../../../../.gitbook/assets/Data_source_node_edit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Data_source_node_edit.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -113,4 +116,4 @@ The protocol should match the communication protocol used by your device manufac
 
 Yes, you can connect a **Data Source node** to multiple processing nodes to create parallel processing paths. This allows you to apply different transformations to the same data stream. Here’s an example:
 
-<figure><img src="../../../../.gitbook/assets/image-20250404-075539.png" alt="Example showing the Data source node in context with multiple outbound connections and outputs"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-20250404-075539.png" alt="Example showing the Data source node in context with multiple outbound connections and outputs"><figcaption></figcaption></figure>

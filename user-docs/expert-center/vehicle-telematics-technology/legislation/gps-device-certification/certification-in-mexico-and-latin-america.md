@@ -1,5 +1,7 @@
 ---
-description: GPS device certification in Mexico and Latin America involves IFT, NOM, ICONTEC, INACAL, and other regional certification bodies.
+description: >-
+  GPS device certification in Mexico and Latin America involves IFT, NOM,
+  ICONTEC, INACAL, and other regional certification bodies.
 ---
 
 # Certification in Mexico and Latin America
@@ -34,7 +36,7 @@ For more information, contact the relevant organizations.
 
 After certification, a product may need to display certain agencies' markings or certificate ID on the packaging, manual, and device itself. This ensures that any potential buyer knows exactly which certifications a device might have. Users can also access the corresponding databases, if available, and search by ID number for additional product information such as test reports, frequency bands, and applicant details.
 
-![Certification in Latin America and Mexico](../../../.gitbook/assets/s-l1600-device-600x400.png)
+![Certification in Latin America and Mexico](../../../../.gitbook/assets/s-l1600-device-600x400.png)
 
 ## Cellular network compliance
 
@@ -42,16 +44,16 @@ In addition to the various national and international bodies that issue certific
 
 ## SIM/operators
 
-Since most trackers use a universal SIM card, certification isn't an issue. Many of the businesses that provide universal SIMs also have deals to access cell towers owned by carriers for roaming and additional capacity. However, if a device has a SIM card from a specific carrier, like AT\&T or T-Mobile, then the tracker needs to be certified to operate on its network. &#x20;
+Since most trackers use a universal SIM card, certification isn't an issue. Many of the businesses that provide universal SIMs also have deals to access cell towers owned by carriers for roaming and additional capacity. However, if a device has a SIM card from a specific carrier, like AT\&T or T-Mobile, then the tracker needs to be certified to operate on its network.
 
 Some alliances between manufacturers and carriers "lock" the devices to only operate with their SIM. If you want to use this equipment with another operator, you would have to consult the corresponding process to "unlock" it.
 
 ## Common carriers in LATAM
 
-- Telcel
-- AT\&T
-- Movistar (Telefónica)
-- Claro
-- Entel
-- Vivo
-- Tim
+* Telcel
+* AT\&T
+* Movistar (Telefónica)
+* Claro
+* Entel
+* Vivo
+* Tim

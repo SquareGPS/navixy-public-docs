@@ -1,5 +1,7 @@
 ---
-description: Configure ADAS, DMS, and input-triggered event alerts on Howen MDVR devices using state field value rules with a full event code table.
+description: >-
+  Configure ADAS, DMS, and input-triggered event alerts on Howen MDVR devices
+  using state field value rules with a full event code table.
 ---
 
 # Event configuration on Howen MDVR
@@ -10,15 +12,15 @@ Howen devices can provide various types of events to the Navixy platform, includ
 
 Howen devices use two distinct state fields for different types of events:
 
-1. **sub_event_code**
+1. **sub\_event\_code**
 
-- ADAS alerts
-- DMS alerts
-- Input triggering events
+* ADAS alerts
+* DMS alerts
+* Input triggering events
 
-2. **event_code**
+2. **event\_code**
 
-- Other device alerts and notifications
+* Other device alerts and notifications
 
 ## How to set up event code alerts
 
@@ -26,9 +28,9 @@ Howen devices use two distinct state fields for different types of events:
 2. Select **State field value** as the alert type
 3. In the settings:
 
-- Choose the appropriate state field (`sub_event_code` or `event_code`)
-- Enter the corresponding code as the expected value
-- Configure additional notification preferences as needed
+* Choose the appropriate state field (`sub_event_code` or `event_code`)
+* Enter the corresponding code as the expected value
+* Configure additional notification preferences as needed
 
 ## Example use case: Lane departure warning
 
@@ -36,14 +38,14 @@ Let's walk through setting up an alert for lane departure warnings:
 
 1. Create a new alert
 2. Select **State field value** as the alert type\
-   ![Live example: State field value alert rule type](../../../../.gitbook/assets/image-20240417-091335.png)
+   ![Live example: State field value alert rule type](../../../../../.gitbook/assets/image-20240417-091335.png)
 3. In the settings tab:\
-   ![Live example: State field and expected value settings](../../../../.gitbook/assets/image-20240417-091116.png)
+   ![Live example: State field and expected value settings](../../../../../.gitbook/assets/image-20240417-091116.png)
 
-- State Field: `sub_event_code`
-- Expected Value: `30_2` (lane departure warning code)
+* State Field: `sub_event_code`
+* Expected Value: `30_2` (lane departure warning code)
 
-When the device sends a packet with sub_event_code 30_2, the platform triggers the alert and notifies you or your driver.
+When the device sends a packet with sub\_event\_code 30\_2, the platform triggers the alert and notifies you or your driver.
 
 ## Event code tables
 
@@ -55,28 +57,28 @@ The following tables provide lists of supported event codes on Howen devices. Al
 
 <summary>Input triggering codes</summary>
 
-| Code | Event                        |
-| ---- | ---------------------------- |
-| 4_0  | Close door                   |
-| 4_1  | Emergency/Panic              |
-| 4_2  | F-door opening               |
-| 4_3  | M- door opening              |
-| 4_4  | B-door opening               |
-| 4_5  | Low beam                     |
-| 4_6  | High beam                    |
-| 4_9  | Right turn                   |
-| 4_10 | Left turn                    |
-| 4_11 | Braking                      |
-| 4_12 | Reverse                      |
-| 4_13 | Reservered 1                 |
-| 4_14 | F-door close                 |
-| 4_15 | M-Door Close                 |
-| 4_16 | B-door close                 |
-| 4_17 | Talking (start the intercom) |
-| 4_18 | Raise up                     |
-| 4_19 | Sealed                       |
-| 4_20 | Load                         |
-| 4_22 | Custom define                |
+| Code  | Event                        |
+| ----- | ---------------------------- |
+| 4\_0  | Close door                   |
+| 4\_1  | Emergency/Panic              |
+| 4\_2  | F-door opening               |
+| 4\_3  | M- door opening              |
+| 4\_4  | B-door opening               |
+| 4\_5  | Low beam                     |
+| 4\_6  | High beam                    |
+| 4\_9  | Right turn                   |
+| 4\_10 | Left turn                    |
+| 4\_11 | Braking                      |
+| 4\_12 | Reverse                      |
+| 4\_13 | Reservered 1                 |
+| 4\_14 | F-door close                 |
+| 4\_15 | M-Door Close                 |
+| 4\_16 | B-door close                 |
+| 4\_17 | Talking (start the intercom) |
+| 4\_18 | Raise up                     |
+| 4\_19 | Sealed                       |
+| 4\_20 | Load                         |
+| 4\_22 | Custom define                |
 
 </details>
 
@@ -84,13 +86,13 @@ The following tables provide lists of supported event codes on Howen devices. Al
 
 <summary>ADAS alarm codes</summary>
 
-| Code  | Event                           |
-| ----- | ------------------------------- |
-| 30_2  | Lane departure warning          |
-| 30_4  | Pedestrian collision alarm      |
-| 30_7  | FVS：Front vehicle start        |
-| 30_17 | FCW：Forward collision warning  |
-| 30_18 | HMW：Headway monitoring warning |
+| Code   | Event                          |
+| ------ | ------------------------------ |
+| 30\_2  | Lane departure warning         |
+| 30\_4  | Pedestrian collision alarm     |
+| 30\_7  | FVS：Front vehicle start        |
+| 30\_17 | FCW：Forward collision warning  |
+| 30\_18 | HMW：Headway monitoring warning |
 
 </details>
 
@@ -98,22 +100,22 @@ The following tables provide lists of supported event codes on Howen devices. Al
 
 <summary>DMS alarm codes</summary>
 
-| Code  | Event                             |
-| ----- | --------------------------------- |
-| 30_33 | Fatigue driving alarm             |
-| 30_34 | Phone call alarm                  |
-| 30_35 | Smoking alarm                     |
-| 30_65 | Eyes closed                       |
-| 30_66 | Yawning                           |
-| 30_67 | Camera cover                      |
-| 30_68 | Distracted Driving                |
-| 30_69 | Seat belt not fastened            |
-| 30_70 | No driver                         |
-| 30_72 | Driver shift                      |
-| 30_73 | Driver back                       |
-| 30_80 | Infrared sunglasses               |
-| 30_81 | Driver ID identified successfully |
-| 30_82 | Driver ID identification failed   |
+| Code   | Event                             |
+| ------ | --------------------------------- |
+| 30\_33 | Fatigue driving alarm             |
+| 30\_34 | Phone call alarm                  |
+| 30\_35 | Smoking alarm                     |
+| 30\_65 | Eyes closed                       |
+| 30\_66 | Yawning                           |
+| 30\_67 | Camera cover                      |
+| 30\_68 | Distracted Driving                |
+| 30\_69 | Seat belt not fastened            |
+| 30\_70 | No driver                         |
+| 30\_72 | Driver shift                      |
+| 30\_73 | Driver back                       |
+| 30\_80 | Infrared sunglasses               |
+| 30\_81 | Driver ID identified successfully |
+| 30\_82 | Driver ID identification failed   |
 
 </details>
 
@@ -131,6 +133,6 @@ The following tables provide lists of supported event codes on Howen devices. Al
 
 For example, to get lane departure warning alerts, choose alert type **State field value**:
 
-And in the settings tab use sub_event_code as the state field and 30_2 as an expected value:
+And in the settings tab use sub\_event\_code as the state field and 30\_2 as an expected value:
 
-Once the device provides a packet with sub event code 30_2, the platform triggers an alert and notifies you or your driver.
+Once the device provides a packet with sub event code 30\_2, the platform triggers an alert and notifies you or your driver.

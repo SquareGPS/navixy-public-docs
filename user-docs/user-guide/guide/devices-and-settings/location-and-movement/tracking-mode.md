@@ -1,12 +1,14 @@
 ---
-description: Control how often a GPS device reports position by interval, distance, and cornering, plus power-save, freeze, and sleep options.
+description: >-
+  Control how often a GPS device reports position by interval, distance, and
+  cornering, plus power-save, freeze, and sleep options.
 ---
 
 # Tracking mode
 
 Controls how often and on what basis the device reports its position, balancing live-tracking detail against data and battery usage. Every device has a reporting configuration, but the exact fields are chosen by the device model, so this page describes the underlying concepts rather than a fixed form.
 
-<figure><img src="../../../.gitbook/assets/image-20240815-182719.png" alt="Tracking mode settings block example" width="310"><figcaption><p>Tracking mode settings block example</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image-20240815-182719.png" alt="Tracking mode settings block example" width="310"><figcaption><p>Tracking mode settings block example</p></figcaption></figure>
 
 {% hint style="info" %}
 The controls below are the canonical building blocks. Your device shows the subset it supports, sometimes with different labels. The device reports when **at least one** of the enabled conditions is met.
@@ -14,8 +16,8 @@ The controls below are the canonical building blocks. Your device shows the subs
 
 ## Core reporting controls
 
-* **Reporting interval**: Report at least every N seconds. The core "how often" control (typically from ~30 seconds up to a day or more, varies by model).
-* **Distance**: Report after moving N meters (typically ~100–65,535 m, varies by model).
+* **Reporting interval**: Report at least every N seconds. The core "how often" control (typically from \~30 seconds up to a day or more, varies by model).
+* **Distance**: Report after moving N meters (typically \~100–65,535 m, varies by model).
 * **Cornering or turning angle**: Report when heading changes by N degrees (typically 10–180°), so corners aren't cut.
 
 {% hint style="info" %}

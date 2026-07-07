@@ -1,5 +1,7 @@
 ---
-description: Visualize fuel and telematics data in Grafana by connecting to the Navixy API. Step-by-step setup for dashboards tracking historical consumption.
+description: >-
+  Visualize fuel and telematics data in Grafana by connecting to the Navixy API.
+  Step-by-step setup for dashboards tracking historical consumption.
 ---
 
 # Fuel data analysis with Grafana via Navixy API integration
@@ -47,18 +49,18 @@ Follow these steps to set up the connection:
 3. Click **Create a JSON API** data source
 4. Fill in the following fields:
 
-- Name: Choose a preferred name for the data source
-- URL: Enter the URL for the Navixy API. Depending on your platform's location, use one of the following URLs:
-  - `https://api.eu.navixy.com/v2/` for Europe
-  - `https://api.us.navixy.com/v2/` for North America
-  - `<your_configured_domain_api_url>` for self-hosted (On-Premise) installations. The default format is usually `http(s)://your_configured_domain/api/`
-- Query string: Use a query string in the format `hash=[YOUR_API_KEY]&iso_datetime=true`. For example: `hash=8f6a4353bc5114d977e2068b4e398&iso_datetime=true`.
+* Name: Choose a preferred name for the data source
+* URL: Enter the URL for the Navixy API. Depending on your platform's location, use one of the following URLs:
+  * `https://api.eu.navixy.com/v2/` for Europe
+  * `https://api.us.navixy.com/v2/` for North America
+  * `<your_configured_domain_api_url>` for self-hosted (On-Premise) installations. The default format is usually `http(s)://your_configured_domain/api/`
+* Query string: Use a query string in the format `hash=[YOUR_API_KEY]&iso_datetime=true`. For example: `hash=8f6a4353bc5114d977e2068b4e398&iso_datetime=true`.
 
 5. Customize any additional settings as required, and then click **Save & Test** to verify the connection.
 
-![Grafana and Navixy API - choosing data source](../../../.gitbook/assets/image-20231017-075916.png)
+![Grafana and Navixy API - choosing data source](../../../../.gitbook/assets/image-20231017-075916.png)
 
-![Grafana and Navixy API - data source setting up](../../../.gitbook/assets/image-20231017-080330.png)
+![Grafana and Navixy API - data source setting up](../../../../.gitbook/assets/image-20231017-080330.png)
 
 ### Step 5: Importing the Navixy dashboard template
 
@@ -68,7 +70,7 @@ To expedite the setup process, import the Navixy [dashboard template](https://gi
 
 Grafana provides a complete set of visualization objects and tools, enabling telematics professionals to effortlessly analyze and interpret complex telematics data. Let's delve into the main elements of the demo dashboard offered by Navixy which are marked in blue.
 
-![](../../../.gitbook/assets/image-20231017-083157.png)
+![](../../../../.gitbook/assets/image-20231017-083157.png)
 
 ### Trackers and sensors to analyze
 

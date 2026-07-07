@@ -1,5 +1,7 @@
 ---
-description: Pre-built Transformation Builder workflows for common Navixy transformations. Download, import, and adapt them to your scenario
+description: >-
+  Pre-built Transformation Builder workflows for common Navixy transformations.
+  Download, import, and adapt them to your scenario
 ---
 
 # Templates
@@ -59,7 +61,7 @@ The table below lists available templates with the values you need for the Outpu
 Produces one row per vehicle trip from raw telematics data, with start and end times,\
 distance, speed statistics, and zone detection. See the [Trips](../common-transformations/trips.md) page for the full output schema, algorithm description, and customization options.
 
-{% file src="../../../../.gitbook/assets/Tracks.yaml" %}
+{% file src="../../../../../.gitbook/assets/Tracks.yaml" %}
 
 When adding the **Output node**, use the following configuration:
 
@@ -78,7 +80,7 @@ Produces time-bucketed aggregates of sensor readings, with decoding, fuel calibr
 
 The template ships pre-configured for 5-minute buckets, a common customization scenario for diagnostics dashboards. To change the bucket size, edit the interval literal in the Custom SQL node before scheduling. The interval value controls both the bucket size and the lookback window.
 
-{% file src="../../../../.gitbook/assets/sensor_data_aggregation.yaml" %}
+{% file src="../../../../../.gitbook/assets/sensor_data_aggregation.yaml" %}
 
 When adding the **Output node**, use the following configuration:
 

@@ -1,5 +1,7 @@
 ---
-description: Apply advanced backup methods for high-load Navixy instances using xtrabackup, database replication, and combined application and database backup approaches.
+description: >-
+  Apply advanced backup methods for high-load Navixy instances using xtrabackup,
+  database replication, and combined application and database backup approaches.
 ---
 
 # Advanced backup strategies
@@ -52,7 +54,7 @@ After the platform update, you need to re-backup your application files so that 
 
 Both methods of database backup work great on their own. And using both of them simultaneously can bring you ultimate safety. Below is a simplified backup scheme to achieve acceptable fault tolerance, as well as recovery techniques in case of problems.
 
-![](../../../../.gitbook/assets/backup.drawio.png)
+![](../../../../../.gitbook/assets/backup.drawio.png)
 
 Guides on database backup methods are available online. To maximize backup reliability, it is recommended to have a DevOps/DBA specialist on your team.
 

@@ -1,5 +1,8 @@
 ---
-description: Publish/subscribe protocol powering lightweight IoT device communication. Covers MQTT broker setup, message formats, QoS levels, and telematics use cases.
+description: >-
+  Publish/subscribe protocol powering lightweight IoT device communication.
+  Covers MQTT broker setup, message formats, QoS levels, and telematics use
+  cases.
 ---
 
 # MQTT fundamentals
@@ -26,11 +29,11 @@ An MQTT broker is a server that receives all messages from the clients and then 
 
 An MQTT client is any device (from a microcontroller up to a fully-fledged server) that runs an MQTT library and connects to an MQTT broker over a network.
 
-- The client connects to the broker. It can subscribe to any message “topic” in the broker. This connection can be a plain TCP/IP connection or an encrypted TLS connection for sensitive messages.
-- The client publishes messages under a topic by sending the message and topic to the broker.
-- The broker then forwards the message to all clients that subscribe to that topic.
+* The client connects to the broker. It can subscribe to any message “topic” in the broker. This connection can be a plain TCP/IP connection or an encrypted TLS connection for sensitive messages.
+* The client publishes messages under a topic by sending the message and topic to the broker.
+* The broker then forwards the message to all clients that subscribe to that topic.
 
-Since MQTT messages are organized by topics, the application developer has the flexibility to specify that certain clients can only interact with certain messages. For example, sensors will publish their readings under the “sensor_data” topic and subscribe to the “config_change” topic. Data processing applications that save sensor data into a backend database will subscribe to the “sensor_data” topic. An admin console application could receive system admin’s commands to adjust the sensors’ configurations, such as sensitivity and sample frequency, and publish those changes to the “config_change” topic.
+Since MQTT messages are organized by topics, the application developer has the flexibility to specify that certain clients can only interact with certain messages. For example, sensors will publish their readings under the “sensor\_data” topic and subscribe to the “config\_change” topic. Data processing applications that save sensor data into a backend database will subscribe to the “sensor\_data” topic. An admin console application could receive system admin’s commands to adjust the sensors’ configurations, such as sensitivity and sample frequency, and publish those changes to the “config\_change” topic.
 
 ### Types of MQTT messages
 
@@ -44,7 +47,7 @@ Because the MQTT protocol aims to be a protocol for resource-constrained and IoT
 
 MQTT is considered a lightweight protocol because all its messages have a small code footprint. The packet consists of a 2-byte fixed header + a variable header and a payload. In this first 2-byte, the fixed header will be always present in all the packets and the other two, variable header and payload are not always present.
 
-![MQTT message format](../../.gitbook/assets/imagen-20231019-231143.png)
+![MQTT message format](../../../.gitbook/assets/imagen-20231019-231143.png)
 
 Out of the two-byte fixed header, the first byte is the control field. This 8-bit control field Is divided into two 4 bit fields. The first 4 MSB bits are the command type field. This type determines the action that will be performed: the client wants to subscribe to the topic, a new message is published for subscribers and others.
 
@@ -62,54 +65,54 @@ QoS refers to an agreement between the sender of a message and the message's rec
 
 The three different QoS levels determine how the content is managed by the MQTT protocol. Although higher levels of QoS are more reliable, they have more latency and bandwidth requirements, so subscribing clients can specify the highest QoS level they would like to receive.
 
-- The simplest QoS level is an unacknowledged service. This QoS level uses a PUBLISH packet sequence; the publisher sends a message to the broker one time, and the broker passes the message to subscribers one time. There is no mechanism in place to make sure the message has been received correctly, and the broker does not save the message. This QoS level may also be referred to as at most once, QoS0 or fire and forget.
-- The second QoS level is acknowledged service. This QoS level uses a PUBLISH/PUBACK packet sequence between the publisher and its broker, as well as between the broker and subscribers. An acknowledgment packet verifies that content has been received, and a retry mechanism will send the original content again if an acknowledgment is not received in a timely manner. This may result in the subscriber receiving multiple copies of the same message. This QoS level may also be referred to as at least once or QoS1.
-- The third QoS level is assured service. This QoS level delivers the message with two pairs of packets. The first pair is called PUBLISH/PUBREC, and the second pair is called PUBREL/PUBCOMP. The two pairs ensure that, regardless of the number of retries, the message will only be delivered once. This QoS level may also be referred to as exactly once or QoS2.
+* The simplest QoS level is an unacknowledged service. This QoS level uses a PUBLISH packet sequence; the publisher sends a message to the broker one time, and the broker passes the message to subscribers one time. There is no mechanism in place to make sure the message has been received correctly, and the broker does not save the message. This QoS level may also be referred to as at most once, QoS0 or fire and forget.
+* The second QoS level is acknowledged service. This QoS level uses a PUBLISH/PUBACK packet sequence between the publisher and its broker, as well as between the broker and subscribers. An acknowledgment packet verifies that content has been received, and a retry mechanism will send the original content again if an acknowledgment is not received in a timely manner. This may result in the subscriber receiving multiple copies of the same message. This QoS level may also be referred to as at least once or QoS1.
+* The third QoS level is assured service. This QoS level delivers the message with two pairs of packets. The first pair is called PUBLISH/PUBREC, and the second pair is called PUBREL/PUBCOMP. The two pairs ensure that, regardless of the number of retries, the message will only be delivered once. This QoS level may also be referred to as exactly once or QoS2.
 
-![QoS MQTT](../../.gitbook/assets/chrome_q1ak4noiok-600x466.png)
+![QoS MQTT](../../../.gitbook/assets/chrome_q1ak4noiok-600x466.png)
 
 ## Advantages and disadvantages
 
 ### Advantages:
 
-- MQTT is packet agnostic. The MQTT protocol payload can carry any type of data such as binary, ASCII text, etc. The receiver needs to interpret and decode as per the format used by the transmitter.
-- It uses a packet of a low size and can be used for low bandwidth applications.
-- It offers lower battery power consumption.
-- It is a reliable protocol as it uses QoS options to provide guaranteed delivery.
-- Due to its publish/subscribe model, It is scalable.
-- It offers a de-coupled design as it is easy to decouple the device and server. Ideal for distributed one-to-many communications and separated applications.
-- A publishing device can send data to the server at any time regardless of its state.
-- Equipped with the function LWT (Last Will and Testament) to notify the parties of an abnormal disconnection of the client.
-- Relies on TCP/IP for basic communication tasks.
-- Designed to deliver messages according to the templates "maximum once", "minimum once" and "exactly once".
+* MQTT is packet agnostic. The MQTT protocol payload can carry any type of data such as binary, ASCII text, etc. The receiver needs to interpret and decode as per the format used by the transmitter.
+* It uses a packet of a low size and can be used for low bandwidth applications.
+* It offers lower battery power consumption.
+* It is a reliable protocol as it uses QoS options to provide guaranteed delivery.
+* Due to its publish/subscribe model, It is scalable.
+* It offers a de-coupled design as it is easy to decouple the device and server. Ideal for distributed one-to-many communications and separated applications.
+* A publishing device can send data to the server at any time regardless of its state.
+* Equipped with the function LWT (Last Will and Testament) to notify the parties of an abnormal disconnection of the client.
+* Relies on TCP/IP for basic communication tasks.
+* Designed to deliver messages according to the templates "maximum once", "minimum once" and "exactly once".
 
 ### Disadvantages:
 
-- MQTT can’t support video streaming.
-- Issues with Latency.
-- Security is not built-in. MQTT is unencrypted. Instead, it uses TLS/SSL (Transport Layer Security/Secure Sockets Layer) for security encryption.
-- A centralized broker can be the point to failure as client connections with brokers are open all the time.
-- It does not support advanced features such as flow control.
+* MQTT can’t support video streaming.
+* Issues with Latency.
+* Security is not built-in. MQTT is unencrypted. Instead, it uses TLS/SSL (Transport Layer Security/Secure Sockets Layer) for security encryption.
+* A centralized broker can be the point to failure as client connections with brokers are open all the time.
+* It does not support advanced features such as flow control.
 
 ## Where MQTT can be used
 
 As IoT applications are now being implemented on a huge scale, MQTT has come into the spotlight as an open, simple, and scalable way to deploy distributed computing and IoT functionality to a wider user base, both in the consumer and industrial markets.
 
-- Fleet management. Organizations are using MQTT to build smarter fleet management systems that improve fleet optimization, driver safety, and lower fuel costs. New modes of transportation using drones are also changing the way we move goods. Connectivity between a mobile device used by the operator, telemetry information direct from the vehicle, and integration into back-end scheduling and routing systems provides the visibility required to improve the overall fleet operation.
-- Environmental sensor data. MQTT supports the "no more than once" message delivery model. In networks with partial coverage of the territory or high latency, this means that information may be lost or duplicated. In areas where remote sensors record and transmit data at specified intervals, this is not a problem, since new readings are received on a regular basis. Sensors in remote environments are usually low-power devices, which makes MQTT an ideal solution for IoT sensors with a relatively low data transfer priority.
-- Machine health data: to quickly respond to emerging problems and prevent downtime. For example, for a wind power plant, you need guaranteed delivery of current performance indicators to local teams even before this information gets to the data processing center. In such situations, the delivery of messages "at least once" guarantees that the appropriate flags will be noticed by the necessary specialists in a timely manner, even if they arrive as duplicates. This is important for machine-to-machine communication with a higher priority.
-- Billing systems: There are even more priority and accurate messages that need to be handled correctly. In business situations where duplication of records is unacceptable, including in billing systems, the "exactly once" transmission QoS flag is useful. This eliminates duplication or loss of packages in billing or billing systems, reduces the number of anomalies and unnecessary contradictions in the agreement.
-- Text-based messaging applications for real-time communication that capitalizes on MQTT's low data and energy usage. For example, Facebook uses MQTT for its Messenger app, not only because the protocol conserves battery power during mobile phone-to-phone messaging, but also because the protocol enables messages to be delivered efficiently in milliseconds, despite inconsistent internet connections across the globe.
+* Fleet management. Organizations are using MQTT to build smarter fleet management systems that improve fleet optimization, driver safety, and lower fuel costs. New modes of transportation using drones are also changing the way we move goods. Connectivity between a mobile device used by the operator, telemetry information direct from the vehicle, and integration into back-end scheduling and routing systems provides the visibility required to improve the overall fleet operation.
+* Environmental sensor data. MQTT supports the "no more than once" message delivery model. In networks with partial coverage of the territory or high latency, this means that information may be lost or duplicated. In areas where remote sensors record and transmit data at specified intervals, this is not a problem, since new readings are received on a regular basis. Sensors in remote environments are usually low-power devices, which makes MQTT an ideal solution for IoT sensors with a relatively low data transfer priority.
+* Machine health data: to quickly respond to emerging problems and prevent downtime. For example, for a wind power plant, you need guaranteed delivery of current performance indicators to local teams even before this information gets to the data processing center. In such situations, the delivery of messages "at least once" guarantees that the appropriate flags will be noticed by the necessary specialists in a timely manner, even if they arrive as duplicates. This is important for machine-to-machine communication with a higher priority.
+* Billing systems: There are even more priority and accurate messages that need to be handled correctly. In business situations where duplication of records is unacceptable, including in billing systems, the "exactly once" transmission QoS flag is useful. This eliminates duplication or loss of packages in billing or billing systems, reduces the number of anomalies and unnecessary contradictions in the agreement.
+* Text-based messaging applications for real-time communication that capitalizes on MQTT's low data and energy usage. For example, Facebook uses MQTT for its Messenger app, not only because the protocol conserves battery power during mobile phone-to-phone messaging, but also because the protocol enables messages to be delivered efficiently in milliseconds, despite inconsistent internet connections across the globe.
 
 ## MQTT devices supported by Navixy
 
-- Xirgo Global FMS500 Light MQTT (IOTM)
-- Xirgo Global FMS500 Light+ MQTT (IOTM)
-- Xirgo Global FMS500 StCAN MQTT (IOTM)
-- BCE FMS500 Light MQTT (IOTM)
-- BCE FMS500 Light+ MQTT (IOTM)
-- BCE FMS500 StCAN MQTT (IOTM)
-- GlobalmatiX xTCU
+* Xirgo Global FMS500 Light MQTT (IOTM)
+* Xirgo Global FMS500 Light+ MQTT (IOTM)
+* Xirgo Global FMS500 StCAN MQTT (IOTM)
+* BCE FMS500 Light MQTT (IOTM)
+* BCE FMS500 Light+ MQTT (IOTM)
+* BCE FMS500 StCAN MQTT (IOTM)
+* GlobalmatiX xTCU
 
 ## How to configure MQTT devices to work with Navixy
 
@@ -117,20 +120,20 @@ As IoT applications are now being implemented on a huge scale, MQTT has come int
 
 To configure the Xirgo & BCE device on working with MQTT:
 
-- Inside FMSET: Choose **Connectivity** → **Telemetry server** → **MQTT broker address settings** and specify host: [mqtt.eu.navixy.com](http://mqtt.eu.navixy.com/) for EU server and [mqtt.us.navixy.com](http://mqtt.us.navixy.com/) for US server, port 1883.
-- And add the default user in **MQTT Security** -> **Authorization**\
-  ![MQTT device configuration](../../.gitbook/assets/imagen-20231019-231034.png)
+* Inside FMSET: Choose **Connectivity** → **Telemetry server** → **MQTT broker address settings** and specify host: [mqtt.eu.navixy.com](http://mqtt.eu.navixy.com/) for EU server and [mqtt.us.navixy.com](http://mqtt.us.navixy.com/) for US server, port 1883.
+* And add the default user in **MQTT Security** -> **Authorization**\
+  ![MQTT device configuration](../../../.gitbook/assets/imagen-20231019-231034.png)
 
 ### Globalmatix MQTT device configuration
 
 To configure the Globalmatix device on working with MQTT:
 
-- Specify server [http://mqtt.navixy.com](http://mqtt.navixy.com) port 1883 for EU and [http://mqtt.us.navixy.com](http://mqtt.us.navixy.com) port 1883 for US
-- **User/password**: globalmatix/secretword
-- **Topic**: globalmatix/in
+* Specify server [http://mqtt.navixy.com](http://mqtt.navixy.com) port 1883 for EU and [http://mqtt.us.navixy.com](http://mqtt.us.navixy.com) port 1883 for US
+* **User/password**: globalmatix/secretword
+* **Topic**: globalmatix/in
 
 To configure the Globalmatix device on working with MQTTS:
 
-- Specify **server** [http://mqtt.navixy.com](http://mqtt.navixy.com) port 8883 for EU and [http://mqtt.us.navixy.com](http://mqtt.us.navixy.com) port 8883 for US
-- **User/password**: globalmatix/secretword
-- **Topic**: globalmatix/in
+* Specify **server** [http://mqtt.navixy.com](http://mqtt.navixy.com) port 8883 for EU and [http://mqtt.us.navixy.com](http://mqtt.us.navixy.com) port 8883 for US
+* **User/password**: globalmatix/secretword
+* **Topic**: globalmatix/in

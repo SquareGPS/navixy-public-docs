@@ -1,5 +1,8 @@
 ---
-description: Plug-and-play OBD devices connect to the vehicle diagnostic port to read engine data without extra wiring. Covers data types and fleet management use cases.
+description: >-
+  Plug-and-play OBD devices connect to the vehicle diagnostic port to read
+  engine data without extra wiring. Covers data types and fleet management use
+  cases.
 ---
 
 # OBD device fundamentals
@@ -10,7 +13,7 @@ Tracking providers have a number of options to consider when choosing a GPS devi
 
 In this document, we’ll explain how these devices work, what functions they provide, and how they’re used. Navixy supports OBD devices from a multitude of manufacturers and with over 15 years of experience and hundreds of partners worldwide, we have significant knowledge of the telematics and fleet management industry.
 
-![OBD port location](../../.gitbook/assets/obdii-connector-location-2.png)
+![OBD port location](../../../.gitbook/assets/obdii-connector-location-2.png)
 
 OBD ports are typically found within the shaded area
 
@@ -18,7 +21,7 @@ OBD ports are typically found within the shaded area
 
 As stated, an OBD device is any GPS tracking device that plugs into the vehicle’s OBDII (On-Board Diagnostic) port. Practically every passenger vehicle sold since 1996 comes with this standardized port, meaning these devices are compatible with just about every car, truck, SUV, or van available. Along with providing GPS location, they can also give fleets access to valuable vehicle data, DTC codes, DPA (Driving Pattern Analysis), and VIN.
 
-![Example of OBD device](../../.gitbook/assets/device-tracker.png)
+![Example of OBD device](../../../.gitbook/assets/device-tracker.png)
 
 Example of OBD device
 
@@ -34,7 +37,7 @@ The OBD port is also commonly available in electric vehicles, although some manu
 
 The OBDII pinout includes 16 pins, each of which communicates with a specific protocol. Though some pins are standardized, others are optional, such as those designed for a specific manufacturer or vendor. The table below describes the corresponding protocol for each pin. Note: Any unlabeled pin is open for use by OEMs.
 
-![OBDII pinouts](../../.gitbook/assets/obd11-graphic.png)
+![OBDII pinouts](../../../.gitbook/assets/obd11-graphic.png)
 
 OBDII pinouts
 
@@ -56,7 +59,7 @@ While the OBD standard covers passenger and light vehicles, the SAE J1939 protoc
 
 Below, you can see how the number of pins and their arrangement differs for this protocol.
 
-![J1939 pinouts](../../.gitbook/assets/heavy-duty-vehicles-graph.png)
+![J1939 pinouts](../../../.gitbook/assets/heavy-duty-vehicles-graph.png)
 
 J1939 pinouts
 
@@ -140,7 +143,7 @@ Fleets of all sizes often choose to secure their vehicles by requiring drivers t
 
 ### Bluetooth
 
-[Bluetooth](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/bluetooth-sensors-block) support connects OBD devices with a multitude of auxiliary devices. In addition to driver ID, BLE beacons can include temperature sensors, door open/close status, and tire pressure monitors, to name a few. Combining these wireless devices with the convenience of an OBD2 device means having a robust telematics system without costly or complicated installation.
+[Bluetooth](/broken/spaces/446mKak1zDrGv70ahuYZ/pages/x7UNE8YpXIFqBL3Yfz85) support connects OBD devices with a multitude of auxiliary devices. In addition to driver ID, BLE beacons can include temperature sensors, door open/close status, and tire pressure monitors, to name a few. Combining these wireless devices with the convenience of an OBD2 device means having a robust telematics system without costly or complicated installation.
 
 ### Voice monitoring
 

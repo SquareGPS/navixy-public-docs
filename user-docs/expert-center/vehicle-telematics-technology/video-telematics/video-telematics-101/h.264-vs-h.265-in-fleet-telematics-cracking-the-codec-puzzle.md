@@ -1,10 +1,12 @@
 ---
-description: H.265 compresses fleet video more efficiently than H.264 but increases thermal load and licensing cost. Compare both codecs for dashcam deployment decisions.
+description: >-
+  H.265 compresses fleet video more efficiently than H.264 but increases thermal
+  load and licensing cost. Compare both codecs for dashcam deployment decisions.
 ---
 
 # H.264 vs H.265 in fleet telematics: Cracking the codec puzzle
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 Fleet managers today face a dilemma that sounds highly technical but has very real consequences for day-to-day operations: **should your vehicle cameras record with H.264 or H.265?** The debate around these two video codecs has become a bit of a codec conundrum in telematics. On paper, H.265 (also known as HEVC) is the shiny new successor promising up to _50% better compression_ than the trusty H.264 (AVC). In theory, that means half the file size for the same video quality, which is important for fleets dealing with limited bandwidth and storage.
 
@@ -86,12 +88,12 @@ H.264 isn't going to disappear overnight. Given installed system inertia and fle
 
 So, given all these considerations, how should a fleet manager or telematics service provider decide **between H.264 and H.265**? It comes down to your specific priorities and constraints. Here's a quick guide based on the common factors we've discussed:
 
-- **Maximizing video retention / Minimizing data use** Need to store a week's worth of footage instead of three days? Want to cut monthly cloud transfers in half? H.265 is your answer. Just make sure your workflow can handle those files downstream.
-- **Device constraints (cost, heat, power)** Working with budget hardware or extreme environments? H.264 might be safer. Basic dashcams and older MDVRs run cooler and more reliably on H.264. In hot climates or 24/7 operations, H.265's extra heat could cause throttling or failures. Stability often trumps storage savings.
-- **Video quality and resolution needs** Aiming for higher resolution footage, especially for evidence like license plates or driver behavior? H.265 is practically essential. It enables 1440p, 4K, and high-FPS recording without overwhelming storage. H.264 struggles here unless you throw massive storage at it.
-- **Compatibility and sharing** Need to share clips with insurance, law enforcement, or clients who aren't tech-savvy? H.264 offers peace of mind: it works on virtually anything. With H.265, have a conversion plan ready or provide viewers with a compatible player.
-- **Cloud platforms and analytics** Verify your telematics platform's H.265 support. Most modern systems handle it, but if yours doesn't, you're stuck with H.264. Platforms like Navixy, built to ingest and process multi-codec video streams, let fleets upgrade devices without fearing backend limitations.
-- **Mixed strategies** Consider a hybrid approach: record locally in H.265 to maximize SD card storage, but stream in H.264 for live view or sharing. Modern devices can handle dual streams, giving you the best of both worlds (though managing this complexity requires a capable platform – something we've certainly seen at Navixy).
+* **Maximizing video retention / Minimizing data use** Need to store a week's worth of footage instead of three days? Want to cut monthly cloud transfers in half? H.265 is your answer. Just make sure your workflow can handle those files downstream.
+* **Device constraints (cost, heat, power)** Working with budget hardware or extreme environments? H.264 might be safer. Basic dashcams and older MDVRs run cooler and more reliably on H.264. In hot climates or 24/7 operations, H.265's extra heat could cause throttling or failures. Stability often trumps storage savings.
+* **Video quality and resolution needs** Aiming for higher resolution footage, especially for evidence like license plates or driver behavior? H.265 is practically essential. It enables 1440p, 4K, and high-FPS recording without overwhelming storage. H.264 struggles here unless you throw massive storage at it.
+* **Compatibility and sharing** Need to share clips with insurance, law enforcement, or clients who aren't tech-savvy? H.264 offers peace of mind: it works on virtually anything. With H.265, have a conversion plan ready or provide viewers with a compatible player.
+* **Cloud platforms and analytics** Verify your telematics platform's H.265 support. Most modern systems handle it, but if yours doesn't, you're stuck with H.264. Platforms like Navixy, built to ingest and process multi-codec video streams, let fleets upgrade devices without fearing backend limitations.
+* **Mixed strategies** Consider a hybrid approach: record locally in H.265 to maximize SD card storage, but stream in H.264 for live view or sharing. Modern devices can handle dual streams, giving you the best of both worlds (though managing this complexity requires a capable platform – something we've certainly seen at Navixy).
 
 #### H.264 vs. H.265: Why the answer might be both <a href="#ember5319" id="ember5319"></a>
 

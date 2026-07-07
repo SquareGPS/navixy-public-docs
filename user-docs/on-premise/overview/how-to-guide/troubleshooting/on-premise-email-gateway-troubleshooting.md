@@ -1,5 +1,8 @@
 ---
-description: Troubleshoot SMTP email gateway issues on Navixy on-premise. Verify settings, check service status, and resolve common authentication and network connectivity errors.
+description: >-
+  Troubleshoot SMTP email gateway issues on Navixy on-premise. Verify settings,
+  check service status, and resolve common authentication and network
+  connectivity errors.
 ---
 
 # On-Premise email gateway troubleshooting
@@ -22,7 +25,7 @@ Here we outline troubleshooting steps if you have problems with email delivery.
 First thing to check is whether SMTP gateway is set up in the admin panel.\
 Email gateway is specified in the _Account management - Email gateways_ section. Check whether all the settings are specified correctly.
 
-![](../../../.gitbook/assets/image-20230823-110110.png)
+![](../../../../.gitbook/assets/image-20230823-110110.png)
 
 Use _Send test email_ feature for quick troubleshooting. It will prompt you for an address and will send a sample email to it. If the email is not received, proceed to the next step.
 

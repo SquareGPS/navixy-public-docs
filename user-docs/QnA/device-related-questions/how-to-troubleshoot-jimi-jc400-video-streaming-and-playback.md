@@ -1,6 +1,9 @@
-﻿---
+---
 title: How to troubleshoot Jimi JC400 video streaming and playback
-description: "Fix JC400 video streaming: verify IMEI, SIM connectivity, firmware version, APN settings, and server configuration. Includes manual command setup for EU and US"
+description: >-
+  Fix JC400 video streaming: verify IMEI, SIM connectivity, firmware version,
+  APN settings, and server configuration. Includes manual command setup for EU
+  and US
 ---
 
 # How to troubleshoot Jimi JC400 video streaming and playback
@@ -15,7 +18,7 @@ Follow these steps in order:
 
 1.  Check that the IMEI is correct.
 
-    ![](<../.gitbook/assets/Unknown image (145)>)
+    ![](<../../.gitbook/assets/Unknown image (145)>)
 2.  Check that the SIM supports SMS and has working GPRS/LTE.
 
     Make sure that:
@@ -68,7 +71,7 @@ Follow these steps in order:
     ```
 6.  Retry activation in the UI when online.
 
-    ![](<../.gitbook/assets/Unknown image (146)>)
+    ![](<../../.gitbook/assets/Unknown image (146)>)
 7. If the device is offline unexpectedly, verify it is powered on and has sufficient battery charge.
 
 ## If default commands are disabled

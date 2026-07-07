@@ -1,5 +1,8 @@
 ---
-description: Route IoT Logic data flows based on conditions with the IF/THEN Logic node. Evaluate telemetry values, trigger actions for matching records, and skip the rest.
+description: >-
+  Route IoT Logic data flows based on conditions with the IF/THEN Logic node.
+  Evaluate telemetry values, trigger actions for matching records, and skip the
+  rest.
 ---
 
 # IF/THEN Logic
@@ -12,7 +15,7 @@ The **IF/THEN Logic** node creates intelligent branching points that route incom
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../../.gitbook/assets/logic-node.png" alt="IF/THEN Logic node tile"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/logic-node.png" alt="IF/THEN Logic node tile"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -21,7 +24,7 @@ The **IF/THEN Logic** nodes are configured separately for each flow in the Navix
 For specific syntax options related to logical expressions, see [IF/THEN Logic expressions and syntax](logic-node-expressions-and-syntax.md).
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/Logic-node-in-flow (1).webp" alt="IF/THEN Logic node positioning in the flow architecture (with inbound and outbound connections)"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Logic-node-in-flow (1).webp" alt="IF/THEN Logic node positioning in the flow architecture (with inbound and outbound connections)"><figcaption></figcaption></figure>
 
 ### How IF/THEN Logic nodes work
 
@@ -67,7 +70,7 @@ The **IF/THEN Logic** node allows you to define conditional expressions that eva
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../../.gitbook/assets/Logic_node_edit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Logic_node_edit.png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -103,7 +106,7 @@ Build your logical statement using the expression field.
 * Use [logical operators according to Navixy Expression Language syntax](logic-node-expressions-and-syntax.md) to reference device parameters and calculated attributes.
 * The expression must return a boolean value (true/false) for proper node operation.
 * Use the [autocomplete feature](../initiate-attribute-node/managing-attributes.md#autofill-attribute-names) to select available attributes from connected data sources.
-* To reference a Navixy geofence as a condition, use the [geofence picker](geofence-functions.md) in the expression field.&#x20;
+* To reference a Navixy geofence as a condition, use the [geofence picker](geofence-functions.md) in the expression field.
 {% endstep %}
 
 {% step %}
@@ -133,7 +136,7 @@ For detailed information on expression syntax, operators, and data flow behavior
 
 The **IF/THEN Logic** node creates two distinct output paths based on the expression evaluation results.
 
-<figure><img src="../../../../../.gitbook/assets/image-20250721-091115.png" alt="IF/THEN Logic node showing THEN and ELSE connections with green and red color coding"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image-20250721-091115.png" alt="IF/THEN Logic node showing THEN and ELSE connections with green and red color coding"><figcaption></figcaption></figure>
 
 ### THEN connection (<mark style="color:green;">green</mark>)
 
@@ -153,7 +156,7 @@ The **IF/THEN Logic** node creates two distinct output paths based on the expres
 
 When connecting to terminal nodes ([Action](../action-node.md), [Webhook](../webhook-node.md)) that don't support outbound connections, create parallel connections to ensure both the terminal node and an Output Endpoint receive data:
 
-<figure><img src="../../../../../.gitbook/assets/flow_branches.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/flow_branches.webp" alt=""><figcaption></figcaption></figure>
 
 **Why both branches need Output Endpoints:**
 
@@ -187,7 +190,7 @@ IF/THEN Logic node results appear as boolean attributes in the [Data Stream Anal
 
 Yes. You can connect **IF/THEN Logic** nodes sequentially to create complex decision trees. Each **IF/THEN Logic** node can reference the boolean attributes created by previous **IF/THEN Logic** nodes, enabling sophisticated multi-stage validation workflows.
 
-<figure><img src="../../../../../.gitbook/assets/image-20250721-091554.png" alt="Example flow showing multiple IF/THEN Logic nodes connected in sequence for complex decision trees"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image-20250721-091554.png" alt="Example flow showing multiple IF/THEN Logic nodes connected in sequence for complex decision trees"><figcaption></figcaption></figure>
 
 ### Why must IF/THEN Logic branches connect to Output Endpoints?
 

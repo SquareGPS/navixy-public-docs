@@ -1,12 +1,14 @@
 ---
-description: Set up the odometer data source, match it to the vehicle's actual reading, and apply a correction multiplier to keep mileage totals accurate.
+description: >-
+  Set up the odometer data source, match it to the vehicle's actual reading, and
+  apply a correction multiplier to keep mileage totals accurate.
 ---
 
 # Odometer
 
 Tracks a vehicle's total mileage and lets you correct measurement error. Readings can come from GPS-based mileage, hardware/CAN mileage, a tachograph, or a measurement sensor you've created. It integrates with [Fleet maintenance](../../fleet-management/maintenance.md) so you can schedule service by mileage and receive reminders.
 
-![](../../../.gitbook/assets/image-20240815-181307.png)
+![](../../../../.gitbook/assets/image-20240815-181307.png)
 
 ## Settings
 

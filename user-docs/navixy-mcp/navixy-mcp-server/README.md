@@ -1,0 +1,2 @@
+# navixy-mcp-server
+

@@ -1,5 +1,7 @@
 ---
-description: Get notified when a specific device state field reaches an expected value, such as a door opening, DTC code appearing, or a driver key being recognized.
+description: >-
+  Get notified when a specific device state field reaches an expected value,
+  such as a door opening, DTC code appearing, or a driver key being recognized.
 ---
 
 # State field value
@@ -14,29 +16,29 @@ Users can generate event reports that summarize the occurrences of specific stat
 
 ## Settings
 
-![](../../../.gitbook/assets/image-20230707-073455.png)
+![](../../../../.gitbook/assets/image-20230707-073455.png)
 
 For a quick setup of the state change notification:
 
-- Choose the necessary state field and set an expected value for it. For example, state field = Trunk, expected value = Opened.
-- Don't enable the **Allow repeat** option and leave the **Repeat delay** field empty. In this case, you are notified only if the value changes.
+* Choose the necessary state field and set an expected value for it. For example, state field = Trunk, expected value = Opened.
+* Don't enable the **Allow repeat** option and leave the **Repeat delay** field empty. In this case, you are notified only if the value changes.
 
 For a quick setup of the event change notification:
 
-- Choose the necessary state field and set an expected value for it. For instance, state field = event_code, expected value = 7 (over speed alarm for Howen Technologies devices). For each event code, a separate state field rule should be created. All expected values can be found on the device manufacturer's website or can be obtained directly from the manufacturer through a request to their support team.
-- Enable allow repeat to get notifications for the same values and set repeat delay (how often the same incoming values trigger the rule event notification). For example, if you want to receive speeding notifications for no more than every 30 minutes, set the repeat delay to 1800 seconds.
+* Choose the necessary state field and set an expected value for it. For instance, state field = event\_code, expected value = 7 (over speed alarm for Howen Technologies devices). For each event code, a separate state field rule should be created. All expected values can be found on the device manufacturer's website or can be obtained directly from the manufacturer through a request to their support team.
+* Enable allow repeat to get notifications for the same values and set repeat delay (how often the same incoming values trigger the rule event notification). For example, if you want to receive speeding notifications for no more than every 30 minutes, set the repeat delay to 1800 seconds.
 
 **State field:**
 
-Here the user specifies the field to be monitored. In our example it is Trunk. So, when the Trunk is Opened, as we define it in the expected value selector, the platform generates a notification event. The **Allow repeat** checkbox also affects behavior. See [Allow repeat](#allow-repeat) for details.
+Here the user specifies the field to be monitored. In our example it is Trunk. So, when the Trunk is Opened, as we define it in the expected value selector, the platform generates a notification event. The **Allow repeat** checkbox also affects behavior. See [Allow repeat](state-field-value.md#allow-repeat) for details.
 
 **Expected value:**
 
-Standard state fields (e.g. **Trunk**, **Door**, **Seat Belt**, etc) have intuitively expected value variants. It is usually **Opened/Closed** or **Locked/Unlocked**. However, if you want to receive a state field notification about some special event occurrences, the user should know what event code it would be sent from the device so that the platform knows what to expect in the event_code incoming field.
+Standard state fields (e.g. **Trunk**, **Door**, **Seat Belt**, etc) have intuitively expected value variants. It is usually **Opened/Closed** or **Locked/Unlocked**. However, if you want to receive a state field notification about some special event occurrences, the user should know what event code it would be sent from the device so that the platform knows what to expect in the event\_code incoming field.
 
 ![State field value](https://www.navixy.com/wp-content/uploads/2023/03/6-3.png)
 
-For instance, a hardware key has a custom value that the platform expects and notifies the user after the A1DD3FC3452904D value arrives in the hardware_key field.
+For instance, a hardware key has a custom value that the platform expects and notifies the user after the A1DD3FC3452904D value arrives in the hardware\_key field.
 
 **Allow repeat:**
 
@@ -44,20 +46,20 @@ If unselected, the event is repeatedly triggered only if there was another incom
 
 This is how the works if unselected:
 
-- 09:00 AM The last received key A1DD3FC3452904D
-- 09:15 AM The platform receives a data packet with the same hardware_key value (A1DD3FC3452904D). No notification is triggered
-- 09:20 AM A new hardware_key value arrived. Say, B99978233FDD1. No notification is generated because this value is not expected. But the internal switcher is ready now to yield notification when the A1DD3FC3452904D key arrives.
-- 09:30 AM The platform receives a data packet with the A1DD3FC3452904D hardware_key value. Notification is triggered now.
+* 09:00 AM The last received key A1DD3FC3452904D
+* 09:15 AM The platform receives a data packet with the same hardware\_key value (A1DD3FC3452904D). No notification is triggered
+* 09:20 AM A new hardware\_key value arrived. Say, B99978233FDD1. No notification is generated because this value is not expected. But the internal switcher is ready now to yield notification when the A1DD3FC3452904D key arrives.
+* 09:30 AM The platform receives a data packet with the A1DD3FC3452904D hardware\_key value. Notification is triggered now.
 
 In short, notifications will be generated only on change but if the expected value arrives after another value.
 
 If the option is selected, the scenario is:
 
-- 09:00 AM The last received key A1DD3FC3452904D
-- 09:15 AM The platform received a data packet with the same hardware_key value (A1DD3FC3452904D). Notification is triggered this time.
-- 09:25 AM The platform received a data packet with the same hardware_key value (A1DD3FC3452904D). Notification is triggered this time again.
-- 09:34 AM A new hardware_key value arrived. Say, B99978233FDD1. No notification is triggered, as the B99978233FDD1 key isn't the expected one.
-- 09:45 AM The platform received a data packet with the expected hardware_key value (A1DD3FC3452904D). Notification is triggered this time.
+* 09:00 AM The last received key A1DD3FC3452904D
+* 09:15 AM The platform received a data packet with the same hardware\_key value (A1DD3FC3452904D). Notification is triggered this time.
+* 09:25 AM The platform received a data packet with the same hardware\_key value (A1DD3FC3452904D). Notification is triggered this time again.
+* 09:34 AM A new hardware\_key value arrived. Say, B99978233FDD1. No notification is triggered, as the B99978233FDD1 key isn't the expected one.
+* 09:45 AM The platform received a data packet with the expected hardware\_key value (A1DD3FC3452904D). Notification is triggered this time.
 
 In short, if the expected value in the previously defined state field arrives on the platform, it generates the notification event.
 
@@ -77,20 +79,19 @@ Sets a custom reset timer in seconds for event notifications. For example, if yo
 
 **Working with virtual sensors:**
 
-The state field rule allows the selection of not only state fields but also virtual sensors.
-By selecting the appropriate virtual sensor and specifying the desired event from the virtual sensor table, users can receive notifications and include the event in reports. This allows businesses to customize and control the events they wish to be informed about, tailoring the monitoring system to their specific needs. This flexibility enhances the ability to track and manage critical or custom events, providing valuable insights and facilitating data-driven decision-making for various business operations. All the events from expected values are custom and can be created according to the users' needs. For further details regarding virtual sensors, see the [Virtual sensors](../../devices-and-settings/vehicle-sensors/virtual-sensors/) article.
+The state field rule allows the selection of not only state fields but also virtual sensors. By selecting the appropriate virtual sensor and specifying the desired event from the virtual sensor table, users can receive notifications and include the event in reports. This allows businesses to customize and control the events they wish to be informed about, tailoring the monitoring system to their specific needs. This flexibility enhances the ability to track and manage critical or custom events, providing valuable insights and facilitating data-driven decision-making for various business operations. All the events from expected values are custom and can be created according to the users' needs. For further details regarding virtual sensors, see the [Virtual sensors](../../devices-and-settings/vehicle-sensors/virtual-sensors/) article.
 
 {% columns %}
 {% column %}
-![](../../../.gitbook/assets/image-20230726-125407.png)
+![](../../../../.gitbook/assets/image-20230726-125407.png)
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20230726-125535.png)
+![](../../../../.gitbook/assets/image-20230726-125535.png)
 {% endcolumn %}
 {% endcolumns %}
 
-![](../../../.gitbook/assets/image-20230726-125722.png)
+![](../../../../.gitbook/assets/image-20230726-125722.png)
 
 ### Notifications
 
@@ -120,5 +121,5 @@ Set a schedule for when the rule runs. If your schedule indicates that the event
 
 ### Navixy platform specifics
 
-- The **State field** alert has a 5-minute reset timer, meaning the alert event doesn't occur more often than once every 5 minutes. If this type of event occurs in time the rule has been waiting for the reset, this event is omitted by the platform, including the reports.
-- The rule supports only one device per rule. This is due to the fact that multiple different sources of state fields can't be cross-referenced with multiple GPS devices.
+* The **State field** alert has a 5-minute reset timer, meaning the alert event doesn't occur more often than once every 5 minutes. If this type of event occurs in time the rule has been waiting for the reset, this event is omitted by the platform, including the reports.
+* The rule supports only one device per rule. This is due to the fact that multiple different sources of state fields can't be cross-referenced with multiple GPS devices.

@@ -1,14 +1,16 @@
 ---
-description: "Track fuel consumption with Fuel volume 2.0: automatic refueling detection, daily fuel data, and sensor quality indicators per vehicle."
+description: >-
+  Track fuel consumption with Fuel volume 2.0: automatic refueling detection,
+  daily fuel data, and sensor quality indicators per vehicle.
 ---
 
 # Fuel volume 2.0 report
 
 The **Fuel volume 2.0 report** tracks refueling events and fuel consumption over a selected period. Unlike the standard Fuel volume report, it has no configuration options. All data processing, smoothing, and event detection are handled automatically by Navixy's processing service, without any threshold settings to adjust.
 
-This report is a good starting point: there are no parameters to configure before building the report, and the graph is always processed and smoothed automatically. However, **Fuel volume 2.0** only detects refueling events and can't identify fuel drains or theft. If you need drain detection, use the standard [Fuel volume report](../../../guide/reports/specific-report-details/fuel-volume-report.md) instead.
+This report is a good starting point: there are no parameters to configure before building the report, and the graph is always processed and smoothed automatically. However, **Fuel volume 2.0** only detects refueling events and can't identify fuel drains or theft. If you need drain detection, use the standard [Fuel volume report](fuel-volume-report.md) instead.
 
-<figure><img src="../../../.gitbook/assets/image (48).png" alt="Fuel volume 2.0 report"><figcaption><p>Fuel volume 2.0 report</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48).png" alt="Fuel volume 2.0 report"><figcaption><p>Fuel volume 2.0 report</p></figcaption></figure>
 
 The **Fuel volume 2.0 report** is composed of several sections:
 

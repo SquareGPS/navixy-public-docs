@@ -1,5 +1,7 @@
 ---
-description: Recover access to your Navixy account by requesting a password reset link to your registered email address from the login page.
+description: >-
+  Recover access to your Navixy account by requesting a password reset link to
+  your registered email address from the login page.
 ---
 
 # Password recovery
@@ -13,7 +15,7 @@ If you've forgotten your password and need to recover it, follow these steps:
 
 {% include "https://app.gitbook.com/s/6dtcPLayxXVB2qaaiuIL/~/reusable/cXM93TrDUyPWrNkS4xqQ/" %}
 
-![](../../.gitbook/assets/image-20240718-181302.png)
+![](../../../.gitbook/assets/image-20240718-181302.png)
 
 ## FAQs and troubleshooting
 

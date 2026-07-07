@@ -1,5 +1,8 @@
 ---
-description: Manage GPS device configuration in Navixy through settings blocks for tracking, sensors, connectivity, driver safety, tachograph, and hardware controls.
+description: >-
+  Manage GPS device configuration in Navixy through settings blocks for
+  tracking, sensors, connectivity, driver safety, tachograph, and hardware
+  controls.
 ---
 
 # Devices and settings
@@ -8,7 +11,7 @@ description: Manage GPS device configuration in Navixy through settings blocks f
 
 This section is for **fleet managers and administrators** who set up how devices report, what their sensors mean, when alerts fire, and how data flows to other systems. Use the cards below to jump to the group that matches your task.
 
-{% include "../../.gitbook/includes/device-limit-hint.md" %}
+{% include "../../.gitbook/includes/device-limit-hint (1).md" %}
 
 ## How settings blocks work
 

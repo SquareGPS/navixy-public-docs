@@ -1,5 +1,7 @@
 ---
-description: Control the offline timeout for each device so power-saving and low-frequency trackers stay accurately shown as connected in Navixy.
+description: >-
+  Control the offline timeout for each device so power-saving and low-frequency
+  trackers stay accurately shown as connected in Navixy.
 ---
 
 # Connection state
@@ -10,7 +12,7 @@ Sets how long a device may be silent before it's marked offline, so infrequently
 You can monitor the [Connection state](../../tracking/objects-list/connection-state.md) of your devices in the [Objects list](../../tracking/objects-list/) in the Tracking module and the **X-GPS Monitor** mobile app. It's shown as a color-coded circle in each device's widget.
 {% endhint %}
 
-![](../../../.gitbook/assets/image-20240815-034950.png)
+![](../../../../.gitbook/assets/image-20240815-034950.png)
 
 ## Settings
 

@@ -1,5 +1,7 @@
 ---
-description: X-GPS Tracker turns a smartphone or tablet into a GPS tracking device. Install the app, accept an invitation, and start transmitting location to Navixy.
+description: >-
+  X-GPS Tracker turns a smartphone or tablet into a GPS tracking device. Install
+  the app, accept an invitation, and start transmitting location to Navixy.
 ---
 
 # X-GPS Tracker
@@ -10,7 +12,7 @@ description: X-GPS Tracker turns a smartphone or tablet into a GPS tracking devi
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-162123.png)
+![](../../../../.gitbook/assets/image-20250304-162123.png)
 
 <p align="center"><strong>Download Links</strong></p>
 

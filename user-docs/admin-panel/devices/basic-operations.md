@@ -1,5 +1,7 @@
 ---
-description: View tracker status and run core actions like edit/assign, clone, activation, plan changes, and Air Console
+description: >-
+  View tracker status and run core actions like edit/assign, clone, activation,
+  plan changes, and Air Console
 ---
 
 # Tracker details and operations
@@ -15,7 +17,7 @@ You also see the following operations below:
 * **Tracker settings**: Opens the **Tracker settings** window for the tracker that shows its information. Only available to activated and non-suspended trackers.\
   This information can also be viewed in the **Devices and settings** module of the Navixy platform. To learn more, see [Devices and settings](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings).
 
-<figure><img src="../.gitbook/assets/{9B1DA52F-55E2-47FC-B79E-234D63D0C19A}.png" alt="" width="291"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/{9B1DA52F-55E2-47FC-B79E-234D63D0C19A}.png" alt="" width="291"><figcaption></figcaption></figure>
 
 * **Create clone:** Creates a [tracker clone](tracker-clones.md). Only available to trackers that aren't clones.
 * **Remove clone**: Deletes a [tracker clone](tracker-clones.md). Only available to trackers that are clones.

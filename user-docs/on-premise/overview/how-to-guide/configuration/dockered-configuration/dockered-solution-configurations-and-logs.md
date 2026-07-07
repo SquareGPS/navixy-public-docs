@@ -1,5 +1,7 @@
 ---
-description: "Locate configuration files and logs for Dockered Navixy services: API-server, SMS-server, and TCP-server. Access container files via the WORKDIR path."
+description: >-
+  Locate configuration files and logs for Dockered Navixy services: API-server,
+  SMS-server, and TCP-server. Access container files via the WORKDIR path.
 ---
 
 # Dockered solution configurations and logs
@@ -31,7 +33,7 @@ Inside of each of these three directories you will find these subdirectories:
 * `./conf` - configuration files of the service.
 * `./log` - log files of the service.
 
-![](../../../../.gitbook/assets/image-20230906-122950.png)
+![](../../../../../.gitbook/assets/image-20230906-122950.png)
 
 ## Frontend
 

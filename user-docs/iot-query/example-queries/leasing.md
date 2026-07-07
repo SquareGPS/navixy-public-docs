@@ -1,5 +1,8 @@
 ---
-description: SQL query templates for banking and leasing analytics, covering asset lifecycle, contract compliance, maintenance scheduling, and usage limit tracking
+description: >-
+  SQL query templates for banking and leasing analytics, covering asset
+  lifecycle, contract compliance, maintenance scheduling, and usage limit
+  tracking
 ---
 
 # Leasing
@@ -30,7 +33,7 @@ While the SQL recipes below provide complete control over leasing analytics, you
 
 The template addresses key leasing workflows: registration and insurance expiry tracking, driver license monitoring, harsh braking and acceleration detection with severity classifications, idle time analysis, and device activity monitoring.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 Import the configuration into [Dashboard Studio](https://marketplace.navixy.com/shop/dashboard-studio/), adjust thresholds for your contracts (mileage caps, behavior severity levels, idle detection parameters), and deploy a complete monitoring workspace. This works well when teams need operational dashboards for day-to-day compliance and risk oversight without writing SQL.
 
@@ -53,7 +56,7 @@ After importing the template, adapt it to your specific leasing contracts and op
 
 **Template JSON:**
 
-{% file src="../.gitbook/assets/Leasing Dashboard-schema.json" %}
+{% file src="../../.gitbook/assets/Leasing Dashboard-schema.json" %}
 
 {% code lineNumbers="true" expandable="true" %}
 ```json

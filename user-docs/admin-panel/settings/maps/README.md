@@ -1,19 +1,21 @@
 ---
-description: Choose which maps users can access, set the default map view, and configure GIS providers, including Google Maps
+description: >-
+  Choose which maps users can access, set the default map view, and configure
+  GIS providers, including Google Maps
 ---
 
 # Map preferences
 
 This page describes the **Maps preferences** page of Admin panel settings. It consists of two parts: [Available maps](./#how-to-select-maps) and [Map default settings](./#default-map-view).
 
-<figure><img src="../../.gitbook/assets/image (38).png" alt="Map preferences page"><figcaption><p>Map preferences page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38).png" alt="Map preferences page"><figcaption><p>Map preferences page</p></figcaption></figure>
 
 ## Cartography in Navixy
 
 To make GPS data easy to understand, the Navixy GPS-tracking platform uses digital maps and Geographic Information Services (GIS).
 
-- **Maps** enable users to identify their current location, view the location of events recorded in reports (such as fuel filling or draining), and see where specific events occurred (like pressing the SOS button).
-- **GIS** provides additional information such as the exact address of a current location, estimated time and length for building routes, taking into account streets and traffic, and street view in any selected area. It is an essential feature for efficient fleet management and helps businesses make informed decisions.
+* **Maps** enable users to identify their current location, view the location of events recorded in reports (such as fuel filling or draining), and see where specific events occurred (like pressing the SOS button).
+* **GIS** provides additional information such as the exact address of a current location, estimated time and length for building routes, taking into account streets and traffic, and street view in any selected area. It is an essential feature for efficient fleet management and helps businesses make informed decisions.
 
 ## Making maps available to your users
 
@@ -33,11 +35,11 @@ Note that the map position stays where the user last left it. The default settin
 
 With Navixy, you are free to choose from a variety of licensed maps and GIS services, including Geocoding, Street View, Directions, Distance Matrix, and more. Your preferences may vary depending on your region and local demand. Here are just a few of the popular available options:
 
-- Google Maps
-- OpenStreetMaps
-- Bing Maps
-- Mapbox
-- Yandex Maps
+* Google Maps
+* OpenStreetMaps
+* Bing Maps
+* Mapbox
+* Yandex Maps
 
 ### Adding Google Maps to your service
 
@@ -54,8 +56,8 @@ To activate and upgrade to the Navixy Premium GIS Package, contact the Navixy cu
 
 If you prefer using the license purchased from Google, you can integrate Google Maps and its API with Navixy. Just provide the Navixy team with the necessary information, and they'll take care of the rest. To learn how to create a key, see [Set up the Geocoding API](https://developers.google.com/maps/documentation/geocoding/get-api-key) page on Google's website. Once you've created the key, send it to Navixy's technical support team along with your domain name information. For security purposes, Navixy recommends creating two Google API keys and restricting them as follows:
 
-- Google API key #1: Restrict it to the following APIs: Google Maps JavaScript API and Google Street View Image API.
-- Google API key #2: Restrict it to the following APIs: Google Maps Geocoding API, Google Maps Geolocation API, and Google Maps Directions API.
+* Google API key #1: Restrict it to the following APIs: Google Maps JavaScript API and Google Street View Image API.
+* Google API key #2: Restrict it to the following APIs: Google Maps Geocoding API, Google Maps Geolocation API, and Google Maps Directions API.
 
 Note that if you change your domain name, you need to create new keys and provide the Navixy team with the updated information. This ensures that your maps and API continue to function properly with Navixy.
 

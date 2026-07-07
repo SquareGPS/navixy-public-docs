@@ -1,5 +1,7 @@
 ---
-description: "Overview of X-GPS Tracker's five main sections: Map, Statuses, Chat, Tasks, and Settings. Learn how each section supports field employee productivity."
+description: >-
+  Overview of X-GPS Tracker's five main sections: Map, Statuses, Chat, Tasks,
+  and Settings. Learn how each section supports field employee productivity.
 ---
 
 # Main features
@@ -14,7 +16,7 @@ The X-GPS Tracker mobile app interface contains five main sections:
 
 This guide covers the first three of them.
 
-![](../../../.gitbook/assets/image-20250304-162547.png)
+![](../../../../.gitbook/assets/image-20250304-162547.png)
 
 ## Map
 
@@ -29,7 +31,7 @@ The **Map** section contains the following options:
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-162733.png)
+![](../../../../.gitbook/assets/image-20250304-162733.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -45,7 +47,7 @@ To change the status, simply tap it with your finger.
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-163308.png)
+![](../../../../.gitbook/assets/image-20250304-163308.png)
 {% endcolumn %}
 {% endcolumns %}
 
@@ -57,6 +59,6 @@ In the **Chat** section, an employee can send and receive messages from the supe
 {% endcolumn %}
 
 {% column %}
-![](../../../.gitbook/assets/image-20250304-163401.png)
+![](../../../../.gitbook/assets/image-20250304-163401.png)
 {% endcolumn %}
 {% endcolumns %}

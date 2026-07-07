@@ -1,5 +1,8 @@
 ---
-description: Share real-time tracking links with customers or partners using Geo links. Configure access duration, visible objects, and privacy settings for each link.
+description: >-
+  Share real-time tracking links with customers or partners using Geo links.
+  Configure access duration, visible objects, and privacy settings for each
+  link.
 ---
 
 # Geo links
@@ -14,12 +17,12 @@ A geo link can be associated with multiple objects, which are displayed on the m
 Here is an example of a generated geo link URL: `https://tracking.example/ls/#ecdd8c083d52a396ecdd8c083d52a396`
 {% endhint %}
 
-![List of geo links](../../.gitbook/assets/{EB395344-78FF-4FD6-857B-72B0F0F621D3}-20250728-083324.png)
+![List of geo links](../../../.gitbook/assets/{EB395344-78FF-4FD6-857B-72B0F0F621D3}-20250728-083324.png)
 
 ## Working with geo links
 
 The following sections provide step-by-step guides to the actions you can perform with geo links on the Navixy platform. Explore their functionality in detail and find your way to use them.
 
-- [Creating geo links](creating-geo-links.md)
-- [Updating and sharing geo links](updating-and-sharing-geo-links.md)
-- [Embedding geo links](embedding-geo-links.md)
+* [Creating geo links](creating-geo-links.md)
+* [Updating and sharing geo links](updating-and-sharing-geo-links.md)
+* [Embedding geo links](embedding-geo-links.md)

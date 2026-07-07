@@ -1,5 +1,7 @@
 ---
-description: Create and assign tags to Places, Employees, Vehicles, and Tasks in Navixy for fast search and filtering across the platform.
+description: >-
+  Create and assign tags to Places, Employees, Vehicles, and Tasks in Navixy for
+  fast search and filtering across the platform.
 ---
 
 # Tags
@@ -27,7 +29,7 @@ You can create an unlimited number of tags to suit your organizational needs. Ho
 
 To create or assign a tag to an object, type the tag label in the **Tags** field. If tags with similar starting inputs already exist, they appear in a dropdown list from which you can select.
 
-![](../../.gitbook/assets/image-20240718-170948.png)
+![](../../../.gitbook/assets/image-20240718-170948.png)
 
 ### Method 2. In the Tags Directory
 

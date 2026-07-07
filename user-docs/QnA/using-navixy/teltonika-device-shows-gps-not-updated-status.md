@@ -1,6 +1,8 @@
-﻿---
+---
 title: Teltonika device shows "GPS not updated" status
-description: "Device operates in static navigation mode; review the relevant parameters and voltage thresholds to resume GPS position updates"
+description: >-
+  Device operates in static navigation mode; review the relevant parameters and
+  voltage thresholds to resume GPS position updates
 ---
 
 # Teltonika device shows "GPS not updated" status
@@ -9,7 +11,7 @@ description: "Device operates in static navigation mode; review the relevant par
 
 Why is my Teltonika device showing "GPS not updated" and 0 satellites in last messages in the Air Console, even though it has GSM coverage?
 
-![](<../.gitbook/assets/Unknown image (1)>)
+![](<../../.gitbook/assets/Unknown image (1)>)
 
 ## Answer
 
@@ -49,12 +51,12 @@ Here's how to diagnose the issue:
    * Parameter 105 shows the minimum voltage (currently 13000mV or 13V)
    * Parameter 104 shows the maximum voltage (currently 30000mV or 30V)
 4. Review your device's voltage history:
-   * Check when the last valid GPS position was received in the location widget.
+   *   Check when the last valid GPS position was received in the location widget.
 
-        ![](<../.gitbook/assets/Unknown image (2)>)
-   * Look at the board voltage sensor measurements within the measuring sensors report.
+       ![](<../../.gitbook/assets/Unknown image (2)>)
+   *   Look at the board voltage sensor measurements within the measuring sensors report.
 
-        ![](<../.gitbook/assets/Unknown image (3)>)
+       ![](<../../.gitbook/assets/Unknown image (3)>)
    * Compare the timestamps of the last GPS update with the last time voltage was above the minimum threshold.
 
 Current situation: The device is in static navigation mode because the power voltage is below 13V. The device interprets this as the vehicle being off, so it stops updating GPS positions. The last GPS update was at 10:39 PM, which matches the last time the voltage was above 13V.

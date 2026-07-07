@@ -1,5 +1,7 @@
 ---
-description: Set up a video telematics test lab using a projector, windshield mount, lighting controls, and steering wheel rig to evaluate dashcam performance.
+description: >-
+  Set up a video telematics test lab using a projector, windshield mount,
+  lighting controls, and steering wheel rig to evaluate dashcam performance.
 ---
 
 # Building a video telematics test lab: key components and considerations
@@ -8,22 +10,22 @@ When setting up a test lab specifically focused on video telematics, it's import
 
 With that in mind, here's a proposal for a simple yet effective lab setup, along with the core components you'll want to include:
 
-- Image projector\
+* Image projector\
   Essential for projecting routes, driving footage, or even gaming consoles. The projector simulates motion by displaying road scenarios, whether from YouTube videos or driving simulators, so that the camera "sees" it as a real trip.
-- Windshield\
+* Windshield\
   A must-have for realism. Since almost all telematics cameras work through a windshield, adding one allows you to test how reflections, glare, and transparency affect video quality.
-- Table\
+* Table\
   More than just a surface. It's the foundation for holding the windshield, DMS devices, steering wheel, and other components in a stable, reproducible setup.
-- Cameras\
+* Cameras\
   A mounting rig above the windshield ensures any test camera stays fixed in place without swinging or vibrating. Pro tip: don't stick cameras directly to the windshield. Use mounts instead for consistency for easy swapping.
-- Chair with seatbelt\
+* Chair with seatbelt\
   Not just any chair. Outfitted with a seatbelt, this lets you simulate safety events related to seatbelt detection and driver monitoring.
-- Steering wheel\
+* Steering wheel\
   Ideally connected to a gaming console, it allows for realistic driving actions, recreating driver movements and interactions during tests.
-- Dimmer / lighting control\
-  Light management is critical. With a dimmer, you can darken or brighten the room to replicate day, night, or transitional lighting conditions. This is invaluable for checking how cameras react to sudden light changes.\
+*   Dimmer / lighting control\
+    Light management is critical. With a dimmer, you can darken or brighten the room to replicate day, night, or transitional lighting conditions. This is invaluable for checking how cameras react to sudden light changes.\\
 
-    <figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 11-05-19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 11-05-19.png" alt=""><figcaption></figcaption></figure>
 
 ## Why it matters
 

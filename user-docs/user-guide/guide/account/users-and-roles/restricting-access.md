@@ -1,5 +1,7 @@
 ---
-description: Control which GPS devices, geofences, places, and notification rules each user can see in Navixy. Protects sensitive data across different teams.
+description: >-
+  Control which GPS devices, geofences, places, and notification rules each user
+  can see in Navixy. Protects sensitive data across different teams.
 ---
 
 # Restricting access
@@ -16,7 +18,7 @@ This document outlines how GPS devices and information created by users are secu
 
 When a user adds a GPS device, it is effectively created under the owner’s account, so even after the user is deleted, the GPS device remains in the organization’s account. The owner can specify which users can view GPS device data, such as trips or sensor data, ensuring that only authorized individuals can view and manage the device.
 
-![](../../../.gitbook/assets/image-20240718-040427.png)
+![](../../../../.gitbook/assets/image-20240718-040427.png)
 
 ## Associated artifacts
 

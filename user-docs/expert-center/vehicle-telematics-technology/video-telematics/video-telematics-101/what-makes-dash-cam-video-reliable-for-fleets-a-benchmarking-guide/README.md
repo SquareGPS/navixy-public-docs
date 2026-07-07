@@ -1,12 +1,14 @@
 ---
-description: Evaluate dashcam reliability by benchmarking driver monitoring sensitivity, HDR performance, and low-light handling under real fleet conditions.
+description: >-
+  Evaluate dashcam reliability by benchmarking driver monitoring sensitivity,
+  HDR performance, and low-light handling under real fleet conditions.
 ---
 
 # What makes dash cam video reliable for fleets? A benchmarking guide
 
 In the world of fleet management and video telematics, not all cameras are created equal. Technical specs like "1080p" or "4K" may look impressive on paper, but what really matters is how those features perform in the field, on busy highways, in dimly lit warehouses, or during sudden light changes. For fleet operators, clarity and reliability can mean the difference between having actionable evidence or blurry footage that raises more questions than answers.
 
-Every fleet manager wants their vehicles to arrive safely at their destination. In the event of an incident, it is critical to report, document, and identify the root causes so that insurance claims can be processed accurately and on time. However, false alerts can create serious problems: they may lead to misinterpretation of events, compromise the safety of the vehicle, put the driver at risk, or even damage the reputation of the logistics company.&#x20;
+Every fleet manager wants their vehicles to arrive safely at their destination. In the event of an incident, it is critical to report, document, and identify the root causes so that insurance claims can be processed accurately and on time. However, false alerts can create serious problems: they may lead to misinterpretation of events, compromise the safety of the vehicle, put the driver at risk, or even damage the reputation of the logistics company.
 
 Unfortunately, there is currently no industry benchmark for evaluating how accurate a camera is in different real-world scenarios. Without standardized field-testing, trust in hardware can be compromised, not because of its true capabilities, but due to inconsistent or unverified performance. It is essential to begin by identifying the needs and concerns that fleet managers have regarding the use of video telematics devices.
 
@@ -35,26 +37,26 @@ By adjusting the sensitivity settings of the camera, tables were created to show
 
 **High sensitivity**
 
-| Yawning          | ✅  | ✅          | ✅          | <p><br></p> |
-| ---------------- | --- | ----------- | ----------- | ----------- |
-| Eyes Close       | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
-| Mobile Call      | ✅  | ✅          | ✅          | <p><br></p> |
-| Distraction      | ✅  | ✅          | ✅          | <p><br></p> |
-| Smoking          | ✅  | ✅          | ✅          | <p><br></p> |
-| Driver Detection | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Camera Cover     | ✅  | ✅          | ✅          | ✅          |
+| Yawning          | ✅ | ✅           | ✅           | <p><br></p> |
+| ---------------- | - | ----------- | ----------- | ----------- |
+| Eyes Close       | ✅ | <p><br></p> | <p><br></p> | <p><br></p> |
+| Mobile Call      | ✅ | ✅           | ✅           | <p><br></p> |
+| Distraction      | ✅ | ✅           | ✅           | <p><br></p> |
+| Smoking          | ✅ | ✅           | ✅           | <p><br></p> |
+| Driver Detection | ✅ | ✅           | <p><br></p> | <p><br></p> |
+| Camera Cover     | ✅ | ✅           | ✅           | ✅           |
 
 **Medium sensitivity**
 
 | Event trigger / Distance (meters) | 0.6 | 1           | 1.6         | 2           |
 | --------------------------------- | --- | ----------- | ----------- | ----------- |
-| Yawning                           | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Eyes Close                        | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
-| Mobile Call                       | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Distraction                       | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Smoking                           | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Driver Detection                  | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Camera Cover                      | ✅  | ✅          | <p><br></p> | <p><br></p> |
+| Yawning                           | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Eyes Close                        | ✅   | <p><br></p> | <p><br></p> | <p><br></p> |
+| Mobile Call                       | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Distraction                       | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Smoking                           | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Driver Detection                  | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Camera Cover                      | ✅   | ✅           | <p><br></p> | <p><br></p> |
 
 <br>
 
@@ -62,21 +64,21 @@ By adjusting the sensitivity settings of the camera, tables were created to show
 
 | Event trigger / Distance (meters) | 0.6 | 1           | 1.6         | 2           |
 | --------------------------------- | --- | ----------- | ----------- | ----------- |
-| Yawning                           | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
-| Eyes Close                        | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
-| Mobile Call                       | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Distraction                       | ✅  | ✅          | <p><br></p> | <p><br></p> |
-| Smoking                           | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
-| Driver Detection                  | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
-| Camera Cover                      | ✅  | <p><br></p> | <p><br></p> | <p><br></p> |
+| Yawning                           | ✅   | <p><br></p> | <p><br></p> | <p><br></p> |
+| Eyes Close                        | ✅   | <p><br></p> | <p><br></p> | <p><br></p> |
+| Mobile Call                       | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Distraction                       | ✅   | ✅           | <p><br></p> | <p><br></p> |
+| Smoking                           | ✅   | <p><br></p> | <p><br></p> | <p><br></p> |
+| Driver Detection                  | ✅   | <p><br></p> | <p><br></p> | <p><br></p> |
+| Camera Cover                      | ✅   | <p><br></p> | <p><br></p> | <p><br></p> |
 
-<figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 10-25-25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 10-25-25.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 10-25-38.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 10-25-38.png" alt=""><figcaption></figcaption></figure>
 
 The results clearly show that camera sensitivity directly influences detection performance. At high sensitivity, cameras capture a wider range of events and distances (0.6 m to 2.0 m), but this may also introduce more false positives. In contrast, medium and low sensitivity settings narrow the detection range (down to just 0.6 m to 1.0 m), reducing noise but risking missed events.
 
-For fleet managers, this trade-off is critical. False alerts can overwhelm drivers and operations teams, leading to unnecessary interventions. On the other hand, missed alerts compromise safety, risk driver accountability, and may even affect insurance claims if incidents go undocumented. But we can make sure this camera will respond successfully even though the sensitivity is low and the camera stands no further than half meter.&#x20;
+For fleet managers, this trade-off is critical. False alerts can overwhelm drivers and operations teams, leading to unnecessary interventions. On the other hand, missed alerts compromise safety, risk driver accountability, and may even affect insurance claims if incidents go undocumented. But we can make sure this camera will respond successfully even though the sensitivity is low and the camera stands no further than half meter.
 
 ## Benchmarking HDR: measuring camera performance in brightness extremes
 
@@ -84,19 +86,19 @@ High Dynamic Range (HDR) technology is essential for cameras to adapt to both ex
 
 From a benchmarking perspective, HDR can be evaluated through measurable factors such as:
 
-- Dynamic range (dB or stops); the ratio between the brightest and darkest areas the camera can capture without losing detail.
-- Low-light performance (lux thresholds); the minimum light level at which a face or plate remains identifiable.
-- Video consistency across conditions; comparing frame quality in high contrast scenarios (e.g., tunnels, sunset glare, headlights at night).
+* Dynamic range (dB or stops); the ratio between the brightest and darkest areas the camera can capture without losing detail.
+* Low-light performance (lux thresholds); the minimum light level at which a face or plate remains identifiable.
+* Video consistency across conditions; comparing frame quality in high contrast scenarios (e.g., tunnels, sunset glare, headlights at night).
 
 By incorporating these benchmarks, fleet managers can differentiate between cameras that truly deliver reliable evidence and those that may fail in critical scenarios. Ultimately, this means greater trust in incident reports, stronger insurance claims, and safer fleet operations.
 
 Let's look at an example from two cameras in the laboratory and compare how they respond to a flashlight.<br>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 10-53-57.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 10-53-57.png" alt=""><figcaption></figcaption></figure>
 
 **Camera 1:** The light source is still intense, but surrounding details (hand, ceiling, face outline) remain more visible, indicating better HDR response and lower lux tolerance.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 10-53-21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 10-53-21.png" alt=""><figcaption></figcaption></figure>
 
 **Camera 2:** The bright light causes strong overexposure, washing out much of the surrounding detail (poor HDR handling).
 
@@ -109,11 +111,11 @@ Let's look at an example from two cameras in the laboratory and compare how they
 
 Camera 2 clearly struggles to execute the necessary contrast adjustments during image processing. However, additional field-testing could determine whether its image sharpness improves under different conditions.<br>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 10-54-30.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 10-54-30.png" alt=""><figcaption></figcaption></figure>
 
 The vehicle was in transit at 8:46 AM on a cloudy day.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot at Sep 12 10-54-40.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot at Sep 12 10-54-40.png" alt=""><figcaption></figcaption></figure>
 
 The vehicle was in transit at 8:11 AM on a bright day.
 
@@ -122,20 +124,20 @@ Both events, triggered at the same location on different days, were flagged as h
 
 ### When details matter: benchmarking dash cams in the harshest light shifts
 
-When fleet vehicles travel through tunnels, cameras face one of the toughest tests of video reliability. The sudden shift from bright daylight to near darkness, and back to intense sunlight, pushes HDR (High Dynamic Range) and light response to the limit. If a camera fails here, critical details like road signs, license plates, or surrounding vehicles can be lost, making footage unreliable for coaching, safety, or insurance claims. Camera 2 shows this response from the change light crossing in a tunnel.&#x20;
+When fleet vehicles travel through tunnels, cameras face one of the toughest tests of video reliability. The sudden shift from bright daylight to near darkness, and back to intense sunlight, pushes HDR (High Dynamic Range) and light response to the limit. If a camera fails here, critical details like road signs, license plates, or surrounding vehicles can be lost, making footage unreliable for coaching, safety, or insurance claims. Camera 2 shows this response from the change light crossing in a tunnel.
 
 <br>
 
-<figure><img src="../../../../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
 
 ### What this means
 
 In a 14-second tunnel crossing, we tracked brightness across frames:
 
-- Minimum brightness (inside tunnel): \~58
-- Maximum brightness (exit glare): \~103
-- Mean brightness: \~89
-- Standard deviation: \~15.3<br>
+* Minimum brightness (inside tunnel): \~58
+* Maximum brightness (exit glare): \~103
+* Mean brightness: \~89
+* Standard deviation: \~15.3<br>
 
 This fluctuation shows that while the camera adapts, transitions are not perfectly smooth. Some detail is sacrificed at both ends of the brightness range.
 

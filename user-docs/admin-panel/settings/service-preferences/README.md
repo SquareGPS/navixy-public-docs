@@ -1,12 +1,14 @@
 ---
-description: Configure core service UI settings like domain/URLs, language/currency, login page, demo account, activation, and support links
+description: >-
+  Configure core service UI settings like domain/URLs, language/currency, login
+  page, demo account, activation, and support links
 ---
 
 # Service preferences
 
 This page allows you to configure your main UI settings. Access it via **Settings** → **Service preferences.**
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt="Service preferences page"><figcaption><p>Service preferences page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt="Service preferences page"><figcaption><p>Service preferences page</p></figcaption></figure>
 
 The page consists of the following sections:
 

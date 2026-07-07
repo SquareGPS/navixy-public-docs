@@ -1,5 +1,7 @@
 ---
-description: "Reference for the CSV raw data file structure exported from Navixy: parameter types, event IDs, and how to interpret GPS, sensor, and state fields."
+description: >-
+  Reference for the CSV raw data file structure exported from Navixy: parameter
+  types, event IDs, and how to interpret GPS, sensor, and state fields.
 ---
 
 # Columns in CSV file
@@ -7,7 +9,7 @@ description: "Reference for the CSV raw data file structure exported from Navixy
 The data warehouse tool enables you to export a raw data file containing all packets received from your device, without any filtering or calculations made on the platform side. These parameters represent information initially decoded from your device's packet in protocol related format, presented in a human-readable way. You don’t need to know the protocol to read and check the information in these packets.
 
 {% hint style="info" %}
-To learn how to download this information, you see [Save IoT data to CSV file](./README.md). Here, we aim to explore further how to read this file and interpret various columns within it.
+To learn how to download this information, you see [Save IoT data to CSV file](./). Here, we aim to explore further how to read this file and interpret various columns within it.
 {% endhint %}
 
 ## Opening a file
@@ -25,7 +27,7 @@ You can open the raw data file with any text editor, such as WordPad, Notepad++,
 
 The file includes selected parameters in columns, along with one consistent entry, msg\_time.
 
-![](../../../.gitbook/assets/image-20240209-073506.png)
+![](../../../../.gitbook/assets/image-20240209-073506.png)
 
 These parameters can be categorized as simple or complex.
 

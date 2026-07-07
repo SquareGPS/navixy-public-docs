@@ -1,6 +1,8 @@
 ---
 title: Green "We'll be back soon" page
-description: API server is inoperable or domain configuration mismatch. Check service status or validate domain settings in Admin Panel and Nginx
+description: >-
+  API server is inoperable or domain configuration mismatch. Check service
+  status or validate domain settings in Admin Panel and Nginx
 ---
 
 # Green "We'll be back soon" page
@@ -9,7 +11,7 @@ description: API server is inoperable or domain configuration mismatch. Check se
 
 What does the green "We'll be back soon" maintenance page mean?
 
-![](<../.gitbook/assets/Unknown image (57)>)
+![](<../../.gitbook/assets/Unknown image (57)>)
 
 ## Answer
 

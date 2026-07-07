@@ -1,5 +1,8 @@
 ---
-description: Process telematics data without coding in IoT Logic. Receive data from GPS trackers, apply transformations, and route results to Navixy or external systems.
+description: >-
+  Process telematics data without coding in IoT Logic. Receive data from GPS
+  trackers, apply transformations, and route results to Navixy or external
+  systems.
 ---
 
 # IoT Logic
@@ -10,7 +13,7 @@ It can work with GPS devices, dash cams, IoT sensors, or third-party telematics 
 
 Inside the flow, you can transform and route data based on real-time conditions, trigger automated actions on devices, and deliver results to the Navixy platform, third-party systems, or both. Continuous data streams, targeted event-driven notifications, and parallel outputs to multiple destinations are all supported within a single flow.
 
-![](../../../.gitbook/assets/IoT_Logic_schema.jpg)
+![](../../../../.gitbook/assets/IoT_Logic_schema.jpg)
 
 {% hint style="info" %}
 **Navigation**

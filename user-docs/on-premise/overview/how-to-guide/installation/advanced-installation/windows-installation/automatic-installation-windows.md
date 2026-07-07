@@ -1,5 +1,8 @@
 ---
-description: Install Navixy on-premise on Windows Server using the NavixyInstaller PowerShell script. Configure domain and SSL options in a single or two-server deployment.
+description: >-
+  Install Navixy on-premise on Windows Server using the NavixyInstaller
+  PowerShell script. Configure domain and SSL options in a single or two-server
+  deployment.
 ---
 
 # Automatic installation - Windows
@@ -57,11 +60,11 @@ Unpack the newly downloaded archive and navigate to the folder named `\navixy-pa
 
 Proceed to `\navixy-package\windows` folder and run the `NavixyInstaller.ps1` script with Powershell:
 
-![Run with Posershell](<../../../../../.gitbook/assets/image-20250527-122145 (1).png>)
+![Run with Posershell](<../../../../../../.gitbook/assets/image-20250527-122145 (1).png>)
 
 This will initiate the installation process, and you will see the installation type selection menu:
 
-![Installer Menu](<../../../../../.gitbook/assets/image-20250527-122250 (1).png>)
+![Installer Menu](<../../../../../../.gitbook/assets/image-20250527-122250 (1).png>)
 
 You can choose to install all components on a single server or deploy database and application on dedicated servers.
 
@@ -85,7 +88,7 @@ The script will ask for the following values:
 * **SSL configuration** - `y` for HTTPS, `n` for HTTP.
 * **SSL certificate paths** - full paths to certificates (in `crt` format) and private keys (in `key` format) for each of the specified domains. The certificate and private key files must be located in any folder on the server.
 
-![Windows - AiO](<../../../../../.gitbook/assets/image-20250527-125239 (1).png>)
+![Windows - AiO](<../../../../../../.gitbook/assets/image-20250527-125239 (1).png>)
 
 After specifying the required parameters, the script will install the platform and all the necessary software. Here you will need to wait for some time. Here are the automatic actions you will see in the Powershell interface:
 
@@ -114,7 +117,7 @@ The script will ask for the following values:
 * **License key** - enter the combination of characters received from Navixy Technical Support. If you do not have a license key, terminate the installation and contact your Account Manager or Technical Support.
 * **Database password** - this password will be assigned to the database user `navixy` and will be used by backend services to access the database. **Save this password!**
 
-![Windows - DB server](<../../../../../.gitbook/assets/image-20250528-124600 (1).png>)
+![Windows - DB server](<../../../../../../.gitbook/assets/image-20250528-124600 (1).png>)
 
 After specifying the required parameters, the script will install MySQL, import the database structure and populate it with default values. Wait for some time until the script finishes its operation.
 
@@ -140,7 +143,7 @@ The script will ask for the following values:
 * **SSL configuration** - `y` for HTTPS, `n` for HTTP.
 * **SSL certificate paths** - full paths to certificates (in `crt` format) and private keys (in `key` format) for each of the specified domains. The certificate and private key files must be located in any folder on the server.
 
-![Windows - App server](<../../../../../.gitbook/assets/image-20250528-135513 (1).png>)
+![Windows - App server](<../../../../../../.gitbook/assets/image-20250528-135513 (1).png>)
 
 After the required parameters are specified, the script will install the platform and all the necessary software. Wait for some time until the script installs JDK and Nginx and then configures the application. If the script encounters any errors, it will notify you.
 
@@ -156,7 +159,7 @@ After the script completes the application deployment, the Windows Services wind
 
 All three should be active (running), like in the screenshot below:
 
-![Windows services](<../../../../../.gitbook/assets/image-20250528-104137 (1).png>)
+![Windows services](<../../../../../../.gitbook/assets/image-20250528-104137 (1).png>)
 
 {% hint style="info" %}
 If `Navixy tcp-server` shuts down, this is most commonly an indication of an incorrect license key. Contact Navixy technical support for further instructions.

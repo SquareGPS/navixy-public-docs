@@ -1,5 +1,8 @@
 ---
-description: Manually install Navixy on-premise on Windows Server. Configure MySQL, environment variables, Nginx frontend, and Java backend services as Windows services.
+description: >-
+  Manually install Navixy on-premise on Windows Server. Configure MySQL,
+  environment variables, Nginx frontend, and Java backend services as Windows
+  services.
 ---
 
 # Manual installation - Windows
@@ -79,7 +82,7 @@ You can also update the `Path` and `JAVA_HOME` environment variables manually in
 
 As a result, you must have the following:
 
-![Environment variables](<../../../../../.gitbook/assets/image-20250321-102652 (1).png>)
+![Environment variables](<../../../../../../.gitbook/assets/image-20250321-102652 (1).png>)
 
 After the variables are saved, open the command line and check the versions of software with the following commands:
 
@@ -90,7 +93,7 @@ java -version
 
 If the versions are returned, then the variables are configured properly.
 
-![Software versions](<../../../../../.gitbook/assets/image-20250321-103003 (1).png>)
+![Software versions](<../../../../../../.gitbook/assets/image-20250321-103003 (1).png>)
 
 If you see the errors like `is not recognised as an internal or external command`, check the paths you specified before.
 
@@ -198,7 +201,7 @@ md nginx
 
 Copy the unpacked Nginx distribution to `C:\nginx`.
 
-![Nginx folder](<../../../../../.gitbook/assets/image-20230928-145508 (1).png>)
+![Nginx folder](<../../../../../../.gitbook/assets/image-20230928-145508 (1).png>)
 
 ### Static files
 
@@ -242,7 +245,7 @@ To configure the platform to work over HTTPS, you will need a valid SSL certific
 
 After all of the above is done - **run nginx.exe as administrator**. Make sure it is up and running in Task manager (normally it has two or more processes). If it stops working, check `C:\nginx\logs\error.log` for errors and act accordingly.
 
-![Nginx running](<../../../../../.gitbook/assets/image-20231011-123558 (1).png>)
+![Nginx running](<../../../../../../.gitbook/assets/image-20231011-123558 (1).png>)
 
 ## Backend
 
@@ -351,7 +354,7 @@ Scroll the services list and find the newly installed Navixy services. Launch th
 * **Navixy sms-server**
 * **Navixy tcp-server**
 
-![Navixy Windows services](<../../../../../.gitbook/assets/image-20231010-113440 (1).png>)
+![Navixy Windows services](<../../../../../../.gitbook/assets/image-20231010-113440 (1).png>)
 
 Make sure that the services keep working over time - they must have a “Running” status constantly. If any of them crashes, [check their logs](../../../troubleshooting/working-with-logs/) for possible errors.
 

@@ -1,12 +1,15 @@
 ---
-description: Adjust online, GPS-not-updated, and offline timeout thresholds for device status indicators in Navixy on-premise. Edit the tcp-server configuration file.
+description: >-
+  Adjust online, GPS-not-updated, and offline timeout thresholds for device
+  status indicators in Navixy on-premise. Edit the tcp-server configuration
+  file.
 ---
 
 # Device statuses
 
 Each device in the Navixy platform has a specific status that indicates its current condition. These statuses change based on the duration of time that elapses.
 
-<table data-header-hidden><thead><tr><th width="236.727294921875" align="center"></th><th width="119.9090576171875"></th><th></th></tr></thead><tbody><tr><td align="center"><img src="../../../.gitbook/assets/browser_lrla4GLmVP.png" alt="browser_lrla4GLmVP.png" data-size="original"></td><td>N/A</td><td>Data is constantly being received from a device and contains valid coordinates</td></tr><tr><td align="center"><img src="../../../.gitbook/assets/browser_qJjb9CyZAT.png" alt="browser_qJjb9CyZAT.png"></td><td>5 minutes</td><td>No valid location data for more than 5 minutes or the device is transmitting data in a time zone other than UTC+0</td></tr><tr><td align="center"><img src="../../../.gitbook/assets/browser_CHEecmH3nB.png" alt="browser_CHEecmH3nB.png"></td><td>10 minutes</td><td>The device does not send any data packets for over set time period</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="236.727294921875" align="center"></th><th width="119.9090576171875"></th><th></th></tr></thead><tbody><tr><td align="center"><img src="../../../../.gitbook/assets/browser_lrla4GLmVP.png" alt="browser_lrla4GLmVP.png" data-size="original"></td><td>N/A</td><td>Data is constantly being received from a device and contains valid coordinates</td></tr><tr><td align="center"><img src="../../../../.gitbook/assets/browser_qJjb9CyZAT.png" alt="browser_qJjb9CyZAT.png"></td><td>5 minutes</td><td>No valid location data for more than 5 minutes or the device is transmitting data in a time zone other than UTC+0</td></tr><tr><td align="center"><img src="../../../../.gitbook/assets/browser_CHEecmH3nB.png" alt="browser_CHEecmH3nB.png"></td><td>10 minutes</td><td>The device does not send any data packets for over set time period</td></tr></tbody></table>
 
 ### Adjusting Timeout Settings
 

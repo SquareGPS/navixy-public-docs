@@ -1,5 +1,7 @@
 ---
-description: White-label the platform with custom login page settings, logos/backgrounds/favicon, and UI themes for web and mobile
+description: >-
+  White-label the platform with custom login page settings,
+  logos/backgrounds/favicon, and UI themes for web and mobile
 ---
 
 # Branding
@@ -8,13 +10,13 @@ With Navixy, you can customize and white-label the service to make it truly your
 
 To access the branding options, log into the **Admin Panel** and navigate to **Settings** → **Branding**. You will find a range of customizable settings that you can use to reflect your company's branding and marketing attributes.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt="Branding page"><figcaption><p>Branding page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40).png" alt="Branding page"><figcaption><p>Branding page</p></figcaption></figure>
 
 The page consists of the following sections:
 
-- **Main settings**: Configure the view of your platform's login page.
-- **Images**: Upload custom logos for your product.
-- **UI themes**: Select a color theme for the web platform and mobile app.
+* **Main settings**: Configure the view of your platform's login page.
+* **Images**: Upload custom logos for your product.
+* **UI themes**: Select a color theme for the web platform and mobile app.
 
 ### Main settings
 
@@ -26,14 +28,14 @@ Navixy provides you with the flexibility to upload graphic files that can help m
 
 The following image categories are available for customization:
 
-- **Logos**\
+* **Logos**\
   Upload company logos to be displayed on the login page, in web and mobile UI, PDF reports, and email notifications. Navixy recommends uploading horizontally oriented images with transparent backgrounds and a size of 500x300 pixels. Maximum file size is 1 Mb. JPEG, PNG, GIF, and WEBP formats are allowed.
-- **Login page background**\
+* **Login page background**\
   Upload a custom background image for the login page. This can be an image that reflects your brand or projects a certain mood. Navixy recommends choosing an image optimized for modern retina screens with a resolution of 3840x2160 pixels. File size isn't restricted. JPEG, PNG, GIF, and WEBP formats are allowed.
-- **Favicon**\
+* **Favicon**\
   Upload an icon to be displayed in the browser tab. Must be in ICO format up to 1 Mb in size.
 
-<figure><img src="../.gitbook/assets/image (41).png" alt="Custom images" width="486"><figcaption><p>Custom images and logos</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt="Custom images" width="486"><figcaption><p>Custom images and logos</p></figcaption></figure>
 
 ## Color theme
 

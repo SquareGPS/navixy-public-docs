@@ -1,5 +1,7 @@
 ---
-description: 'Set up the Teltonika Eye Sensor in three steps: configure the mobile app, set parameters in the desktop configurator, and map readings in Navixy.'
+description: >-
+  Set up the Teltonika Eye Sensor in three steps: configure the mobile app, set
+  parameters in the desktop configurator, and map readings in Navixy.
 ---
 
 # Configuring Eye sensor on Teltonika GPS device
@@ -10,15 +12,15 @@ By following the step-by-step instructions provided, you will learn how to downl
 
 Let's get started on configuring your Teltonika Eye Sensors to maximize their potential for your business needs in 3 steps.
 
-- [1. Configuration with Mobile app: Teltonika's Eye app](configuring-eye-sensor-on-teltonika-tracker.md#1-configuration-with-mobile-app-teltonikas-eye-app)
-- [2. Conficugation with Teltonika device configuration for desktop](configuring-eye-sensor-on-teltonika-tracker.md#2-conficugation-with-teltonika-device-configuration-for-desktop)
-- [3. Setting up an Eye Sensor on Navixy](configuring-eye-sensor-on-teltonika-tracker.md#3-setting-up-an-eye-sensor-on-navixy)
+* [1. Configuration with Mobile app: Teltonika's Eye app](configuring-eye-sensor-on-teltonika-tracker.md#1-configuration-with-mobile-app-teltonikas-eye-app)
+* [2. Conficugation with Teltonika device configuration for desktop](configuring-eye-sensor-on-teltonika-tracker.md#2-conficugation-with-teltonika-device-configuration-for-desktop)
+* [3. Setting up an Eye Sensor on Navixy](configuring-eye-sensor-on-teltonika-tracker.md#3-setting-up-an-eye-sensor-on-navixy)
 
 ## 1. Configuration with Mobile app: Teltonika's Eye app
 
 Download Teltonika's Eye App from the Google Store or App Store.
 
-![](../../.gitbook/assets/image-20240819-201555.png)
+![](../../../.gitbook/assets/image-20240819-201555.png)
 
 Get into the **Eye Application** and turn on Bluetooth. Your mobile device will start scanning any Eye sensor device around the cellphone. Every device will show the decibels and the distances from the cellphone to the sensors. Select **Eye sensor**, which shows the active sensors on the screen, then PIN the code, if it is the first time configuring it, the PIN would be 123456.
 
@@ -31,8 +33,6 @@ Click the **Configure** button and change the packet setting to **Sensor** so it
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmqdUk--23DC7qiVYapJkU-hfAjZISIS06ylcIUC6kVILVPRy983MXLXV0_hxHqUCpJk_rvlKbs5cLZKcJS1kH9np3amHr-ANGntbSpVx97rSYw48Xrn1PNvOZC4l4635w3NJIxUKjMAs716P2mZ4oe5Iq?key=6KHuR2IBwmomxMottXEmGA)
 
 <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcdlV7i2Y6miCzjVxNShut77230x1_w2jUe8qiVmwsSRVDzsB8mCtkgOHmabquUkdO0FACRk0nmbm-kbaIR5jfTvb0lZzmShRQ5aQOQex5yPhJQAu-QdFkfvugndzNs0Xlqsv9lP979sGjDu_25Alxnxz_3?key=6KHuR2IBwmomxMottXEmGA" alt="" width="375">
-
-&#x20;
 
 <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXevSXGMbYt5LZoCMLRNEtptpyQzrdbhFxmdCTYmlrQPhdCv40al-na0osyW3OmM-vlH3O3sn9v1FZYRrqe6bYV1Dl-lfLA8Ezg9BBF7FuPBrudUsUT0AJCxZEF9C6LZ8Vivw0ZgPP4q8Ce8kFnCe5lnFBtU?key=6KHuR2IBwmomxMottXEmGA" alt="" width="375">
 
@@ -62,7 +62,7 @@ In this particular case, Teltonika has a Data Sending ID document for FMC130 whi
 
 In the next link, you can find the complete AVL list:
 
-[https://wiki.teltonika-gps.com/view/FMC130_Teltonika_Data_Sending_Parameters_ID](https://wiki.teltonika-gps.com/view/FMC130_Teltonika_Data_Sending_Parameters_ID)
+[https://wiki.teltonika-gps.com/view/FMC130\_Teltonika\_Data\_Sending\_Parameters\_ID](https://wiki.teltonika-gps.com/view/FMC130_Teltonika_Data_Sending_Parameters_ID)
 
 Go to **Devices and settings**, select the device, and add a measurement sensor to the **Sensor and buttons** tab.
 

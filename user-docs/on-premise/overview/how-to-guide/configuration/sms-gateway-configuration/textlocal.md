@@ -1,5 +1,7 @@
 ---
-description: Configure the Textlocal SMS gateway for Navixy on-premise deployments in the UK. Set up API key authentication and optional incoming message handling.
+description: >-
+  Configure the Textlocal SMS gateway for Navixy on-premise deployments in the
+  UK. Set up API key authentication and optional incoming message handling.
 ---
 
 # Textlocal
@@ -36,7 +38,7 @@ Alternatively, you may use API key from Textlocal:
 
 where `api_key` is the API key created in your [Messenger Control Panel](https://control.txtlocal.co.uk/settings/apikeys/):
 
-![On-Premise - SMS gateway configuration - Textlocal](../../../../.gitbook/assets/image-20230810-133538.png)
+![On-Premise - SMS gateway configuration - Textlocal](../../../../../.gitbook/assets/image-20230810-133538.png)
 
 If you use Textlocal in India ([textlocal.in](http://textlocal.in/)) you need to add the `URL` parameter:
 

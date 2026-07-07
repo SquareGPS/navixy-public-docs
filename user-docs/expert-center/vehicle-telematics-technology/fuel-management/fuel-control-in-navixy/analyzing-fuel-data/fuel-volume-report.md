@@ -1,5 +1,7 @@
 ---
-description: Per-vehicle drains, refills, and consumption rates in the fuel volume report. Assess sensor quality scores and calibration accuracy from report data.
+description: >-
+  Per-vehicle drains, refills, and consumption rates in the fuel volume report.
+  Assess sensor quality scores and calibration accuracy from report data.
 ---
 
 # Fuel volume report
@@ -9,9 +11,9 @@ description: Per-vehicle drains, refills, and consumption rates in the fuel volu
 {% hint style="info" %}
 Please make sure the platform is configured properly before you create a fuel report, so events could be recognized properly:
 
-- Check [sensor settings](../sensors-setup-and-configuration.md)
-- Check [parking detection settings](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/location-and-movement/parking-detection-block)
-  {% endhint %}
+* Check [sensor settings](../sensors-setup-and-configuration.md)
+* Check [parking detection settings](/broken/spaces/446mKak1zDrGv70ahuYZ/pages/kuQsXSvRlmWewB0IVXgM)
+{% endhint %}
 
 ### Refills and drains in reports
 
@@ -25,9 +27,9 @@ In the report, a "filling" event is documented when the fuel level increases by 
 
 Once you have enabled one or both options for ignoring - the next algorithm will be used for reports and alerts in addition to standard:
 
-- If refueling begins during the [parking time](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/events-and-notifications/movement-monitoring/parking-state-detection), it will be displayed in the report and logged by the rule. Additionally, if refueling starts within X minutes of the filter timeout before parking or within X minutes of the filter timeout after the trip starts, it's also logged by the rule and shown in the report.
-- However, if refueling starts earlier than X minutes from the filter timeout before parking or later than X minutes from the filter timeout since the beginning of the trip, it's filtered out.
-- In cases where no filter timeout is specified, all refills that start during trips are filtered.
+* If refueling begins during the [parking time](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/events-and-notifications/movement-monitoring/parking-state-detection), it will be displayed in the report and logged by the rule. Additionally, if refueling starts within X minutes of the filter timeout before parking or within X minutes of the filter timeout after the trip starts, it's also logged by the rule and shown in the report.
+* However, if refueling starts earlier than X minutes from the filter timeout before parking or later than X minutes from the filter timeout since the beginning of the trip, it's filtered out.
+* In cases where no filter timeout is specified, all refills that start during trips are filtered.
 
 ## Creating a fuel volume report in Navixy
 
@@ -35,27 +37,27 @@ Fuel level report displays detailed information on all fuel sensors installed in
 
 Tasks that the report addresses:
 
-- To record the actual fuel consumption of vehicles and compare it with the manufacturer's stated fuel consumption.
-- To calculate depreciation on transportation of goods and cargo, which will be useful for logistics companies and any business to calculate the cost price of goods.
-- To calculate employee payments for fuel and lubricants if they operate their own vehicles.
-- To identify unscrupulous drivers who may be dumping your fuel for resale.
-- To record the fuel consumption of units. For example, generator sets.
-- To account for the dispensing of fuel to vehicles on the base.
-- To determine which machines need repair if their fuel consumption is consistently high.
+* To record the actual fuel consumption of vehicles and compare it with the manufacturer's stated fuel consumption.
+* To calculate depreciation on transportation of goods and cargo, which will be useful for logistics companies and any business to calculate the cost price of goods.
+* To calculate employee payments for fuel and lubricants if they operate their own vehicles.
+* To identify unscrupulous drivers who may be dumping your fuel for resale.
+* To record the fuel consumption of units. For example, generator sets.
+* To account for the dispensing of fuel to vehicles on the base.
+* To determine which machines need repair if their fuel consumption is consistently high.
 
 {% hint style="info" %}
 You can also build the report using Navixy API. More information could be obtained in [Developers Hub](https://www.navixy.com/docs/developers)
 {% endhint %}
 
-![Fuel report](../../../../.gitbook/assets/image-20230905-074120.png)
+![Fuel report](../../../../../.gitbook/assets/image-20230905-074120.png)
 
 ## What affects the readings in the report
 
 The report displays graphs based on the sensor readings sent by the unit. From the received data, the set settings of the fuel sensors and the parameters of the report itself, it performs calculations of drains, refills and fuel consumption. In order for the platform to perform calculations and display information correctly, the following must be configured:
 
-- For the platform to support reading a particular fuel sensor, it's important to verify if the list of supported inputs of any model includes the capability to read fuel levels from that specific sensor.
-- Continuous transmission of fuel level data between the device and platform is crucial. If the data is not consistently received or is inaccurate, it may lead to graph display issues or incorrect calculations on the platform.
-- The recorded values in the report are influenced by the fuel level sensor settings, which are vital for calculating drains and refills. You have the flexibility to modify the sensor settings at any given point and generate a fresh report. Additionally, the results obtained are directly impacted by the report parameters, making them a crucial factor to consider.
+* For the platform to support reading a particular fuel sensor, it's important to verify if the list of supported inputs of any model includes the capability to read fuel levels from that specific sensor.
+* Continuous transmission of fuel level data between the device and platform is crucial. If the data is not consistently received or is inaccurate, it may lead to graph display issues or incorrect calculations on the platform.
+* The recorded values in the report are influenced by the fuel level sensor settings, which are vital for calculating drains and refills. You have the flexibility to modify the sensor settings at any given point and generate a fresh report. Additionally, the results obtained are directly impacted by the report parameters, making them a crucial factor to consider.
 
 {% hint style="info" %}
 Once you modify the sensor settings, you have the option to regenerate the report for that specific time frame using different settings. This enables the changes to be implemented into the recorded data seamlessly.
@@ -83,18 +85,18 @@ The platform uses the drain thresholds sensor parameters to identify drains in r
 
 Let’s consider an example. The following values are specified for the fuel level sensor:
 
-- The tank is 370 liters;
-- The error is 2%, so the absolute error is 370 \* 0.02 = 7.4 L;
-- The time threshold for drains is 100 liters per hour or 16.6 in 10 minutes;
-- The mileage threshold for drains is 60 liters per 100 km or 6 liters per 10 km;
-- Drain starts: at 1:20, with fuel level 333.85 L, and mileage 73.4
-- Drain ends: at 1:30, with fuel level 324.98 L, and mileage 79.77
+* The tank is 370 liters;
+* The error is 2%, so the absolute error is 370 \* 0.02 = 7.4 L;
+* The time threshold for drains is 100 liters per hour or 16.6 in 10 minutes;
+* The mileage threshold for drains is 60 liters per 100 km or 6 liters per 10 km;
+* Drain starts: at 1:20, with fuel level 333.85 L, and mileage 73.4
+* Drain ends: at 1:30, with fuel level 324.98 L, and mileage 79.77
 
 Difference:
 
-- Time: 10 minutes
-- Fuel level: 8.88 - more than absolute error, so if at least one of thresholds exceeded, the drain will be determined.
-- Mileage 6.37
+* Time: 10 minutes
+* Fuel level: 8.88 - more than absolute error, so if at least one of thresholds exceeded, the drain will be determined.
+* Mileage 6.37
 
 The platform starts checking the speed of fuel level change:
 
@@ -105,20 +107,20 @@ For mileage: 8.88 L / 6.37 km = 1.39 per kilometer or 139 per 100 kilometers, wh
 
 The following parameters are used in the report:
 
-- The x-axis on the graph
-  - Mileage: the report is built on the basis of the received mileage data, and drains are taken into account based on the mileage thresholds. Average consumption will be calculated in l/100km.
-  - Time: the report is built on the basis of received time data, and drains are counted based on time thresholds. The average flow rate will be calculated in l/h.
-- Detail by dates: display summary data on fuel movement for each day of the selected period.
-- Show General Report: allows you to enable or disable the page with general information on all devices.
-- Show only total report: display fuel movement totals for the period for all selected devices.
-- Consumption by ignition data: ignition sensor readings will be used to calculate average fuel consumption, not travel time. Use for equipment that often stands still with the engine running for long periods of time: excavators, tractors, etc.
-- Show mileage is only available for the time report. When enabled, the mileage will additionally be displayed on the graph.
-- Use smart filter: short trips up to 300m and up to 4 points will not be considered in the report. The length and time of such trips will not be included in the statistics.
-- Show speed: adds a speed reading to the graph in the report. It will help you when diagnosing fuel consumption, as well as to determine whether there was a false drain (for example, a real drain is unlikely to occur at a speed of 90 km/h).
-- Smooth graph: this option is recommended for devices without built-in averaging mechanism. If the graph is uneven and the fuel level is constantly jumping up and down by 5-10%: try to enable this function. Please note that smoothing reduces the accuracy of fueling and draining, but allows to get an acceptable picture for inaccurate sensors.
-- Filter emissions: if you observe strong short-term changes in fuel level on the graph, turn this option on. If you want to filter only the largest emissions, move the slider to the left. If you need the weak ones, move it to the right.
+* The x-axis on the graph
+  * Mileage: the report is built on the basis of the received mileage data, and drains are taken into account based on the mileage thresholds. Average consumption will be calculated in l/100km.
+  * Time: the report is built on the basis of received time data, and drains are counted based on time thresholds. The average flow rate will be calculated in l/h.
+* Detail by dates: display summary data on fuel movement for each day of the selected period.
+* Show General Report: allows you to enable or disable the page with general information on all devices.
+* Show only total report: display fuel movement totals for the period for all selected devices.
+* Consumption by ignition data: ignition sensor readings will be used to calculate average fuel consumption, not travel time. Use for equipment that often stands still with the engine running for long periods of time: excavators, tractors, etc.
+* Show mileage is only available for the time report. When enabled, the mileage will additionally be displayed on the graph.
+* Use smart filter: short trips up to 300m and up to 4 points will not be considered in the report. The length and time of such trips will not be included in the statistics.
+* Show speed: adds a speed reading to the graph in the report. It will help you when diagnosing fuel consumption, as well as to determine whether there was a false drain (for example, a real drain is unlikely to occur at a speed of 90 km/h).
+* Smooth graph: this option is recommended for devices without built-in averaging mechanism. If the graph is uneven and the fuel level is constantly jumping up and down by 5-10%: try to enable this function. Please note that smoothing reduces the accuracy of fueling and draining, but allows to get an acceptable picture for inaccurate sensors.
+* Filter emissions: if you observe strong short-term changes in fuel level on the graph, turn this option on. If you want to filter only the largest emissions, move the slider to the left. If you need the weak ones, move it to the right.
 
-![Fuel volume report parameters](../../../../.gitbook/assets/image-20230905-074250.png)
+![Fuel volume report parameters](../../../../../.gitbook/assets/image-20230905-074250.png)
 
 After changing the sensor settings, you can build the report for the same period again with different settings and the changes will be applied to the recorded data.
 
@@ -128,19 +130,19 @@ The graphical presentation showcases fuel sensor readings, displayed individuall
 
 Additionally, the chart provides numerical data for drains and refills, following the order in the **Fills and drains** table. The numeric display appears at the completion of refueling or draining, rather than at the starting point, ensuring clarity in representation.
 
-- When refueling, the number will be displayed in green.
-- When draining, the number will be displayed in red.
+* When refueling, the number will be displayed in green.
+* When draining, the number will be displayed in red.
 
-![Fuel consumption graph](../../../../.gitbook/assets/image-20230905-074528.png)
+![Fuel consumption graph](../../../../../.gitbook/assets/image-20230905-074528.png)
 
 If the platform did not receive any data from the sensor, it will be highlighted on the graph as a shaded area. Additionally, a notification will be displayed when hovering over the area. This indicates that the fuel sensor did not transmit any data during the specified timeframe to the platform.
 
 {% hint style="info" %}
 There are various factors that may contribute to this phenomenon:
 
-- The device did not send data from the fuel sensor during this period. For example, the sensor wire is not securely fastened or data from the sensor was not sent according to the beacon setting.
-- The device did not send any data at all during this period. For example, it was turned off or removed from the monitored object.
-  {% endhint %}
+* The device did not send data from the fuel sensor during this period. For example, the sensor wire is not securely fastened or data from the sensor was not sent according to the beacon setting.
+* The device did not send any data at all during this period. For example, it was turned off or removed from the monitored object.
+{% endhint %}
 
 If any values have been filtered according to the fuel level sensor setting, the platform will display the last unfiltered data here.
 
@@ -156,7 +158,7 @@ At 504.95 km from the start of the report period, the fuel level in the tank was
 
 _example of a point on a fuel consumption by mileage graph_
 
-![Point on graph with x-axis mileage](../../../../.gitbook/assets/image-20230905-075125.png)
+![Point on graph with x-axis mileage](../../../../../.gitbook/assets/image-20230905-075125.png)
 
 **X-axis = time**
 
@@ -168,7 +170,7 @@ On September 1, 2023 at 21:59, the fuel level was 33.4 liters. The ignition was 
 
 _example of a point on a graph of fuel consumption over time_
 
-![Point on graph with x-axis time](../../../../.gitbook/assets/image-20230905-075327.png)
+![Point on graph with x-axis time](../../../../../.gitbook/assets/image-20230905-075327.png)
 
 ## Table Fillings and drains
 
@@ -176,20 +178,20 @@ This table will display information about the recorded drains and refills for th
 
 _example of a refueling and draining table_
 
-![Fillings and drains table](../../../../.gitbook/assets/image-20230905-074858.png)
+![Fillings and drains table](../../../../../.gitbook/assets/image-20230905-074858.png)
 
 **Columns**
 
 In this table, the information is presented in the following columns:
 
-- Number: a serial number, which will also be displayed on the chart.
-- Time: when the draining or refueling was recorded.
-- Filling/draining
-- Volume, l: number of liters by the defined event.
-- Initial volume, l: fuel level at the beginning of the event.
-- End volume, l: fuel level at the end of the event.
-- From the beginning, km: how many km the device has traveled since the beginning of the report period.
-- Address: clicking on the address will open the map to display where the event occurred. Geofences may be listed before the address if the address is within them.
+* Number: a serial number, which will also be displayed on the chart.
+* Time: when the draining or refueling was recorded.
+* Filling/draining
+* Volume, l: number of liters by the defined event.
+* Initial volume, l: fuel level at the beginning of the event.
+* End volume, l: fuel level at the end of the event.
+* From the beginning, km: how many km the device has traveled since the beginning of the report period.
+* Address: clicking on the address will open the map to display where the event occurred. Geofences may be listed before the address if the address is within them.
 
 **Rows**
 
@@ -203,26 +205,26 @@ A date-detailed table will display the calculated information by day, according 
 
 _example of a table detailing fuel consumption by date_
 
-![Table details by dates](../../../../.gitbook/assets/image-20230905-075915.png)
+![Table details by dates](../../../../../.gitbook/assets/image-20230905-075915.png)
 
 **Columns**
 
 The information in the table is organized in the following columns:
 
-- Date: reporting day
-- GPS and flow rate data
-  - Mileage, km: information about the mileage calculated by GPS on the beacon side.
-  - Normal consumption, l: how many liters the vehicle would consume if it consumed fuel as specified by the factory.
-  - consumption rate, l/100 km: vehicle consumption rate specified by the factory. It is taken by the platform from the [vehicle](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/fleet-management/vehicles) card.
-- Fuel level sensor data": data that the platform has received from the fuel level sensor.
-  - Initial volume, l: initial fuel level for the day.
-  - Final volume, l: final fuel level for the day.
-  - Consumption, l: actual fuel level consumption for the day. Calculated by the formula
-  - `((initial fuel level + (refueling volume - draining volume)) - final fuel level`
-  - Consumption l/100km: actual fuel level consumption per 100 km. Calculated by the formula
-  - `((initial fuel level + (refueling volume - drain volume)) - final fuel level)/mileage * 100`
-- Gas stations: information on the number and total volume of registered gas stations.
-- Drains: information on the number and total volume of registered drains.
+* Date: reporting day
+* GPS and flow rate data
+  * Mileage, km: information about the mileage calculated by GPS on the beacon side.
+  * Normal consumption, l: how many liters the vehicle would consume if it consumed fuel as specified by the factory.
+  * consumption rate, l/100 km: vehicle consumption rate specified by the factory. It is taken by the platform from the [vehicle](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/fleet-management/vehicles) card.
+* Fuel level sensor data": data that the platform has received from the fuel level sensor.
+  * Initial volume, l: initial fuel level for the day.
+  * Final volume, l: final fuel level for the day.
+  * Consumption, l: actual fuel level consumption for the day. Calculated by the formula
+  * `((initial fuel level + (refueling volume - draining volume)) - final fuel level`
+  * Consumption l/100km: actual fuel level consumption per 100 km. Calculated by the formula
+  * `((initial fuel level + (refueling volume - drain volume)) - final fuel level)/mileage * 100`
+* Gas stations: information on the number and total volume of registered gas stations.
+* Drains: information on the number and total volume of registered drains.
 
 **Raws**
 
@@ -244,16 +246,16 @@ If the sensor data is missing in the report, the platform will indicate it with 
 
 This table provides statistical information on fuel levels by day and for the period.
 
-![Table statistics data](../../../../.gitbook/assets/image-20230905-075013.png)
+![Table statistics data](../../../../../.gitbook/assets/image-20230905-075013.png)
 
 **Columns**
 
 The data are categorized into the following columns:
 
-- Date
-- Minimum, l: minimum fuel level for the period.
-- Maximum, l: maximum fuel level for the period.
-- Average, l: average value of fuel level for the period. It is based on all received sensor values.
+* Date
+* Minimum, l: minimum fuel level for the period.
+* Maximum, l: maximum fuel level for the period.
+* Average, l: average value of fuel level for the period. It is based on all received sensor values.
 
 **Raws**
 
@@ -271,8 +273,8 @@ This information may be useful to customers who are analyzing fuel calculations 
 
 If there is enough data to calculate a quality score for the sensor indicators, the algorithm will output a quantitative and a qualitative result:
 
-- The quantitative result will be represented as a score from 1.0 to 10.0, where 1 means low quality of sensor indicators, 10 means high quality of fuel level sensor indicators.
-- The qualitative indicator is expressed in one of three characteristics: **low**, for sensors with a quality score from 1.0 to 3.9, **medium** for sensors with a score of 4.0 to 7.9 and **high**, with a score of 8.0 to 10.0 respectively.
+* The quantitative result will be represented as a score from 1.0 to 10.0, where 1 means low quality of sensor indicators, 10 means high quality of fuel level sensor indicators.
+* The qualitative indicator is expressed in one of three characteristics: **low**, for sensors with a quality score from 1.0 to 3.9, **medium** for sensors with a score of 4.0 to 7.9 and **high**, with a score of 8.0 to 10.0 respectively.
 
 If there is insufficient data for calculation, for example, if the sensor has been used recently, the system will display the following message: "Insufficient data to assess the quality of fuel sensor readings. The most probable reasons are: insufficient number of car journeys during the selected period, too infrequent interval of fuel data acquisition or poor quality of sensor calibration on the platform. The minimum recommended period to assess the quality of readings is from 14 days of active vehicle operation."
 

@@ -1,6 +1,8 @@
 ---
 title: A device is showing as moving on the platform even though it is offline
-description: Device continues showing its last known status until it comes back online and sends updated location information to the platform
+description: >-
+  Device continues showing its last known status until it comes back online and
+  sends updated location information to the platform
 ---
 
 # A device is showing as moving on the platform even though it is offline
@@ -9,7 +11,7 @@ description: Device continues showing its last known status until it comes back 
 
 Why does my device appear to be moving on the platform when it's offline?
 
-![](<../.gitbook/assets/Unknown image>)
+![](<../../.gitbook/assets/Unknown image>)
 
 ## Answer
 
@@ -26,4 +28,4 @@ For example, if your device last reported that it was moving at 00:08 AM on Nove
 
 [Connection status](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/tracking/objects-list/connection-state)
 
-[Parking detection widget](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/location-and-movement/parking-detection-block)
+[Parking detection widget](/broken/spaces/446mKak1zDrGv70ahuYZ/pages/kuQsXSvRlmWewB0IVXgM)

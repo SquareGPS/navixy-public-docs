@@ -1,6 +1,8 @@
 ---
 title: Camera light indicators (JC261)
-description: "Diagnose JC261 LED status: red indicates power, green shows GPS lock, and blinking blue signals missing cellular connectivity. Verify APN configuration"
+description: >-
+  Diagnose JC261 LED status: red indicates power, green shows GPS lock, and
+  blinking blue signals missing cellular connectivity. Verify APN configuration
 ---
 
 # Camera light indicators (JC261)
@@ -25,4 +27,4 @@ Always make sure that the APN settings were entered correctly.
 
 If the APN is correct, contact the SIM provider to verify the SIM is active.
 
-![](<../.gitbook/assets/Unknown image (83)>)
+![](<../../.gitbook/assets/Unknown image (83)>)

@@ -1,5 +1,7 @@
 ---
-description: Enable online payments via Stripe (webhooks and API keys) or connect a custom gateway using a payment URL
+description: >-
+  Enable online payments via Stripe (webhooks and API keys) or connect a custom
+  gateway using a payment URL
 ---
 
 # Payment gateway
@@ -48,14 +50,14 @@ You must provide your Stripe API keys to the Navixy support team to complete the
 
 Navigate to **Developers → API keys**. Retrieve the following two parameters:
 
-- `Publishable key`
-- `Secret key`
+* `Publishable key`
+* `Secret key`
 
 **Webhook signing secret**
 
 Navigate to **Developers → Webhooks**. Click on the webhook endpoint you just created. Under the Signing secret section, click **Reveal** to obtain the key:
 
-- `Signing secret`
+* `Signing secret`
 
 Once you have completed these steps, you are ready to accept online payments.
 
@@ -74,4 +76,4 @@ Your payment system needs to process the parameter `/?id={id}`.
 
 Once you have specified the **Payment system URL** in the **Domain & URLs** section of **Service preferences**, an **Add money** option is enabled in the [Profile](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/profile) section of the web platform:
 
-<figure><img src="../.gitbook/assets/image (74).png" alt="Add money link" width="375"><figcaption><p>Add money option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (74).png" alt="Add money link" width="375"><figcaption><p>Add money option</p></figcaption></figure>

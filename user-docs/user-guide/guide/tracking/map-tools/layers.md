@@ -1,12 +1,14 @@
 ---
-description: Add custom KML map layers to display city districts, responsibility areas, specialized routes, or terrain data not available in the standard map views.
+description: >-
+  Add custom KML map layers to display city districts, responsibility areas,
+  specialized routes, or terrain data not available in the standard map views.
 ---
 
 # Layers
 
 Map layers allow you to add custom data overlays to your map, enhancing the visualization of specific areas not included in the standard map view. This feature is particularly useful for displaying unique geographic details, such as city districts, responsibility areas, custom routes, and other specialized maps. By using map layers, you can better understand the locations and situations of your fleet.
 
-![Layers tool](../../../.gitbook/assets/image-20240807-205554.png)
+![Layers tool](../../../../.gitbook/assets/image-20240807-205554.png)
 
 ## Practical application
 

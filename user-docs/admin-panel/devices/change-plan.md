@@ -1,5 +1,7 @@
 ---
-description: Change a tracker’s pricing plan in Admin Panel and choose how billing is handled immediately or at the next billing cycle
+description: >-
+  Change a tracker’s pricing plan in Admin Panel and choose how billing is
+  handled immediately or at the next billing cycle
 ---
 
 # Changing plan
@@ -24,13 +26,13 @@ To change the pricing plan for your GPS tracker in the Navixy platform, follow t
 
 Select the tracker and click **Change plan** (located in the right side panel). This opens the **Change plan** window:
 
-<div align="left"><figure><img src="../.gitbook/assets/{12CB99F1-067E-43E2-8569-5A8856A2811F}.png" alt="Change plan window" width="366"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/{12CB99F1-067E-43E2-8569-5A8856A2811F}.png" alt="Change plan window" width="366"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 ### Select the tracker plan
 
-In the drop-down menu, select the new pricing plan for your tracker. Plan names have the following format:  `name | billing cycle | price` .
+In the drop-down menu, select the new pricing plan for your tracker. Plan names have the following format: `name | billing cycle | price` .
 {% endstep %}
 
 {% step %}

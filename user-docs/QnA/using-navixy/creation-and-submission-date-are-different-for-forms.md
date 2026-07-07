@@ -1,6 +1,8 @@
-﻿---
+---
 title: Creation and submission date are different for forms
-description: Task form creation date precedes submission; check-in form creation date follows submission due to platform database processing logic
+description: >-
+  Task form creation date precedes submission; check-in form creation date
+  follows submission due to platform database processing logic
 ---
 
 # Creation and submission date are different for forms
@@ -11,7 +13,7 @@ When we download a forms report from the Submitted Form tab, we notice that for 
 
 We would expect the creation date to always be earlier than the submission date, so this behavior is unexpected. Why does it happen?
 
-![](<../.gitbook/assets/Unknown image (29)>)
+![](<../../.gitbook/assets/Unknown image (29)>)
 
 ## Answer
 

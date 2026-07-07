@@ -1,6 +1,8 @@
 ---
 title: Short trips in history and long parking states
-description: Disable Consider ignition state in Parking Detection to prevent inconsistent ignition signal from fragmenting trips into short segments
+description: >-
+  Disable Consider ignition state in Parking Detection to prevent inconsistent
+  ignition signal from fragmenting trips into short segments
 ---
 
 # Short trips in history and long parking states
@@ -9,7 +11,7 @@ description: Disable Consider ignition state in Parking Detection to prevent inc
 
 Why does trip history show very short trips along with long parking durations?
 
-![](<../.gitbook/assets/Unknown image (22)>)
+![](<../../.gitbook/assets/Unknown image (22)>)
 
 ## Answer
 
@@ -24,11 +26,11 @@ Since it is enough for the device to send OFF ignition state for a trip end, man
 
 To make sure that the ignition is the root cause, you can prepare a raw data spreadsheet with the discrete\_inputs columns selected:
 
-![](<../.gitbook/assets/Unknown image (24)>)
+![](<../../.gitbook/assets/Unknown image (24)>)
 
 To resolve the situation, you can either fix ignition detection from the device side so it detects ignition consistently without unexpected drops, or switch off the **Consider ignition state** option in the **Parking detection** block. The old track durations will not change after the fix.
 
 ## Links
 
-* [Parking detection](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/location-and-movement/parking-detection-block)
-* [Raw data](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/devices-and-settings/object-management/raw-data-block)
+* [Parking detection](/broken/spaces/446mKak1zDrGv70ahuYZ/pages/kuQsXSvRlmWewB0IVXgM)
+* [Raw data](/broken/spaces/446mKak1zDrGv70ahuYZ/pages/nAow2M4maY1kfkjkJ02G)

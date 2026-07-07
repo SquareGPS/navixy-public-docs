@@ -1,5 +1,7 @@
 ---
-description: Enable two-factor authentication for your Navixy account. A one-time passcode sent to your email is required alongside your password on each login.
+description: >-
+  Enable two-factor authentication for your Navixy account. A one-time passcode
+  sent to your email is required alongside your password on each login.
 ---
 
 # Two-factor authentication
@@ -36,6 +38,6 @@ If the OTP is correct, you gain access to your account.
 {% endstep %}
 {% endstepper %}
 
-![Login verification window](../../.gitbook/assets/2fa.png)
+![Login verification window](../../../.gitbook/assets/2fa.png)
 
 Each passcode is valid for 5 minutes, limiting the opportunity for misuse. Additionally, you can request a new code if needed, but only once per minute to prevent abuse.

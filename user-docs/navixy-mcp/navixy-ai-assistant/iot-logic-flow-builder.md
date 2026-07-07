@@ -1,5 +1,7 @@
 ---
-description: Use the Navixy AI Assistant to design an IoT Logic flow through a guided conversation, then import the generated file into your account.
+description: >-
+  Use the Navixy AI Assistant to design an IoT Logic flow through a guided
+  conversation, then import the generated file into your account.
 ---
 
 # IoT Logic Flow Builder
@@ -16,11 +18,11 @@ Because IoT Logic flows react to telemetry, the builder works within that model.
 
 When a trigger fires, a flow can do one of the following:
 
-- Activate a device output.
-- Send a command to the device.
-- Send a webhook. Webhooks are output-only: the flow sends them, but they can't start a flow.
-- Publish via MQTT.
-- Send a notification through push, email, SMS, Telegram, or a webhook channel.
+* Activate a device output.
+* Send a command to the device.
+* Send a webhook. Webhooks are output-only: the flow sends them, but they can't start a flow.
+* Publish via MQTT.
+* Send a notification through push, email, SMS, Telegram, or a webhook channel.
 
 Each build produces one flow. If you describe several independent automations at once, the assistant asks you to split them into separate requests.
 
@@ -38,22 +40,22 @@ If your automation involves a geofence (for example, "when a vehicle enters Main
 
 Once you're in the assistant, start a build by describing the automation you want. Any of these phrasings work:
 
-- "Create a flow that emails me when a truck idles for over 15 minutes."
-- "Alert me when speed goes above 100 km/h."
-- "Turn on output 2 when ignition switches on."
+* "Create a flow that emails me when a truck idles for over 15 minutes."
+* "Alert me when speed goes above 100 km/h."
+* "Turn on output 2 when ignition switches on."
 
 From there, the assistant asks one question at a time, so the interview stays focused. It usually takes around four exchanges. As you answer, a **Confirmed requirements** checklist tracks what's locked in and what's still pending, so you can always see where you are.
 
-<figure><img src="../.gitbook/assets/iot-logic-flow-builder-interview.png" alt="IoT Logic flow builder interview step in the Navixy AI Assistant, showing a Confirmed requirements checklist with locked and pending items above a reporting-interval question with preset options"><figcaption><p>An interview question, with the Confirmed requirements checklist above it.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/iot-logic-flow-builder-interview.png" alt="IoT Logic flow builder interview step in the Navixy AI Assistant, showing a Confirmed requirements checklist with locked and pending items above a reporting-interval question with preset options"><figcaption><p>An interview question, with the Confirmed requirements checklist above it.</p></figcaption></figure>
 
 Most questions appear as a clickable widget with sensible presets, and you can type your own value when the presets don't fit. Over the interview, the assistant settles these details:
 
-- **Trigger:** The event or condition that activates the flow (for example, ignition on, speed over a threshold, entering or leaving a geofence, low battery).
-- **Action:** What happens when the condition is met.
-- **Else branch:** What happens when the condition is not met. The most common answer is "nothing."
-- **Combinator:** When your trigger has two or more conditions, whether all of them must be true (AND) or any of them (OR).
-- **Duration:** If the trigger is "for N minutes or hours," the assistant also asks how often your devices report so it can calculate the timing correctly.
-- **Device scope:** Which devices the flow applies to: all devices, a specific group, or specific ones. If your description makes the scope clear, the assistant assumes all devices and tells you.
+* **Trigger:** The event or condition that activates the flow (for example, ignition on, speed over a threshold, entering or leaving a geofence, low battery).
+* **Action:** What happens when the condition is met.
+* **Else branch:** What happens when the condition is not met. The most common answer is "nothing."
+* **Combinator:** When your trigger has two or more conditions, whether all of them must be true (AND) or any of them (OR).
+* **Duration:** If the trigger is "for N minutes or hours," the assistant also asks how often your devices report so it can calculate the timing correctly.
+* **Device scope:** Which devices the flow applies to: all devices, a specific group, or specific ones. If your description makes the scope clear, the assistant assumes all devices and tells you.
 
 For a full run-through, expand the worked example.
 
@@ -74,7 +76,7 @@ Goal: notify by email when any truck idles for more than 15 minutes.
 
 </details>
 
-<figure><img src="../.gitbook/assets/iot-logic-flow-builder-summary.png" alt="Flow summary in the Navixy AI Assistant listing trigger, action, frequency, devices, and reporting interval, with Build the flow and Let me adjust first options"><figcaption><p>The flow summary, with the Build the flow and Let me adjust first options.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/iot-logic-flow-builder-summary.png" alt="Flow summary in the Navixy AI Assistant listing trigger, action, frequency, devices, and reporting interval, with Build the flow and Let me adjust first options"><figcaption><p>The flow summary, with the Build the flow and Let me adjust first options.</p></figcaption></figure>
 
 Nothing is built until you click **Build the flow**. If the summary isn't right, click **Let me adjust first** to change a specific detail before generating.
 
@@ -82,7 +84,7 @@ Nothing is built until you click **Build the flow**. If the summary isn't right,
 
 When the build finishes, the assistant returns a download link for `flow_design.json`, available for 7 days. Importing the file is a manual step that keeps you in control: you review the generated flow on the canvas before it goes live.
 
-<figure><img src="../.gitbook/assets/iot-logic-flow-builder-result.png" alt="Navixy AI Assistant success message reading Flow built successfully, with a flow_design.json download link, a flow summary, and a list of assumptions"><figcaption><p>The build result: a flow_design.json download link with the flow summary and assumptions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/iot-logic-flow-builder-result.png" alt="Navixy AI Assistant success message reading Flow built successfully, with a flow_design.json download link, a flow summary, and a list of assumptions"><figcaption><p>The build result: a flow_design.json download link with the flow summary and assumptions.</p></figcaption></figure>
 
 To import the flow into your account, follow these steps:
 
@@ -106,24 +108,24 @@ Building a flow doesn't change anything in your account. Device selections and c
 
 The walkthrough above is the main path. Along the way, the builder also takes care of a few things on its own, so you don't have to spell them out:
 
-| Behavior | What the builder does |
-| --- | --- |
-| **Geofence matching** | When a trigger names a geofence in plain language, such as "when a vehicle enters Main Depot," the builder matches the name to the actual zone in your account, so you never use numeric zone IDs. |
-| **Duration timing** | When a trigger depends on a duration, such as "idle for more than 15 minutes," the builder asks how often your devices report and then chooses the timing mechanism for you. You describe durations in plain terms and don't deal with report counts. |
-| **Safety confirmation** | For an action that controls a safety-critical actuator (engine block, fuel cutoff, brake control, or a transmission or steering lock), the builder doesn't generate the flow until you confirm that you understand the risk. |
-| **Interview language** | The builder runs the interview in your language, for example English, Russian, or Spanish. Technical terms such as node types, parameter names, and action types stay in English to match the IoT Logic interface. |
+| Behavior                | What the builder does                                                                                                                                                                                                                                 |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Geofence matching**   | When a trigger names a geofence in plain language, such as "when a vehicle enters Main Depot," the builder matches the name to the actual zone in your account, so you never use numeric zone IDs.                                                    |
+| **Duration timing**     | When a trigger depends on a duration, such as "idle for more than 15 minutes," the builder asks how often your devices report and then chooses the timing mechanism for you. You describe durations in plain terms and don't deal with report counts. |
+| **Safety confirmation** | For an action that controls a safety-critical actuator (engine block, fuel cutoff, brake control, or a transmission or steering lock), the builder doesn't generate the flow until you confirm that you understand the risk.                          |
+| **Interview language**  | The builder runs the interview in your language, for example English, Russian, or Spanish. Technical terms such as node types, parameter names, and action types stay in English to match the IoT Logic interface.                                    |
 
 ## Limits
 
 Two limits apply to the builder:
 
-- **Daily build limit:** 10 successful flow builds per day. If you reach the limit, the assistant tells you and asks you to try again the next day.
-- **Download link lifetime:** the download link for a generated flow is available for 7 days.
+* **Daily build limit:** 10 successful flow builds per day. If you reach the limit, the assistant tells you and asks you to try again the next day.
+* **Download link lifetime:** the download link for a generated flow is available for 7 days.
 
 ## See also
 
-- [Navixy AI Assistant](README.md): overview of all assistant capabilities, including account queries and how-to help
-- [IoT Logic overview](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic): what IoT Logic is and how it works
-- [IoT Logic quick start guide](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic/quick-start-guide): build your first flow manually on the canvas
-- [IoT Logic nodes reference](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic/nodes): reference for all node types and their configuration
-- [Importing and exporting flows](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic/flow-management): **Upload Flow**, export, and the full import procedure
+* [Navixy AI Assistant](./): overview of all assistant capabilities, including account queries and how-to help
+* [IoT Logic overview](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic): what IoT Logic is and how it works
+* [IoT Logic quick start guide](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic/quick-start-guide): build your first flow manually on the canvas
+* [IoT Logic nodes reference](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic/nodes): reference for all node types and their configuration
+* [Importing and exporting flows](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/account/iot-logic/flow-management): **Upload Flow**, export, and the full import procedure

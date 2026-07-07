@@ -1,5 +1,8 @@
 ---
-description: Adjust RAM allocation for Navixy Java services and MySQL on systemd, runit, Docker, and Windows deployments. Edit service configuration files to set memory limits.
+description: >-
+  Adjust RAM allocation for Navixy Java services and MySQL on systemd, runit,
+  Docker, and Windows deployments. Edit service configuration files to set
+  memory limits.
 ---
 
 # Memory allocation for services
@@ -67,7 +70,7 @@ Inside this file, you can see the various sections that set the startup options 
 
 Below is an example of how this is done for _api-server_ on an existing instance:
 
-![](../../../.gitbook/assets/image-20230921-082139.png)
+![](../../../../.gitbook/assets/image-20230921-082139.png)
 
 Save the file.
 

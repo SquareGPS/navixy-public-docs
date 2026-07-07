@@ -1,5 +1,7 @@
 ---
-description: Configure custom event alerts on Jimi JC series dashcams in Navixy using state field value rules with a reference table of supported event codes.
+description: >-
+  Configure custom event alerts on Jimi JC series dashcams in Navixy using state
+  field value rules with a reference table of supported event codes.
 ---
 
 # Event configuration on Jimi JC series
@@ -12,9 +14,9 @@ Jimi JC devices can send various event codes to the Navixy platform. While the p
 2. Select **State field value** as the alert type.
 3. In the settings:
 
-- Set "event_code" as the state field;
-- Enter the desired event code as the expected value;
-- Configure additional notification preferences as needed.
+* Set "event\_code" as the state field;
+* Enter the desired event code as the expected value;
+* Configure additional notification preferences as needed.
 
 ## Example use case: Seat belt unplug alert
 
@@ -22,12 +24,12 @@ Let's walk through setting up an alert for when a seat belt is unplugged:
 
 1. Create a new alert
 2. Select **State field value** as the alert type\
-   ![Example use case: Seat belt alert — Setting alert type](../../../../.gitbook/assets/browser_KjcUn9UmiH.png)\
+   ![Example use case: Seat belt alert — Setting alert type](../../../../../.gitbook/assets/browser_KjcUn9UmiH.png)\
    3\. In the settings tab:\
-   ![Live example: Setting event code 167 for seat belt unplug detection](../../../../.gitbook/assets/image-20241024-092818.png)
+   ![Live example: Setting event code 167 for seat belt unplug detection](../../../../../.gitbook/assets/image-20241024-092818.png)
 
-- State Field: `event_code`
-- Expected Value: `167` (seat belt unplugged code)
+* State Field: `event_code`
+* Expected Value: `167` (seat belt unplugged code)
 
 When the device sends a packet with event code 167, the platform triggers the alert and notifies designated personnel.
 
@@ -41,8 +43,8 @@ This table provides a list of event codes supported by Jimi JC devices.
 
 For your convenience, Navixy presents both:
 
-- Decimal codes (used in platform configuration).
-- Hexadecimal (HEX) codes (as referenced in manufacturer documentation).
+* Decimal codes (used in platform configuration).
+* Hexadecimal (HEX) codes (as referenced in manufacturer documentation).
 
 The definitions provided closely align with the original Jimi JC series documentation, ensuring consistency with manufacturer specifications. Use these codes when configuring state field value alerts in the platform.
 

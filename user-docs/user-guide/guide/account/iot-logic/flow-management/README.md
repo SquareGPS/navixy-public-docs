@@ -1,5 +1,8 @@
 ---
-description: "Build custom IoT Logic flows on a visual canvas: connect nodes to receive device telemetry, process and transform data, and route it to external systems."
+description: >-
+  Build custom IoT Logic flows on a visual canvas: connect nodes to receive
+  device telemetry, process and transform data, and route it to external
+  systems.
 ---
 
 # Flow management
@@ -15,7 +18,7 @@ You create flows from the IoT Logic start page using the **Create Flow** button.
 3. Enter a name and description for the flow and set its initial enabled state.
 4. Click **Confirm**. The canvas opens and the new flow is ready to edit.
 
-<figure><img src="../../../../.gitbook/assets/new-flow.png" alt="Create Flow dialog with name, description, and enabled state fields"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/new-flow.png" alt="Create Flow dialog with name, description, and enabled state fields"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 Disabled flows don't send any data! The readings from the devices involved in a disabled flow don't reach any destination, including the Navixy platform. This means that disabling a flow can interrupt your monitoring capabilities and data collection for the affected devices. Only disable flows when you deliberately want to stop data transmission completely.
@@ -41,7 +44,7 @@ To assemble your data processing sequence:
 2. Click on each node to open its configuration panel and set up the required parameters.
 3. Connect nodes by clicking on a node's output connector and dragging it to the input connector of the destination node.
 
-<figure><img src="../../../../.gitbook/assets/image-20250403-161201.png" alt="Flow workspace showing connected nodes with visible connectors between them"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-20250403-161201.png" alt="Flow workspace showing connected nodes with visible connectors between them"><figcaption></figcaption></figure>
 
 Your flow must begin with at least one **Data Source** node and end with one or more **Output Endpoint** nodes. Between these, you can add transformation nodes to manipulate the data according to your requirements.
 
@@ -77,7 +80,7 @@ When you need to restructure your flow, you can remove nodes or connections:
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-20250403-161554.png" alt="Node with delete icon"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-20250403-161554.png" alt="Node with delete icon"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -94,7 +97,7 @@ When you delete a node, all of its connections will also be removed.
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../../../.gitbook/assets/image-20250403-161949.png" alt="Selected connection highlighted for deletion"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-20250403-161949.png" alt="Selected connection highlighted for deletion"><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -112,7 +115,7 @@ IoT Logic allows you to export flow configurations for backup purposes or to sha
 
 Here's an example of an exported/ready-to-import flow JSON file:
 
-{% file src="../../../../.gitbook/assets/iot-logic-full-example-exported-flow.json" %}
+{% file src="../../../../../.gitbook/assets/iot-logic-full-example-exported-flow.json" %}
 
 ### Exporting a flow
 

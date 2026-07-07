@@ -1,5 +1,7 @@
 ---
-description: Install ultrasonic and capacitive fuel level sensors. Covers CAN bus connections, output interface types, and specialized sensor probe designs.
+description: >-
+  Install ultrasonic and capacitive fuel level sensors. Covers CAN bus
+  connections, output interface types, and specialized sensor probe designs.
 ---
 
 # Fuel level sensor installation
@@ -10,28 +12,28 @@ We strongly recommend engaging the services of professionals for the installatio
 
 To get the sensor up and running it takes:
 
-- 2 technicians
-- Installation tools
-  - Bi-metal hole saw
-  - Corner drill
-  - Metal drills (look for HSS-TiN drills)
-  - Flat head and Phillips head screwdriver
-  - Pliers
-  - Hack saw or tube cutter
-  - Riveter (to fix the sensor to the thick-walled tank)
-- Calibration set
-  - Calibration tube
-  - Portable gas station - required during tank calibration for precise measurement of fuel level
-  - Tanks for temporary fuel storage (often inflatable/ collapsible fuel tanks)
-- Consumables: U-bolts, corrugated tubes, etc.
-- Laptop: to calibrate the sensor and the fuel tank
-- USB Connector kit (to connect the sensor and the laptop). Usually sensor manufacturers make their own USB adapters (e.g. UNU-USB by Omnicomm) to fit the sensors.
+* 2 technicians
+* Installation tools
+  * Bi-metal hole saw
+  * Corner drill
+  * Metal drills (look for HSS-TiN drills)
+  * Flat head and Phillips head screwdriver
+  * Pliers
+  * Hack saw or tube cutter
+  * Riveter (to fix the sensor to the thick-walled tank)
+* Calibration set
+  * Calibration tube
+  * Portable gas station - required during tank calibration for precise measurement of fuel level
+  * Tanks for temporary fuel storage (often inflatable/ collapsible fuel tanks)
+* Consumables: U-bolts, corrugated tubes, etc.
+* Laptop: to calibrate the sensor and the fuel tank
+* USB Connector kit (to connect the sensor and the laptop). Usually sensor manufacturers make their own USB adapters (e.g. UNU-USB by Omnicomm) to fit the sensors.
 
-![Fuel sensor connection](../../../../.gitbook/assets/omnicomm-sensor-installation.png)
+![Fuel sensor connection](../../../../../.gitbook/assets/omnicomm-sensor-installation.png)
 
 Quite often, technical crews operate an all-in-one mobile calibration station, which has everything from tanks for draining the fuel to a refilling station on one vehicle.
 
-![All-in-one mobile calibration station](../../../../.gitbook/assets/calibration-station2.png)
+![All-in-one mobile calibration station](../../../../../.gitbook/assets/calibration-station2.png)
 
 And last but not least, installation of fuel sensors requires knowledge, skill and expertise to deal with all kinds of tanks and situations.
 
@@ -86,8 +88,6 @@ CAN bus is a twisted pair (two wires twisted around each other). To find the CAN
 
 Once it is located, you can connect to it via a CAN Crocodile contactless reader (recommended) or connect to it directly.
 
-![Connection to the CAN bus](../../../../.gitbook/assets/CAN-bus-diagram-600x348.png)
-
 1. Find out the vehicle brand, model and year of manufacture before connecting to its CAN bus.
 2. Check the vehicle manuals to make sure that the CAN bus monitors fuel level data. Unless it does, the other steps will make no sense.
 3. Go to the tracker manufacturer’s website to select a CAN module brand that fits.
@@ -106,24 +106,24 @@ For instance, Teltonika requires different CAN module for cars (LV-CAN 200) and 
 
 The installation will take approximately 30 minutes (considering the diagram is available).
 
-![Sample wiring diagram](../../../../.gitbook/assets/canlog-wiring-diagram-762x1024-446x600.png)
+![Sample wiring diagram](../../../../../.gitbook/assets/canlog-wiring-diagram-762x1024-446x600.png)
 
 ## Fuel sensor outputs
 
 As of 2018, the most common outputs to connect to GPS trackers were:
 
-- For factory installed trackers:
-  - analogue output
-  - CAN interface
-- For additionally installed trackers:
-  - analogue output
-  - frequency output
-  - digital output:
-    - RS-232
-    - RS-485
-    - CAN-2 interface
-    - Bluetooth radio interface
-    - Other radio interface
+* For factory installed trackers:
+  * analogue output
+  * CAN interface
+* For additionally installed trackers:
+  * analogue output
+  * frequency output
+  * digital output:
+    * RS-232
+    * RS-485
+    * CAN-2 interface
+    * Bluetooth radio interface
+    * Other radio interface
 
 ### Analogue signal
 
@@ -135,7 +135,7 @@ As of 2018, the most common outputs to connect to GPS trackers were:
 For instance, 1V stands for an empty tank, 10V stands for a full tank. A tank calibration is required to convert the volts into litres or gallons.
 ```
 
-![Fuel sensor with analogue output, GPS tracker with analogue input](../../../../.gitbook/assets/tank-calibration-table.png)
+![Fuel sensor with analogue output, GPS tracker with analogue input](../../../../../.gitbook/assets/tank-calibration-table.png)
 
 GPS trackers will transmit the values to the GPS tracking system in volts (e.g. 6.35 V).
 
@@ -219,7 +219,7 @@ Modern fuel sensors can be powered with both analogue and digital outputs. It’
 
 Fuel level indicator is installed directly in the driver’s cabin to show the exact fuel sensor reading. It works both ways: managers will always see the fuel level and the drivers will always know the fuel is being constantly monitored (any fuel thieves will be caught red-handed). Below you can find a fuel indicator by Omnicomm.
 
-![Fuel level indicator](../../../../.gitbook/assets/fuel-level-indicator.png)
+![Fuel level indicator](../../../../../.gitbook/assets/fuel-level-indicator.png)
 
 **Bent tube design**
 

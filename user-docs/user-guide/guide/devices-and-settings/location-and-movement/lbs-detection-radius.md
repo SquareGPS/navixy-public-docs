@@ -1,12 +1,14 @@
 ---
-description: Tune the LBS search radius for cellular and Wi-Fi positioning in Navixy. Use a larger radius in rural areas and a smaller one in cities.
+description: >-
+  Tune the LBS search radius for cellular and Wi-Fi positioning in Navixy. Use a
+  larger radius in rural areas and a smaller one in cities.
 ---
 
 # LBS detection radius
 
 Tunes cellular/Wi-Fi-based positioning, used as a fallback when GPS isn't available. It sets how far the Navixy platform trusts a base-station or Wi-Fi fix to pinpoint the device.
 
-![](../../../.gitbook/assets/image-20240815-180931.png)
+![](../../../../.gitbook/assets/image-20240815-180931.png)
 
 ## Settings
 

@@ -1,6 +1,8 @@
 ---
 title: Difference between fuel level and fuel level 2.0 reports
-description: "Fuel Level 2.0 uses machine learning to smooth noisy sensor data but cannot track drains; use Fuel Level for drain detection"
+description: >-
+  Fuel Level 2.0 uses machine learning to smooth noisy sensor data but cannot
+  track drains; use Fuel Level for drain detection
 ---
 
 # Difference between fuel level and fuel level 2.0 reports
@@ -34,5 +36,5 @@ The new fuel report should be used in these cases:
 
 * [Fuel management](https://app.gitbook.com/s/IgDb43gtyXcm1Av4h1np/vehicle-telematics-technology/fuel-management)
 * [Fuel control in Navixy](https://app.gitbook.com/s/IgDb43gtyXcm1Av4h1np/vehicle-telematics-technology/fuel-management/fuel-control-in-navixy)
-* [Fuel volume report](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/446mKak1zDrGv70ahuYZ/guide/reports/specific-report-details/fuel-volume-report)
-* [Fuel volume 2.0 report](https://app.gitbook.com/o/YVLWhgAwCZPoU5vlRsCs/s/446mKak1zDrGv70ahuYZ/guide/reports/specific-report-details/fuel-volume-2.0-report)
+* [Fuel volume report](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/reports/specific-report-details/fuel-volume-report)
+* [Fuel volume 2.0 report](https://app.gitbook.com/s/446mKak1zDrGv70ahuYZ/guide/reports/specific-report-details/fuel-volume-2.0-report)

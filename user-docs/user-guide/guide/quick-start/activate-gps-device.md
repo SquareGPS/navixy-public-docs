@@ -1,5 +1,7 @@
 ---
-description: Add a GPS tracking device to Navixy using automatic or manual activation, including APN and SIM setup for cellular, MQTT, LoRa, and satellite devices.
+description: >-
+  Add a GPS tracking device to Navixy using automatic or manual activation,
+  including APN and SIM setup for cellular, MQTT, LoRa, and satellite devices.
 ---
 
 # Activate GPS device
@@ -13,7 +15,7 @@ In Navixy, activating a device means adding a new device to your user account. T
 1. [Activate GPS device automatically (recommended)](activate-gps-device.md#activate-gps-device-automatically): Simplifies device setup by automatically configuring your device without any manual intervention. This method is recommended for most cases except when [manual activation is required or preferred](activate-gps-device.md#when-manual-activation-is-required-or-preferred).
 2. [Activate GPS device manually](activate-gps-device.md#activate-gps-device-manually): Requires you to physically enter configuration settings into the device using its configurator, or more directly through SMS. This option is useful if the automatic configuration isn't feasible due to specific technical or regional constraints.
 
-{% include "../../.gitbook/includes/device-limit-hint.md" %}
+{% include "../../.gitbook/includes/device-limit-hint (1).md" %}
 
 ## Activate GPS device automatically
 
@@ -29,7 +31,7 @@ Once you log in to your user account, navigate to **Device activation** in the l
 
 {% stepper %}
 {% step %}
-#### Device manufacturer and model&#x20;
+#### Device manufacturer and model
 
 Search and select from a list sorted alphabetically and grouped by manufacturers.
 
@@ -62,7 +64,7 @@ If you have an activation code from your service provider, you can skip manual p
    1. Most GPS devices and dashcams use IMEI, a 15-digit factory number printed on the device label or packaging.
    2.  Some devices require an ID from third-party applications or a manufacturer-specific identifier.<br>
 
-       Contact your [service provider](about-service-providers.md) if you're unsure which ID format to use.&#x20;
+       Contact your [service provider](about-service-providers.md) if you're unsure which ID format to use.
 2. Insert **Phone number**. Provide the SIM card number including the country code (e.g., +1234567890). This number is typically printed on the SIM card packaging.\
    The platform automatically detects appropriate APN settings based on the phone number. If automatic detection fails, you'll need to enter APN settings manually.
 3. Configure **GPRS settings** (if required):
@@ -78,7 +80,7 @@ When ready, click **Next** to proceed.
 {% step %}
 #### Activation
 
-After you entered all the necessary information you are ready for the activation.&#x20;
+After you entered all the necessary information you are ready for the activation.
 
 1. Review the instructions in the final step: they remind you that automatic activation requires the device to be powered on and able to receive messages.
 2. When ready, click **Activate**. SMS messages containing configuration commands are sent to the device.

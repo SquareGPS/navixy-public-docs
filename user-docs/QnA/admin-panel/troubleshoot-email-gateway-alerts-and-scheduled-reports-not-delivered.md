@@ -1,6 +1,8 @@
 ---
 title: Troubleshoot email gateway (alerts and scheduled reports not delivered)
-description: Use browser DevTools to inspect the send_email network response for SMTP credential errors or server setting mismatches
+description: >-
+  Use browser DevTools to inspect the send_email network response for SMTP
+  credential errors or server setting mismatches
 ---
 
 # Troubleshoot email gateway (alerts and scheduled reports not delivered)
@@ -26,15 +28,15 @@ If you see an error, it usually points to wrong SMTP credentials or server setti
 
 This is what the approximate workflow looks like:
 
-![](<../.gitbook/assets/Unknown image (51)>)
+![](<../../.gitbook/assets/Unknown image (51)>)
 
-![](<../.gitbook/assets/Unknown image (52)>)
+![](<../../.gitbook/assets/Unknown image (52)>)
 
-![](<../.gitbook/assets/Unknown image (53)>)
+![](<../../.gitbook/assets/Unknown image (53)>)
 
 Successful response example:
 
-![](<../.gitbook/assets/Unknown image (54)>)
+![](<../../.gitbook/assets/Unknown image (54)>)
 
 Also check spam and allow up to **5 minutes** for delivery.
 

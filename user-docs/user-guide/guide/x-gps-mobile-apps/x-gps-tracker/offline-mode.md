@@ -1,5 +1,7 @@
 ---
-description: X-GPS Tracker stores check-ins and completed forms locally when offline and uploads them automatically when internet connection is restored.
+description: >-
+  X-GPS Tracker stores check-ins and completed forms locally when offline and
+  uploads them automatically when internet connection is restored.
 ---
 
 # Offline mode
@@ -11,7 +13,7 @@ Employees can finish their tasks without having to worry about a good GSM connec
 
 To enable the offline mode, go to the application settings, open the **Advanced settings** tab, and toggle the **Offline mode** switch (disabled by default).
 
-![](../../../.gitbook/assets/image-20250304-170633.png)
+![](../../../../.gitbook/assets/image-20250304-170633.png)
 
 ### Offline mode performance details
 

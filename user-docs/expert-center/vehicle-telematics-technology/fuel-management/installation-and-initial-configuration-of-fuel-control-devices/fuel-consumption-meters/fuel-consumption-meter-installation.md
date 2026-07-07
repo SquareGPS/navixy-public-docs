@@ -1,5 +1,7 @@
 ---
-description: Install a fuel consumption meter using single-chamber or differential meter types. Covers mounting procedures, CAN-bus setup, and connection interfaces.
+description: >-
+  Install a fuel consumption meter using single-chamber or differential meter
+  types. Covers mounting procedures, CAN-bus setup, and connection interfaces.
 ---
 
 # Fuel consumption meter installation
@@ -10,7 +12,7 @@ We strongly recommend engaging the services of professional installers for the i
 
 A flow meter is a vital component installed in vehicles or special equipment's fuel system. Let's revisit the typical scheme of the fuel system once more:
 
-![Typical diagram of the diesel engine fuel system](../../../../.gitbook/assets/fuel-flow-meter-73.png)
+![Typical diagram of the diesel engine fuel system](../../../../../.gitbook/assets/fuel-flow-meter-73.png)
 
 1. Fuel tank
 2. Rough filter
@@ -22,8 +24,8 @@ A flow meter is a vital component installed in vehicles or special equipment's f
 
 A flow meter can be installed:
 
-- **Between the rough filter and the low-pressure fuel pump** (within the supply fuel line). This scheme is called **“On suction side”**.
-- **Between the fine filter and the high-pressure fuel pump** (within the supply fuel line). This scheme is called **“On pressure side”**.
+* **Between the rough filter and the low-pressure fuel pump** (within the supply fuel line). This scheme is called **“On suction side”**.
+* **Between the fine filter and the high-pressure fuel pump** (within the supply fuel line). This scheme is called **“On pressure side”**.
 
 {% hint style="info" %}
 Depending on the type of flow meter selected (single-chamber or differential), it may be necessary to make certain changes to the fuel system.
@@ -31,17 +33,17 @@ Depending on the type of flow meter selected (single-chamber or differential), i
 
 To install a flow meter you will need:
 
-- An installer. On complex fuel lines, several installers may be needed.
-- A mounting kit
-- A bracket
-- Automobile hand tool kit (cap key, drive socket, and screwdriver sets)
-- A welding machine (preferably of an inverter type)
-- Pyrometer
-- Pressure gauge
+* An installer. On complex fuel lines, several installers may be needed.
+* A mounting kit
+* A bracket
+* Automobile hand tool kit (cap key, drive socket, and screwdriver sets)
+* A welding machine (preferably of an inverter type)
+* Pyrometer
+* Pressure gauge
 
-![Mounting bracket for fuel meter installation](../../../../.gitbook/assets/fuel-flow-meter-12.png)
+![Mounting bracket for fuel meter installation](../../../../../.gitbook/assets/fuel-flow-meter-12.png)
 
-![Fuel meter mounting kit](../../../../.gitbook/assets/fuel-flow-meter-13.png)
+![Fuel meter mounting kit](../../../../../.gitbook/assets/fuel-flow-meter-13.png)
 
 ## Flow meter installation routine
 
@@ -54,9 +56,9 @@ Irrespective of the chosen flow meter and connection scheme, the installation pr
 5. **Screw a mounting bracket to the vehicle frame area.** A bracket is a special metal plate to which a flow meter can be bolted.
 6. **Break the fuel line at the connection point with the flow meter.** The existing fuel lines are removed and the new ones are installed in their place (usually they are reinforced hoses). Later, several kit items are installed at the ends of the new pipes in order to:
 
-- connect to the flow meter inlet
-- connect to the flow meter outlet
-- receive fuel from the return fuel line (depending on the installation scheme)The new fuel lines need to have some spare length in order to compensate length changes due to the temperature.
+* connect to the flow meter inlet
+* connect to the flow meter outlet
+* receive fuel from the return fuel line (depending on the installation scheme)The new fuel lines need to have some spare length in order to compensate length changes due to the temperature.
 
 7. **To prevent air in the return pipe, it is recommended to install a fuel deaeration system.** By utilizing a deaerator, air bubbles can be effectively eliminated from the fuel line, ensuring accurate measurements and uninterrupted flow through the measuring chamber.
 
@@ -64,25 +66,25 @@ Irrespective of the chosen flow meter and connection scheme, the installation pr
 Drilling into the vehicle frame is strictly prohibited when fitting the mounting plate for the flow meter. In case the use of bolts is not feasible for attaching the mounting plate, spot welding is an acceptable alternative.
 {% endhint %}
 
-![Technoton DFM DA 250 deaerator](../../../../.gitbook/assets/fuel-flow-meter-141.png)
+![Technoton DFM DA 250 deaerator](../../../../../.gitbook/assets/fuel-flow-meter-141.png)
 
 8. For proper operation of the modified fuel system, **install a bypass valve** at the high-pressure fuel pump output, which will support the necessary pressure and help to prevent:
 
-- Fuel flowing in the opposite direction
-- Fuel system's hydraulic shocks
+* Fuel flowing in the opposite direction
+* Fuel system's hydraulic shocks
 
 9. Mount a fuel return line depending on the selected flow meter and the installation scheme. The mounting process is described above.
 10. With the help of a low-pressure fuel pump, remove the air from the fuel supply line. To do this:
 
-- Loosen the bracket at the fuel injector inlet
-- Manually pump the fuel with the help of a low-pressure fuel pump
-- Make sure that there is no air coming from the the injector inlet
-- Fasten the bracket
+* Loosen the bracket at the fuel injector inlet
+* Manually pump the fuel with the help of a low-pressure fuel pump
+* Make sure that there is no air coming from the the injector inlet
+* Fasten the bracket
 
 11. **To assess the fuel line pressure at various operating modes of the engine, such as idle or maximum speed, utilize a manometer.** This data can then be compared to the previous readings obtained prior to installation. It is essential to ensure that any deviation observed does not exceed 5%.
 12. **Connect the flow meter to the onboard power supply and a laptop through an adapter** (the same as with FLS). Then, configure the sensor with the help of a special application on your laptop.
 
-![Universal Adapter](../../../../.gitbook/assets/fuel-flow-meter-15.png)
+![Universal Adapter](../../../../../.gitbook/assets/fuel-flow-meter-15.png)
 
 13. **Disconnect the flow meter from the computer**, then tie an interface cable with a cable route. Connect the opposite side of the cable route to the GPS tracking device.
 
@@ -94,7 +96,7 @@ The installation of a flow meter can vary in time depending on the fuel system, 
 
 Installation of a single-chamber flow meter according to the **On suction side** scheme:
 
-![](../../../../.gitbook/assets/fuel-flow-meter-161.png)
+![](../../../../../.gitbook/assets/fuel-flow-meter-161.png)
 
 1. Fuel tank
 2. Rough filter
@@ -109,26 +111,26 @@ Installation of a single-chamber flow meter according to the **On suction side**
 
 The following changes will be made to the standard fuel system:
 
-- **The fuel line scheme for the return system has been modified.** As part of the modification, the line that originates from the bypass valve of the high-pressure pump needs to be rerouted to the input of the low-pressure fuel pump. This adjustment eliminates the requirement to account for fuel from the return line. It is important to note that the return line from the injectors remains unchanged. When the injectors function properly, their return flow is minimal, constituting less than 0.1% of the overall fuel consumption. Therefore, this amount can be considered insignificant.
-- **An extra fine filter is placed between the rough filter and the flow meter.** Its purpose is not only to prevent the measuring chamber from getting clogged but also to serve as a deaerator when there is minimal air present in the fuel. This ensures optimal functionality and efficiency.
+* **The fuel line scheme for the return system has been modified.** As part of the modification, the line that originates from the bypass valve of the high-pressure pump needs to be rerouted to the input of the low-pressure fuel pump. This adjustment eliminates the requirement to account for fuel from the return line. It is important to note that the return line from the injectors remains unchanged. When the injectors function properly, their return flow is minimal, constituting less than 0.1% of the overall fuel consumption. Therefore, this amount can be considered insignificant.
+* **An extra fine filter is placed between the rough filter and the flow meter.** Its purpose is not only to prevent the measuring chamber from getting clogged but also to serve as a deaerator when there is minimal air present in the fuel. This ensures optimal functionality and efficiency.
 
 **Advantages:**
 
-- minimal interference into the fuel system;
-- easy installation;
-- applicable for most engines.
+* minimal interference into the fuel system;
+* easy installation;
+* applicable for most engines.
 
 **Disadvantages:**
 
-- requires installation of an additional fine filter and causes extra costs;
-- additional load on the low pressure fuel pump;
-- fuel in the tank is not heated by a return flow line (fuel heater is sometimes required).
+* requires installation of an additional fine filter and causes extra costs;
+* additional load on the low pressure fuel pump;
+* fuel in the tank is not heated by a return flow line (fuel heater is sometimes required).
 
 ### Single-chamber flow meter installation — On pressure side
 
 Installation of a single-chamber flow meter according to **On pressure side** scheme:
 
-![](../../../../.gitbook/assets/fuel-flow-meter-171.png)
+![](../../../../../.gitbook/assets/fuel-flow-meter-171.png)
 
 1. Fuel tank
 2. Rough filter
@@ -143,25 +145,25 @@ Installation of a single-chamber flow meter according to **On pressure side** sc
 
 The following changes will be made to the standard fuel system:
 
-- **The modification of the return fuel line is necessary.** The fine filter output is equipped with a bypass valve and is connected to the return line through a pipe. Any excess fuel pumped by the low-pressure fuel pump will then be directed back to the fuel tank from the fine filter's side. Consequently, only the amount of fuel consumed by the engine will pass through the flow meter.
-- **A bypass valve is removed from a high-pressure fuel pump output**, the appeared space has to be plugged.
+* **The modification of the return fuel line is necessary.** The fine filter output is equipped with a bypass valve and is connected to the return line through a pipe. Any excess fuel pumped by the low-pressure fuel pump will then be directed back to the fuel tank from the fine filter's side. Consequently, only the amount of fuel consumed by the engine will pass through the flow meter.
+* **A bypass valve is removed from a high-pressure fuel pump output**, the appeared space has to be plugged.
 
 **Advantages:**
 
-- A flow meter is installed after a regular fine filter;
-- fuel flows under pressure and does not overload the low-pressure fuel pump;
-- return fuel can heat fuel in the tank.
+* A flow meter is installed after a regular fine filter;
+* fuel flows under pressure and does not overload the low-pressure fuel pump;
+* return fuel can heat fuel in the tank.
 
 **Disadvantages:**
 
-- High-pressure fuel pump is slightly deteriorated;
-- return flow fuel is lower than with a regular fuel system.
+* High-pressure fuel pump is slightly deteriorated;
+* return flow fuel is lower than with a regular fuel system.
 
 ### Differential flow meter installation — On suction side
 
 Installation of a differential/two-chamber flow meter according to **On suction side** scheme:
 
-![](../../../../.gitbook/assets/fuel-flow-meter-181.png)
+![](../../../../../.gitbook/assets/fuel-flow-meter-181.png)
 
 1. Fuel tank
 2. Rough filter
@@ -174,26 +176,26 @@ Installation of a differential/two-chamber flow meter according to **On suction 
 
 The following changes will be made to the standard fuel system
 
-- **An additional fine filter is installed between the rough filter and the straight-flow measured chamber.** It prevents the chamber from clogging and can function as a deaerator in such cases there is not much air in the fuel.
-- The return fuel line is connected with the **return-flow chamber inlet via a pipe**.
-- **The chamber outlet** is connected to the tank by a pipe.
+* **An additional fine filter is installed between the rough filter and the straight-flow measured chamber.** It prevents the chamber from clogging and can function as a deaerator in such cases there is not much air in the fuel.
+* The return fuel line is connected with the **return-flow chamber inlet via a pipe**.
+* **The chamber outlet** is connected to the tank by a pipe.
 
 **Advantages:**
 
-- no changes in the fuel system;
-- installation possible for the engine during the warranty period.
+* no changes in the fuel system;
+* installation possible for the engine during the warranty period.
 
 **Disadvantages:**
 
-- higher costs;
-- higher fuel consumption measurement error (up to 3%);
-- additional fine filter and meter increase load on the low-pressure fuel pump.
+* higher costs;
+* higher fuel consumption measurement error (up to 3%);
+* additional fine filter and meter increase load on the low-pressure fuel pump.
 
 ### Differential flow meter installation: **On pressure side**
 
 Installation of a differential/two-chamber flow meter according to this scheme is as follows:
 
-![](../../../../.gitbook/assets/fuel-flow-meter-191.png)
+![](../../../../../.gitbook/assets/fuel-flow-meter-191.png)
 
 Installation of a differential flow meter as per **On pressure side** scheme:
 
@@ -207,18 +209,18 @@ Installation of a differential flow meter as per **On pressure side** scheme:
 
 **The following changes** will be made to the standard fuel system:
 
-- **The return fuel line is connected with the return-flow chamber inlet via a pipe.** The chamber outlet is connected to the tank by a pipe.
-- **The return-flow measurement chamber output** is connected to the fuel tank via a pipe.
+* **The return fuel line is connected with the return-flow chamber inlet via a pipe.** The chamber outlet is connected to the tank by a pipe.
+* **The return-flow measurement chamber output** is connected to the fuel tank via a pipe.
 
 **Advantages:**
 
-- no changes in the fuel system;
-- installation possible for the engine during warranty period.
+* no changes in the fuel system;
+* installation possible for the engine during warranty period.
 
 **Disadvantages:**
 
-- higher costs (when compared with a single-chamber installation);
-- higher fuel consumption measurement error;
+* higher costs (when compared with a single-chamber installation);
+* higher fuel consumption measurement error;
 
 ### CAN-bus flow meter installation
 
@@ -228,14 +230,14 @@ To establish a connection with a CAN-bus, the first step is to locate it within 
 
 Once you have successfully identified the CAN bus, there are two options to establish a connection: either through a CAN Crocodile contactless reader (recommended for its non-destructive nature) or by directly connecting to it (less preferable).
 
-![Fuel flow meter CAN connection](../../../../.gitbook/assets/can-bus-diagram-600x348.png)
+![Fuel flow meter CAN connection](../../../../../.gitbook/assets/can-bus-diagram-600x348.png)
 
 General procedure for connecting to the CAN bus:
 
 1. First, you need to know the brand, model and year of manufacture of the car to which you want to connect a CAN-bus.
 2. Later, by looking at [this table](https://www.navixy.com/wp-content/uploads/2019/07/allcan300_list.pdf), check whether the full fuel consumption parameter is transmitted to the CAN-bus of your car. **If the data is not transmitted, this option is not possible.**
 
-![Fuel flow meter connection to CAN-bus example](../../../../.gitbook/assets/fuel-flow-meter-21.png)
+![Fuel flow meter connection to CAN-bus example](../../../../../.gitbook/assets/fuel-flow-meter-21.png)
 
 3. Go to your device manufacturer's website to select a CAN module brand that fits.
 4. For example, when connecting Teltonika devices to passenger cars, the CAN-module LV-CAN 200 is used, and for trucks, it will be ALLCAN 300.
@@ -257,14 +259,14 @@ For example, one line delivers fuel to the engine that runs the car while the ot
 
 As of 2018, the following interfaces were used to connect a flow meter to a GPS device:
 
-- For hardware flow meters:
-  - Impulse interface;
-  - Serial interfaces:
-    - RS-232
-    - RS-485
-    - CAN-like
-- For CAN-bus flow meters:
-  - By connecting to a CAN bus network
+* For hardware flow meters:
+  * Impulse interface;
+  * Serial interfaces:
+    * RS-232
+    * RS-485
+    * CAN-like
+* For CAN-bus flow meters:
+  * By connecting to a CAN bus network
 
 ### Analog interface
 
