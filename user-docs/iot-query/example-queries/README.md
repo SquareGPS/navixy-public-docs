@@ -1,13 +1,11 @@
 ---
 title: SQL Recipe Book
-description: >-
-  Ready-made SQL templates for frequent fleet management and telematics
-  analyses. Customize and execute queries directly against your data warehouse
+description: Ready-made SQL templates for frequent fleet management and telematics analyses. Customize and execute queries directly against your data warehouse
 ---
 
 # SQL Recipe Book
 
-<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Ready-made SQL query templates for common analytical tasks and industry-specific use cases in the **Navixy IoT Query**. Each recipe provides complete, functional SQL code that you can customize and execute directly against your data warehouse instance.
 

@@ -1,8 +1,6 @@
 ---
 title: Custom analysis & SQL Configurator
-description: >-
-  Write PostgreSQL queries against fleet data, browse the full database schema,
-  and create custom visualizations in the SQL Configurator
+description: Write PostgreSQL queries against fleet data, browse the full database schema, and create custom visualizations in the SQL Configurator
 ---
 
 # Custom analysis & SQL Configurator
@@ -11,7 +9,7 @@ The **Custom Analysis & SQL Configurator** enables direct database access for cu
 
 ## Interface overview
 
-<figure><img src="../../../.gitbook/assets/SQL-configurator-and-visualization.webp" alt="Database Schema browser showing raw_business_data and raw_telematics_data schemas with expandable table lists, SQL Query Execution panel with query input area and results display, and Visualization tab for chart creation"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/SQL-configurator-and-visualization.webp" alt="Database Schema browser showing raw_business_data and raw_telematics_data schemas with expandable table lists, SQL Query Execution panel with query input area and results display, and Visualization tab for chart creation"><figcaption></figcaption></figure>
 
 The workspace of **SQL Configurator** consists of 3 main sections:
 

@@ -1,8 +1,6 @@
 ---
 title: Settings and configuration
-description: >-
-  Manage Explorer for IoT Query data processing categories, system health
-  monitoring, and historical data loading from the settings panel
+description: Manage Explorer for IoT Query data processing categories, system health monitoring, and historical data loading from the settings panel
 ---
 
 # Settings and configuration
@@ -11,7 +9,7 @@ Your **Explorer for IoT Query** instance requires management to deliver optimal 
 
 ## Understanding your system's health
 
-![](../../.gitbook/assets/image-20250813-134236.png)
+![](../.gitbook/assets/image-20250813-134236.png)
 
 The **System Health** dashboard shows your instance's current operational status. Check these indicators before making configuration changes.
 

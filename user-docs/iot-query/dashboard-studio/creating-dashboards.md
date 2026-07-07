@@ -1,8 +1,6 @@
 ---
 title: Creating dashboards
-description: >-
-  Add visualization panels to a canvas, configure SQL queries, and arrange
-  layouts for real-time fleet monitoring and operational decision-making
+description: Add visualization panels to a canvas, configure SQL queries, and arrange layouts for real-time fleet monitoring and operational decision-making
 ---
 
 # Creating dashboards
@@ -59,7 +57,7 @@ Dashboard Studio provides five visualization types. Each works best for specific
 
 Each visualization type serves specific analytical purposes. Stat tiles work well for KPIs like total fleet size or average utilization. Bar charts help you compare performance across regions or track metrics over time. Pie charts show how totals divide into categories, such as fuel consumption by vehicle type. Tables present detailed records when users need to see multiple attributes together. Text panels add context, instructions, or section headers to your reports.
 
-<figure><img src="../../.gitbook/assets/dashboard_example.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dashboard_example.webp" alt=""><figcaption></figcaption></figure>
 
 Query requirements vary by visualization type. Stat tiles need one numeric value. Bar and pie charts require exactly two columns: categories and values. Tables accept any number of columns. Text panels don't query data at all. For complete query requirements and examples, see [Writing SQL queries.](writing-sql-queries.md#how-to-write-sql-for-visualizations)
 
@@ -73,9 +71,9 @@ Let's walk through the steps from an empty canvas to a structured and informativ
 {% step %}
 **Create a new dashboard**
 
-<figure><img src="../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-* Click <img src="../../.gitbook/assets/image (1) (2).png" alt="" data-size="line"> in the lower-left corner of the app and select **New dashboard**.
+* Click <img src="../.gitbook/assets/image (1).png" alt="" data-size="line"> in the lower-left corner of the app and select **New dashboard**.
 * Add **Title**.
 * Click **Create dashboard**, a **Get Started** message appears.
 * Select **Start with Blank Dashboard** to open an empty canvas.
@@ -84,22 +82,22 @@ Let's walk through the steps from an empty canvas to a structured and informativ
 {% step %}
 **Add a panel**
 
-<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Now you can add your first panel by selecting a visualization type.
 
-1. Select <img src="../../.gitbook/assets/image (2) (2).png" alt="" data-size="line"> on the editing toolbar.
+1. Select <img src="../.gitbook/assets/image (2).png" alt="" data-size="line"> on the editing toolbar.
 2. Choose **Panel Type** and click **Add panel**. The new panel appears on the canvas.
 {% endstep %}
 
 {% step %}
 **Configure the visual**
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Now it's time to add the diagram settings:
 
-1. Hover your mouse over the tile and click <img src="../../.gitbook/assets/image (3) (2).png" alt="" data-size="line">.
+1. Hover your mouse over the tile and click <img src="../.gitbook/assets/image (3).png" alt="" data-size="line">.
 2. Dashboard Studio opens a panel editor with three tabs:
    1. **Panel Properties** controls the title and type
    2. **SQL Query** defines what data to display
@@ -115,7 +113,7 @@ Now it's time to add the diagram settings:
 
 Now that you understand the basic workflow, let's explore SQL queries in detail. Write PostgreSQL queries that reference IoT Query tables in the SQL Query tab. All Raw data and Transformation layer tables are available. Test queries before applying them to verify results match your visualization requirements.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Query results must match visualization requirements. The SQL Query tab includes a "Dataset Requirements" section explaining what your chosen visualization expects. Use Common Table Expressions (CTEs) to define parameters at the query start for flexibility. This approach keeps your queries maintainable and allows you to adjust parameters without rewriting complex logic.
 
@@ -137,7 +135,7 @@ Configure visualization-specific options in the **Visualization Settings** tab:
 
 These settings control how data appears visually but don't change what data is displayed. The available options depend on your panel type.
 
-<figure><img src="../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>Table Visualization Settings example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Table Visualization Settings example</p></figcaption></figure>
 
 ### How to organize dashboards in sections
 
@@ -149,7 +147,7 @@ Use the menu editing mode to create sections, drag reports between them, and reo
 {% endcolumn %}
 
 {% column width="58.33333333333333%" %}
-<figure><img src="../../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -161,13 +159,13 @@ Export reports to share them with other users or create backups.
 
 To do it:
 
-1. Click <img src="../../.gitbook/assets/image (11) (1).png" alt="" data-size="line"> to enter edit mode.
-2. Click <img src="../../.gitbook/assets/image (12).png" alt="" data-size="line"> to open the Full Schema window.
+1. Click <img src="../.gitbook/assets/image (11).png" alt="" data-size="line"> to enter edit mode.
+2. Click <img src="../.gitbook/assets/image (12).png" alt="" data-size="line"> to open the Full Schema window.
 3. Select **Export**.
 
 Dashboard Studio downloads a JSON file containing the complete report structure, including panels, queries, and visualization settings. You can import an existing schema as well.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ## How data refresh works
 

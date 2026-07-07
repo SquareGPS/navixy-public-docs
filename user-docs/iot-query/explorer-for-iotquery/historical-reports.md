@@ -1,8 +1,6 @@
 ---
 title: Historical reports
-description: >-
-  Analyze sensor, activity, driving behavior, shifts, mileage, trips, and
-  downtime patterns across defined time periods for fleet optimization insights
+description: Analyze sensor, activity, driving behavior, shifts, mileage, trips, and downtime patterns across defined time periods for fleet optimization insights
 ---
 
 # Historical reports
@@ -11,7 +9,7 @@ Historical reports transform your operational data into strategic insights by an
 
 ## Measurement sensor report
 
-![](../../.gitbook/assets/image-20250813-124709.png)
+![](../.gitbook/assets/image-20250813-124709.png)
 
 **When to use**: Fuel management planning, predictive maintenance scheduling, and identifying equipment performance patterns across multiple vehicles and time periods.
 
@@ -34,7 +32,7 @@ All timestamps convert to UTC for consistent analysis regardless of vehicle geog
 
 ## Object activity report
 
-![](../../.gitbook/assets/image-20250813-124725.png)
+![](../.gitbook/assets/image-20250813-124725.png)
 
 **When to use**: Route optimization analysis, vehicle utilization assessment, and operational efficiency measurement across defined time periods and fleet segments.
 
@@ -57,7 +55,7 @@ The underlying query structure adapts based on your selected parameters, optimiz
 
 ## Eco-driving report
 
-![](../../.gitbook/assets/image-20250813-124745.png)
+![](../.gitbook/assets/image-20250813-124745.png)
 
 **When to use**: Driver safety analysis, insurance compliance reporting, and fleet risk management assessment for developing targeted training programs and reducing operational costs.
 
@@ -80,7 +78,7 @@ The underlying algorithm processes 15-second aggregated GPS data from `raw_telem
 
 ## Shifts report
 
-![](../../.gitbook/assets/image-20250813-124757.png)
+![](../.gitbook/assets/image-20250813-124757.png)
 
 **When to use**: Workforce productivity analysis, operational pattern identification, and shift efficiency measurement for fleet scheduling optimization.
 
@@ -103,7 +101,7 @@ GPS coordinate validation ensures only quality positioning data contributes to d
 
 ## Mileage report
 
-<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 **When to use**: Fleet utilization analysis, operational efficiency assessment, and work time versus non-work time usage pattern identification for optimizing vehicle deployment and identifying unauthorized usage.
 
@@ -127,7 +125,7 @@ GPS quality validation ensures only reliable positioning data (satellites > 3, n
 
 ## Trips report
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **When to use**: Journey pattern analysis, route optimization assessment, and operational behavior evaluation for understanding trip frequency, distance distribution, and identifying unusual travel patterns.
 
@@ -152,7 +150,7 @@ All trip timestamps convert to UTC for consistent analysis across different oper
 
 ## Downtime report
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **When to use**: Vehicle utilization optimization, idle time cost analysis, operational efficiency assessment, and identifying excessive downtime at specific locations for improving fleet productivity and reducing fuel waste.
 

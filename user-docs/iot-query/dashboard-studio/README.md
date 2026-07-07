@@ -1,8 +1,6 @@
 ---
 title: Dashboard Studio
-description: >-
-  Build interactive fleet dashboards and reports from SQL queries without
-  external BI tools. Self-service analytics with drag-and-drop visualization
+description: Build interactive fleet dashboards and reports from SQL queries without external BI tools. Self-service analytics with drag-and-drop visualization
 ---
 
 # Dashboard Studio
@@ -13,7 +11,7 @@ description: >-
 
 Dashboard Studio extends your [**IoT Query**](https://navixy.com/en/iot-query/) access with an advanced analytics layer, delivering fleet-optimized visualizations through a web-based interface. You execute SQL queries against your **IoT Query** database across **Raw data**, **Transformation**, and **Insight** layers, and Dashboard Studio renders results as interactive dashboards. The dashboards update automatically as new telemetry data arrives, providing current views of fleet operations without manual data exports.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The visual editor separates dashboard design from SQL knowledge. Advanced users write queries once against the structured data model you already access through SQL clients, while dashboard viewers interact with visualizations without touching code. You arrange panels through drag-and-drop, configure visualizations through form-based interfaces, and organize completed dashboards into logical menu structures.
 
@@ -55,7 +53,7 @@ Dashboard Studio addresses the gap between basic reporting and full business int
 * **Operations analysts** can use Dashboard Studio to build dashboards that track indicators across routes, vehicles, and drivers. Create reusable dashboards that update automatically, replacing manual Excel exports and one-off data requests.
 * **Fleet managers** get immediate answers about fleet operations through self-service access to visualizations built on your telemetry data, without waiting for scheduled reports or data analyst availability.
 
-<figure><img src="../../.gitbook/assets/combined_dashboard.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/combined_dashboard.webp" alt=""><figcaption></figcaption></figure>
 
 ## What you need to get started
 

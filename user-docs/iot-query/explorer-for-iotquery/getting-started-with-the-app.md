@@ -1,8 +1,6 @@
 ---
 title: Getting started with the app
-description: >-
-  Configure Explorer for IoT Query via User Applications and verify connection.
-  Navigate the interface to access dashboards, reports, and analytics tools
+description: Configure Explorer for IoT Query via User Applications and verify connection. Navigate the interface to access dashboards, reports, and analytics tools
 ---
 
 # Getting started with the app
@@ -51,7 +49,7 @@ The **Information about IoT Query** panel displays your connection details, whil
 {% endcolumn %}
 
 {% column %}
-![](../../.gitbook/assets/Explorer_menu.webp)
+![](../.gitbook/assets/Explorer_menu.webp)
 {% endcolumn %}
 {% endcolumns %}
 

@@ -1,7 +1,5 @@
 ---
-description: >-
-  Process raw IoT sensor readings into hourly time-bucketed records with decoded
-  calibration, fuel volume calculations, and device-level aggregation
+description: Process raw IoT sensor readings into hourly time-bucketed records with decoded calibration, fuel volume calculations, and device-level aggregation
 ---
 
 # Sensor data aggregation
@@ -106,7 +104,7 @@ The filter operates on the raw `value` column in `inputs`, before any decoding i
 {% step %}
 #### **Joining sensor configuration**
 
-Each remaining reading is matched against `raw_business_data.sensor_description` using a `LEFT JOIN` on `device_id` and `input_label = sensor_name`. The join brings in `sensor_id`, `sensor_label`, `sensor_type`, `units_type`, `group_type`, `divider`, `multiplier`, `calibration_data`, and `parameters`. Because the join is left-sided, readings from unconfigured sensors still pass through with sensor metadata as null.
+Each remaining reading is matched against `raw_business_data.sensor_description` using a `LEFT JOIN` on `device_id` and `input_label = sensor_name`. The join brings in `sensor_id`, `sensor_label`, `sensor_type`, `units_type`, `group_type`, `divider`, `multiplier`, `calibration_data`, and `parameters`. Because the join is left-sided, readings from unconfigured sensors still pass through with sensor metadata as null.&#x20;
 {% endstep %}
 
 {% step %}
@@ -116,7 +114,7 @@ Each reading is converted from its stored representation to a usable numeric val
 
 * `bit_index` extracts a single bit from the integer value using bit-shift and mask: `((raw_value::bigint >> bit_index) & 1)`. Used for status flags packed into integers.
 * `identity` uses the raw numeric value unchanged.
-* Otherwise, the function applies `(raw_value / divider) * multiplier`, which is the standard formula for measuring sensors. A null divider triggers a `COALESCE` fallback to the raw value.
+* Otherwise, the function applies `(raw_value / divider) * multiplier`, which is the standard formula for measuring sensors. A null divider triggers a `COALESCE` fallback to the raw value.&#x20;
 {% endstep %}
 
 {% step %}
@@ -124,7 +122,7 @@ Each reading is converted from its stored representation to a usable numeric val
 
 Decoded values are grouped into time buckets by truncating `device_time` to the bucket boundary. Within each bucket, the function computes `AVG`, `MIN`, and `MAX` of the decoded value. Grouping also includes sensor metadata columns, so aggregates are calculated per sensor per device per bucket.
 
-In the built-in transformation, the bucket is one hour. Custom transformations can use any positive interval. See [Customizing the transformation](https://claude.ai/chat/32cacafe-fe34-476d-b7d0-c93b4ce82da6#customizing-the-transformation) below.
+In the built-in transformation, the bucket is one hour. Custom transformations can use any positive interval. See [Customizing the transformation](https://claude.ai/chat/32cacafe-fe34-476d-b7d0-c93b4ce82da6#customizing-the-transformation) below.&#x20;
 {% endstep %}
 
 {% step %}
@@ -140,7 +138,7 @@ The breakpoint columns (`val_low_*`, `val_high_*`, `vol_low_*`, `vol_high_*`) ar
 
 The aggregated rows are joined with `raw_business_data.objects` on `device_id` to add `object_label`, and with `raw_business_data.description_parameters` twice to resolve `units_type` and `group_type` into human-readable description strings. The function also computes `sensor_units_final`, which prefers the user-entered `sensor_units` and falls back to the description string.
 
-For discrete sensors with a `parameters.value_titles` mapping, the function looks up the human-readable title corresponding to `value_max` and returns it as `value_title`. Measuring sensors have `value_title` set to null.
+For discrete sensors with a `parameters.value_titles` mapping, the function looks up the human-readable title corresponding to `value_max` and returns it as `value_title`. Measuring sensors have `value_title` set to null.&#x20;
 {% endstep %}
 {% endstepper %}
 
@@ -198,7 +196,7 @@ The interval value controls bucket size and lookback together. They cannot be se
 
 The minimal workflow is two nodes:
 
-<figure><img src="../../../../../.gitbook/assets/Sensor-data-aggregation-custom-timeframe.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Sensor-data-aggregation-custom-timeframe.png" alt=""><figcaption></figcaption></figure>
 
 No `Raw data: Telematics` source node is needed. The function reads from `raw_telematics_data.inputs` and `raw_business_data` tables internally. The Custom SQL node contains the entire pipeline, and the Output node materializes the result to your target table.
 
