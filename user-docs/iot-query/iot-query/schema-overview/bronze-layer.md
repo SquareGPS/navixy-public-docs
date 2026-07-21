@@ -1114,7 +1114,7 @@ Reference and lookup data
 
 ## `raw_telematics_data` structure
 
-The **`raw_telematics_data`** schema contains three primary table types that work together to provide comprehensive device data.
+The **`raw_telematics_data`** schema contains four primary table types that work together to provide comprehensive device data.
 
 {% hint style="info" %}
 The interactive diagram of raw\_telematics\_data schema is available on **dbdiagram.io**: [https://dbdiagram.io/d/v1-schema-telematics-bd-67a0acef263d6cf9a0d8e750](https://dbdiagram.io/d/v1-schema-telematics-bd-67a0acef263d6cf9a0d8e750)
@@ -1198,9 +1198,33 @@ Table states {
 
   
 
+Table additional_data {
+
+  device_id integer [primary key]
+
+  device_time timestampz [primary key]
+
+  platform_time timestampz
+
+  record_added_at timestampz [default: `now()`]
+
+  discrete_inputs text [primary key]
+
+  discrete_outputs text [primary key]
+
+  special_jsonb jsonb
+
+  indexes {(device_id, discrete_inputs, discrete_outputs, device_time)}
+
+}
+
+ 
+
 Ref: inputs.(device_id, device_time) > tracking_data_core.(device_id, device_time)
 
 Ref: states.(device_id, device_time) > tracking_data_core.(device_id, device_time)
+
+Ref: additional_data.(device_id, device_time) > tracking_data_core.(device_id, device_time)
 ```
 {% endcode %}
 
@@ -1240,6 +1264,16 @@ JOIN raw_telematics_data.tacking_data_core AS tdc
 **Purpose**: Device status indicators and operational modes
 
 <table><thead><tr><th width="174.800048828125">Attribute</th><th>Details</th></tr></thead><tbody><tr><td><strong>Key Fields</strong></td><td><code>state_id</code>, <code>device_id</code>, <code>device_time</code>, <code>state_name</code>, <code>value</code></td></tr><tr><td><strong>Content</strong></td><td>Operating mode indicators (working, idle, off), component statuses (ignition, doors)</td></tr><tr><td><strong>Value Format</strong></td><td>Boolean values (1/0) or specific status codes</td></tr></tbody></table>
+
+</details>
+
+<details>
+
+<summary><code>additional_data</code></summary>
+
+**Purpose**: Discrete input/output signal states and other non-standard device data
+
+<table><thead><tr><th width="174.800048828125">Attribute</th><th>Details</th></tr></thead><tbody><tr><td><strong>Key fields</strong></td><td><code>device_id</code>, <code>device_time</code>, <code>platform_time</code>, <code>discrete_inputs</code>, <code>discrete_outputs</code></td></tr><tr><td><strong>Primary key</strong></td><td>Composite: <code>(device_id, discrete_inputs, discrete_outputs, device_time)</code></td></tr><tr><td><strong>Content</strong></td><td>Each of <code>discrete_inputs</code> and <code>discrete_outputs</code> is a bit string with one character per input or output channel (for example, <code>"10110001"</code>), where <code>1</code> means on and <code>0</code> means off</td></tr><tr><td><strong>Special notes</strong></td><td><code>special_jsonb</code> is a reserved column for future device data and isn't currently populated. This table feeds <code>processed_common_data.input_change_events</code>. See <a href="transformation-layer/common-transformations/input-change-events.md">Input change events</a></td></tr></tbody></table>
 
 </details>
 

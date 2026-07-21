@@ -301,6 +301,7 @@
       * [Transformation layer](iot-query/iot-query/schema-overview/transformation-layer/README.md)
         * [Common transformations](iot-query/iot-query/schema-overview/transformation-layer/common-transformations/README.md)
           * [Driver performance events](iot-query/iot-query/schema-overview/transformation-layer/common-transformations/driver-performance-events.md)
+          * [Input change events](iot-query/iot-query/schema-overview/transformation-layer/common-transformations/input-change-events.md)
           * [Sensor data aggregation](iot-query/iot-query/schema-overview/transformation-layer/common-transformations/sensor-data-aggregation.md)
           * [Trips](iot-query/iot-query/schema-overview/transformation-layer/common-transformations/trips.md)
         * [Transformation Builder](iot-query/iot-query/schema-overview/transformation-layer/transformation-builder/README.md)
