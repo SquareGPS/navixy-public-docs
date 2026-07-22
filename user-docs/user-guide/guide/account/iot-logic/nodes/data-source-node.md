@@ -71,7 +71,7 @@ Let's see what elements this node uses and what you can configure when working w
 
 {% stepper %}
 {% step %}
-#### Specify Node name
+#### Specify node name
 
 Enter a descriptive name for this data source:
 
@@ -80,7 +80,7 @@ Enter a descriptive name for this data source:
 {% endstep %}
 
 {% step %}
-#### Select Sources
+#### Select sources
 
 From the filtered list, select the devices to include. Only devices registered in your Navixy user account are available for selection. This selection is also the prerequisite for the optional **Software** tab, which can only map devices selected here.
 {% endstep %}
@@ -106,11 +106,11 @@ If you change the manufacturer or model settings after selecting devices, Navixy
 
 HTTP push enrichment lets an external system add attributes to a device already selected in this node's **Devices** tab, by pushing data to a generated URL. It's optional, and requires at least one device selected under [Configuration steps](data-source-node.md#configuration-steps) first.
 
-This is useful when a device already reports to a separate system that doesn't feed Navixy by default, for example a battery management platform tracking the same vehicle's state of charge. Instead of migrating the device onto Navixy's native ingestion, you can keep it registered as-is and have that other platform push its readings here. A push with `vehicle_id: "truck_12"`, `battery_soc: 76`, and `battery_temp: 34.2` adds `battery_soc` and `battery_temp` as new attributes on the mapped device, alongside its native GPS telemetry.
+This is useful when a device already reports to a separate system that doesn't feed Navixy by default, for example a battery management platform tracking the same vehicle's state of charge. Instead of migrating the device onto Navixy's native ingestion, you can keep it registered as-is and have that other platform push its readings here. A push with `vehicle_id: "truck_12"`, `bms_battery_soc: 76`, and `bms_battery_temp: 34.2` adds `bms_battery_soc` and `bms_battery_temp` as new attributes on the mapped device, alongside its native GPS telemetry.
 
 {% stepper %}
 {% step %}
-#### Set Connector Type
+#### Set connector type
 
 Switch to the **Software** tab and set **Connector Type** to **HTTP**, currently the only option.
 {% endstep %}
@@ -118,7 +118,7 @@ Switch to the **Software** tab and set **Connector Type** to **HTTP**, currently
 {% step %}
 #### Save the flow and copy the generated URL
 
-Save the entire flow, not just this node. The **URL** field only generates a value once the flow is saved with **Connector Type** set; until then, it shows a placeholder prompting you to save the flow. Once the URL appears, click the copy icon next to it, disabled only while the field is empty.
+Save the entire flow, not just this node. The **URL** field only generates a value once the flow is saved with **Connector Type** set. Until then, it shows a placeholder prompting you to save the flow. Once the URL appears, click the copy icon next to it, disabled only while the field is empty.
 {% endstep %}
 
 {% step %}
@@ -128,14 +128,14 @@ Give the external system a valid [Navixy API key](../../api-keys.md), and config
 {% endstep %}
 
 {% step %}
-#### Define Primary key and Mappings
+#### Define primary key and mappings
 
 Enter a **Primary key**: the name of the field the external system uses to identify which device a pushed record belongs to. It accepts up to 64 characters, letters, digits, and underscores only.
 
 Add one **Mappings** row per device to enrich. For each row, select the **Device name**, limited to devices already selected in Devices, and enter the **Key value** that identifies that device in inbound pushes. This field stores up to 255 characters, but the push endpoint itself accepts only up to 100 characters per field, so keep the value well under 100 characters in practice.
 
 {% hint style="warning" %}
-Both Primary key and Key value accept only letters, digits, and underscores, no hyphens or other punctuation. The push endpoint's general field validation is more permissive and accepts hyphens in any field without complaint, but a hyphenated value can never match a stored Key value, so pushes using one are silently discarded exactly as if the value simply didn't match. If your external system's identifiers use hyphens (for example `truck-12`), translate them, for example to `truck_12`, before pushing.
+Both Primary key and Key value accept only letters, digits, and underscores, no hyphens or other punctuation. The push endpoint's general field validation is more permissive and accepts hyphens in any field without complaint, but a hyphenated value can never match a stored Key value, so pushes using one are silently discarded exactly as if the value didn't match. If your external system's identifiers use hyphens (for example `truck-12`), translate them, for example to `truck_12`, before pushing.
 {% endhint %}
 {% endstep %}
 
@@ -159,11 +159,11 @@ This standardization process enables you to build consistent processing flows re
 
 ### How pushed data is handled
 
-Navixy matches each inbound push by its primary key value against the node's configured **Mappings**, then merges the remaining fields into the mapped device's data stream as new attributes. They don't affect location or other telemetry. A request can end up in one of three states:
+Navixy matches each inbound push by its primary key value against the node's configured **Mappings**, then merges the remaining fields into the mapped device's data stream as attributes: new if the field name is new, or written into that attribute's existing history if the name matches one that already exists, whether reported natively by the device or pushed by another flow's connector. They don't affect location or other telemetry. The field named in **Primary key**, along with `flow_id` and `node_id`, is used for routing and never becomes an attribute itself. A request can end up in one of three states:
 
-| Outcome                                   | HTTP response        | Data merged?                                      |
-| ----------------------------------------- | -------------------- | ------------------------------------------------- |
-| Primary key value matches a mapping       | 200, `success: true` | Yes. Remaining fields merge as new attributes     |
+| Outcome                                   | HTTP response        | Data merged?                                                             |
+| ----------------------------------------- | -------------------- | ------------------------------------------------------------------------- |
+| Primary key value matches a mapping       | 200, `success: true` | Yes. Remaining fields merge as attributes, new if the name is new, existing history if it matches one already in use |
 | Primary key value matches no mapping      | 200, `success: true` | No. Discarded silently                            |
 | Missing or invalid `Authorization` header | 400 error            | No. Rejected before Navixy checks the primary key |
 
@@ -171,23 +171,33 @@ Navixy matches each inbound push by its primary key value against the node's con
 A 200 response only confirms Navixy accepted the request, not that the data merged. A mismatched primary key value is discarded silently, with no error to signal it. If you're unsure a push was matched, check the mapped device's attributes in [Data Stream Analyzer](../data-stream-analyzer.md) rather than relying on the response.
 {% endhint %}
 
+{% hint style="warning" %}
+A pushed field name shares one namespace with the device's own native attributes, and with names pushed by another flow's connector enriching the same device. If the name matches one already in use, whether native to the device or pushed by another flow, the push overwrites that attribute's existing history instead of creating a separate one.
+
+Sensors, reports, and alerts read the merged value as a real reading, so a colliding name can produce false data downstream. For example, a pushed field named `fuel_level` that matches a device's native fuel attribute would inject a false reading, producing false fuel-drop or refuel events in reports.
+
+To avoid this, prefix pushed field names so they can't collide with a device's native attributes or another flow's pushed names, for example `bms_battery_soc` instead of `battery_soc`.
+
+System message fields such as `speed`, `latitude`, `longitude`, `heading`, `satellites`, and `hdop` can't be overwritten this way. Pushes only ever create or update attributes, never message-level telemetry. A pushed field using one of those names still appears under that name in [Data Stream Analyzer](../data-stream-analyzer.md), separate from the device's real telemetry.
+{% endhint %}
+
 A merged attribute lands as a point-in-time entry in the device's attribute history, not a sticky current value. If the device reports its own telemetry much more often than the external system pushes updates, the device's own packets can advance the attribute's history past the pushed value within seconds, even though the merge succeeded.
 
 {% hint style="info" %}
-This is an expected consequence of two data streams running at different speeds, not a defect. Reference the attribute downstream as `value('attribute_name', 0, 'valid')` instead of its bare name; `'valid'` walks back through the attribute's history to the last non-null reading, so downstream nodes get the pushed value regardless of timing.
+This is an expected consequence of two data streams running at different speeds, not a defect. Reference the attribute downstream as `value('attribute_name', 0, 'valid')` instead of its bare name. `'valid'` walks back through the attribute's history to the last non-null reading, so downstream nodes get the pushed value regardless of timing.
 {% endhint %}
 
 The push endpoint accepts up to 1 request per second per API key, with a burst size of 1. Pace the external system's requests accordingly.
 
 ## Frequently asked questions
 
-#### Can I use multiple Data source nodes in one flow?
+#### Can I use multiple Data Source nodes in one flow?
 
 Yes, you can use several **Data source nodes** in one workspace. This is useful when you need to process data from different types of devices in different ways or want to merge several data streams after specific transformations.
 
 #### What happens if a device is already used in another flow?
 
-A device can belong to multiple flows at the same time. If you add a device that is already used in another flow, both flows process its data simultaneously and results are merged to avoid data loss. Being assigned to another flow isn't a restriction.
+A device can belong to multiple flows at the same time. If you add a device that is already used in another flow, both flows process its data simultaneously and results are merged to avoid data loss. Being assigned to another flow isn't a restriction. If two flows' connectors push the same attribute name to that device, though, they don't merge harmlessly. One push's history overwrites the other's. See [How pushed data is handled](data-source-node.md#how-pushed-data-is-handled) to avoid colliding names.
 
 #### Are all my Navixy devices automatically available in IoT Logic?
 
@@ -218,3 +228,7 @@ Check these in order:
 1. Confirm the request included a valid `Authorization: NVX <api_key>` header. A missing or invalid header fails loudly with an HTTP 400 error.
 2. Confirm the pushed field name matches the node's **Primary key** setting exactly, and its value matches one of the configured **Mappings** exactly, letters, digits, and underscores only. A hyphenated value is the most common cause: it passes the push endpoint's own validation without error, but can never match a stored Key value, so the request still returns success while nothing merges.
 3. Check the attribute's history in Data Stream Analyzer, not just its current value. A device that reports its own telemetry often can scroll a merged value out of the current slot within seconds, even though the merge succeeded.
+
+#### I pushed a field and the device's own readings look wrong
+
+The pushed field's name likely matched a native attribute the device already reports, or one pushed by another flow's connector, and overwrote its history instead of creating a separate attribute. Rename the pushed field with a distinct prefix, then check the attribute's history in [Data Stream Analyzer](../data-stream-analyzer.md) to confirm the pushed and native values are no longer mixed.
